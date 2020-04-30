@@ -5,17 +5,17 @@
 @section('title','View Building')
 
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/flag-icon/css/flag-icon.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/data-tables/css/jquery.dataTables.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/data-tables/css/jquery.dataTables.min.css')}}">
 <link rel="stylesheet" type="text/css"
-    href="{{asset('marbia/marbia-crm/public/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/data-tables/css/select.dataTables.min.css')}}">
+    href="{{asset('public/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/data-tables/css/select.dataTables.min.css')}}">
 @endsection
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/cards-basic.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/data-tables.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/cards-basic.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/data-tables.css')}}">
 {{-- <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css"> --}}
 <style>
@@ -108,18 +108,18 @@
 </div>
 @endsection
 @section('vendor-script')
-<script src="{{asset('marbia/marbia-crm/public/vendors/data-tables/js/jquery.dataTables.min.js')}}"></script>
-<script src="{{asset('marbia/marbia-crm/public/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js')}}"></script>
-<script src="{{asset('marbia/marbia-crm/public/vendors/data-tables/js/dataTables.select.min.js')}}"></script>
-<script src="{{asset('marbia/marbia-crm/public/js/custom/datatable/pdfmake.min.js')}}"></script>
-<script src="{{asset('marbia/marbia-crm/public/js/custom/datatable/vfs_fonts.js')}}"></script>
-<script src="{{asset('marbia/marbia-crm/public/js/custom/datatable/jszip.min.js')}}"></script>
-<script src="{{asset('marbia/marbia-crm/public/js/custom/datatable/buttons.print.min.js')}}"></script>
-<script src="{{asset('marbia/marbia-crm/public/js/custom/datatable/dataTables.buttons.min.js')}}"></script>
-<script src="{{asset('marbia/marbia-crm/public/js/custom/datatable/buttons.colVis.min.js')}}"></script>
-<script src="{{asset('marbia/marbia-crm/public/js/custom/datatable/buttons.flash.min.js')}}"></script>
-<script src="{{asset('marbia/marbia-crm/public/js/custom/datatable/buttons.html5.min.js')}}"></script>
-<script src="{{asset('marbia/marbia-crm/public/js/custom/datatable/buttons.print.min.js')}}"></script>
+<script src="{{asset('public/vendors/data-tables/js/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('public/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js')}}"></script>
+<script src="{{asset('public/vendors/data-tables/js/dataTables.select.min.js')}}"></script>
+<script src="{{asset('public/js/custom/datatable/pdfmake.min.js')}}"></script>
+<script src="{{asset('public/js/custom/datatable/vfs_fonts.js')}}"></script>
+<script src="{{asset('public/js/custom/datatable/jszip.min.js')}}"></script>
+<script src="{{asset('public/js/custom/datatable/buttons.print.min.js')}}"></script>
+<script src="{{asset('public/js/custom/datatable/dataTables.buttons.min.js')}}"></script>
+<script src="{{asset('public/js/custom/datatable/buttons.colVis.min.js')}}"></script>
+<script src="{{asset('public/js/custom/datatable/buttons.flash.min.js')}}"></script>
+<script src="{{asset('public/js/custom/datatable/buttons.html5.min.js')}}"></script>
+<script src="{{asset('public/js/custom/datatable/buttons.print.min.js')}}"></script>
 @endsection
 @section('page-script')
 <script>

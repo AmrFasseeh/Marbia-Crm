@@ -149,5 +149,5 @@
 
 {{--page scripts --}}
 @section('page-script')
-<script src="{{asset('marbia/marbia-crm/public/js/scripts/advance-ui-scrollspy.js')}}"></script>
+<script src="{{asset('public/js/scripts/advance-ui-scrollspy.js')}}"></script>
 @endsection

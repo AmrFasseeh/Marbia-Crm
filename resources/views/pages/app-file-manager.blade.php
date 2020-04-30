@@ -6,13 +6,13 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
 @endsection
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/app-file-manager.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/widget-timeline.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/app-file-manager.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/widget-timeline.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -185,7 +185,7 @@
                   <div class="fonticon">
                     <i class="material-icons">more_vert</i>
                   </div>
-                  <img class="recent-file" src="{{asset('marbia/marbia-crm/public/images/icon/pdf.png')}}" height="38" width="30"
+                  <img class="recent-file" src="{{asset('public/images/icon/pdf.png')}}" height="38" width="30"
                     alt="Card image cap">
                 </div>
                 <div class="app-file-recent-details">
@@ -201,7 +201,7 @@
               <div class="card-content">
                 <div class="app-file-content-logo grey lighten-4">
                   <div class="fonticon"><i class="material-icons">more_vert</i></div>
-                  <img class="recent-file" src="{{asset('marbia/marbia-crm/public/images/icon/psd.png')}}" height="38" width="30"
+                  <img class="recent-file" src="{{asset('public/images/icon/psd.png')}}" height="38" width="30"
                     alt="Card image cap">
                 </div>
                 <div class="app-file-content-details">
@@ -217,7 +217,7 @@
               <div class="card-content">
                 <div class="app-file-content-logo grey lighten-4">
                   <div class="fonticon"> <i class="material-icons">more_vert</i></div>
-                  <img class="recent-file" src="{{asset('marbia/marbia-crm/public/images/icon/doc.png')}}" height="38" width="30"
+                  <img class="recent-file" src="{{asset('public/images/icon/doc.png')}}" height="38" width="30"
                     alt="Card image cap">
                 </div>
                 <div class="app-file-content-details">
@@ -235,7 +235,7 @@
                   <div class="fonticon">
                     <i class="material-icons">more_vert</i>
                   </div>
-                  <img class="recent-file" src="{{asset('marbia/marbia-crm/public/images/icon/sketch.png')}}" height="38" width="30"
+                  <img class="recent-file" src="{{asset('public/images/icon/sketch.png')}}" height="38" width="30"
                     alt="Card image cap">
                 </div>
                 <div class="app-file-content-details">
@@ -355,7 +355,7 @@
                   <div class="fonticon">
                     <i class="material-icons">more_vert</i>
                   </div>
-                  <img class="recent-file" src="{{asset('marbia/marbia-crm/public/images/icon/pdf.png')}}" height="38" width="30"
+                  <img class="recent-file" src="{{asset('public/images/icon/pdf.png')}}" height="38" width="30"
                     alt="Card image cap">
                 </div>
                 <div class="app-file-details">
@@ -373,7 +373,7 @@
                   <div class="fonticon">
                     <i class="material-icons">more_vert</i>
                   </div>
-                  <img class="recent-file" src="{{asset('marbia/marbia-crm/public/images/icon/psd.png')}}" height="38" width="30"
+                  <img class="recent-file" src="{{asset('public/images/icon/psd.png')}}" height="38" width="30"
                     alt="Card image cap">
                 </div>
                 <div class="app-file-details">
@@ -391,7 +391,7 @@
                   <div class="fonticon">
                     <i class="material-icons">more_vert</i>
                   </div>
-                  <img class="recent-file" src="{{asset('marbia/marbia-crm/public/images/icon/doc.png')}}" height="38" width="30"
+                  <img class="recent-file" src="{{asset('public/images/icon/doc.png')}}" height="38" width="30"
                     alt="Card image cap">
                 </div>
                 <div class="app-file-details">
@@ -409,7 +409,7 @@
                   <div class="fonticon">
                     <i class="material-icons">more_vert</i>
                   </div>
-                  <img class="recent-file" src="{{asset('marbia/marbia-crm/public/images/icon/sketch.png')}}" height="38" width="30"
+                  <img class="recent-file" src="{{asset('public/images/icon/sketch.png')}}" height="38" width="30"
                     alt="Card image cap">
                 </div>
                 <div class="app-file-details">
@@ -429,7 +429,7 @@
                   <div class="fonticon">
                     <i class="material-icons">more_vert</i>
                   </div>
-                  <img class="recent-file" src="{{asset('marbia/marbia-crm/public/images/icon/psd.png')}}" height="38" width="30"
+                  <img class="recent-file" src="{{asset('public/images/icon/psd.png')}}" height="38" width="30"
                     alt="Card image cap">
                 </div>
                 <div class="app-file-details">
@@ -447,7 +447,7 @@
                   <div class="fonticon">
                     <i class="material-icons">more_vert</i>
                   </div>
-                  <img class="recent-file" src="{{asset('marbia/marbia-crm/public/images/icon/sketch.png')}}" height="38" width="30"
+                  <img class="recent-file" src="{{asset('public/images/icon/sketch.png')}}" height="38" width="30"
                     alt="Card image cap">
                 </div>
                 <div class="app-file-details">
@@ -465,7 +465,7 @@
                   <div class="fonticon">
                     <i class="material-icons">more_vert</i>
                   </div>
-                  <img class="recent-file" src="{{asset('marbia/marbia-crm/public/images/icon/doc.png')}}" height="38" width="30"
+                  <img class="recent-file" src="{{asset('public/images/icon/doc.png')}}" height="38" width="30"
                     alt="Card image cap">
                 </div>
                 <div class="app-file-details">
@@ -483,7 +483,7 @@
                   <div class="fonticon">
                     <i class="material-icons">more_vert</i>
                   </div>
-                  <img class="recent-file" src="{{asset('marbia/marbia-crm/public/images/icon/pdf.png')}}" height="38" width="30"
+                  <img class="recent-file" src="{{asset('public/images/icon/pdf.png')}}" height="38" width="30"
                     alt="Card image cap">
                 </div>
                 <div class="app-file-details">
@@ -530,7 +530,7 @@
         <div class="tab-content">
           <div class="details-tab active" id="details">
             <div class="display-flex align-items-center flex-column pb-2 pt-4">
-              <img src="{{asset('marbia/marbia-crm/public/images/icon/pdf.png')}}" alt="PDF" height="42" width="35" class="mt-5 mb-5">
+              <img src="{{asset('public/images/icon/pdf.png')}}" alt="PDF" height="42" width="35" class="mt-5 mb-5">
               <p class="mt-4">15.3mb</p>
             </div>
             <div class="divider mt-5 mb-5"></div>
@@ -601,7 +601,7 @@
                 <h6 class="timeline-title">You added an item to</h6>
                 <p class="timeline-text">You added an item</p>
                 <div class="timeline-content">
-                  <img src="{{asset('marbia/marbia-crm/public/images/icon/psd.png')}}" alt="PSD" height="30" width="25" class="mr-1">Mockup.psd
+                  <img src="{{asset('public/images/icon/psd.png')}}" alt="PSD" height="30" width="25" class="mr-1">Mockup.psd
                 </div>
               </li>
               <li class="timeline-items timeline-icon-cyan active">
@@ -609,7 +609,7 @@
                 <h6 class="timeline-title">You shared 2 times</h6>
                 <p class="timeline-text">Emily Bennett edited an item</p>
                 <div class="timeline-content">
-                  <img src="{{asset('marbia/marbia-crm/public/images/icon/sketch.png')}}" alt="Sketch" height="30" width="25"
+                  <img src="{{asset('public/images/icon/sketch.png')}}" alt="Sketch" height="30" width="25"
                     class="mr-1">Template_Design.sketch
                 </div>
               </li>
@@ -618,7 +618,7 @@
                 <h6 class="timeline-title">You edited an item</h6>
                 <p class="timeline-text">You edited an item</p>
                 <div class="timeline-content">
-                  <img src="{{asset('marbia/marbia-crm/public/images/icon/pdf.png')}}" alt="document" height="30" width="25"
+                  <img src="{{asset('public/images/icon/pdf.png')}}" alt="document" height="30" width="25"
                     class="mr-1">Information.doc
                 </div>
               </li>
@@ -627,7 +627,7 @@
                 <h6 class="timeline-title">You edited an item</h6>
                 <p class="timeline-text">John Keller edited an item</p>
                 <div class="timeline-content">
-                  <img src="{{asset('marbia/marbia-crm/public/images/icon/pdf.png')}}" alt="document" height="30" width="25"
+                  <img src="{{asset('public/images/icon/pdf.png')}}" alt="document" height="30" width="25"
                     class="mr-1">Documentation.doc
                 </div>
               </li>
@@ -636,7 +636,7 @@
                 <h6 class="timeline-title">You added an item to</h6>
                 <p class="timeline-text">You edited an item</p>
                 <div class="timeline-content">
-                  <img src="{{asset('marbia/marbia-crm/public/images/icon/pdf.png')}}" alt="document" height="30" width="25"
+                  <img src="{{asset('public/images/icon/pdf.png')}}" alt="document" height="30" width="25"
                     class="mr-1">Resume.pdf
                 </div>
               </li>
@@ -656,5 +656,5 @@
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('marbia/marbia-crm/public/js/scripts/app-file-manager.js')}}"></script>
+<script src="{{asset('public/js/scripts/app-file-manager.js')}}"></script>
 @endsection

@@ -86,13 +86,13 @@
 					<div id="view-pulse-large">
 						<div class="pulse-style-one padding-3">
 							<a class="btn btn-floating pulse btn-large">
-								<img src="{{asset('marbia/marbia-crm/public/images/gallery/43.png')}}" class="responsive-img mb-10 circle" alt="">
+								<img src="{{asset('public/images/gallery/43.png')}}" class="responsive-img mb-10 circle" alt="">
 							</a>
 							<a class="btn btn-floating pulse btn-large">
-								<img src="{{asset('marbia/marbia-crm/public/images/gallery/37.png')}}" class="responsive-img mb-10 circle" alt="">
+								<img src="{{asset('public/images/gallery/37.png')}}" class="responsive-img mb-10 circle" alt="">
 							</a>
 							<a class="btn btn-floating pulse btn-large">
-								<img src="{{asset('marbia/marbia-crm/public/images/gallery/36.png')}}" class="responsive-img mb-10 circle" alt="">
+								<img src="{{asset('public/images/gallery/36.png')}}" class="responsive-img mb-10 circle" alt="">
 							</a>
 						</div>
 					</div>

@@ -6,9 +6,9 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/flag-icon/css/flag-icon.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/magnific-popup/magnific-popup.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/hover-effects/media-hover-effects.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/magnific-popup/magnific-popup.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/hover-effects/media-hover-effects.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -24,7 +24,7 @@
     <h4 class="col s12">Lily</h4>
     <div class="col s12 m6 grid">
       <figure class="effect-lily">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/12.png')}}" alt="img12" />
+        <img src="{{asset('public/images/gallery/12.png')}}" alt="img12" />
         <figcaption>
           <div>
             <h2>Nice
@@ -38,7 +38,7 @@
     </div>
     <div class="col s12 m6 grid">
       <figure class="effect-lily">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/1.png')}}" alt="img1" />
+        <img src="{{asset('public/images/gallery/1.png')}}" alt="img1" />
         <figcaption>
           <div>
             <h2>Nice
@@ -55,7 +55,7 @@
     <h4 class="col s12">Sadie</h4>
     <div class="col s12 m6 grid">
       <figure class="effect-sadie">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/2.png')}}" alt="img02" />
+        <img src="{{asset('public/images/gallery/2.png')}}" alt="img02" />
         <figcaption>
           <h2>Holy
             <span>Sadie</span>
@@ -68,7 +68,7 @@
     </div>
     <div class="col s12 m6 grid">
       <figure class="effect-sadie">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/14.png')}}" alt="img14" />
+        <img src="{{asset('public/images/gallery/14.png')}}" alt="img14" />
         <figcaption>
           <h2>Holy
             <span>Sadie</span>
@@ -84,7 +84,7 @@
     <h4 class="col s12">Honey</h4>
     <div class="col s12 m6 grid">
       <figure class="effect-honey">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/4.png')}}" alt="img04" />
+        <img src="{{asset('public/images/gallery/4.png')}}" alt="img04" />
         <figcaption>
           <h2>Dreamy
             <span>Honey</span>
@@ -96,7 +96,7 @@
     </div>
     <div class="col s12 m6 grid">
       <figure class="effect-honey">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/5.png')}}" alt="img05" />
+        <img src="{{asset('public/images/gallery/5.png')}}" alt="img05" />
         <figcaption>
           <h2>Dreamy
             <span>Honey</span>
@@ -111,7 +111,7 @@
     <h4 class="col s12">Layla</h4>
     <div class="col s12 m6 grid">
       <figure class="effect-layla">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/6.png')}}" alt="img06" />
+        <img src="{{asset('public/images/gallery/6.png')}}" alt="img06" />
         <figcaption>
           <h2>Crazy
             <span>Layla</span>
@@ -123,7 +123,7 @@
     </div>
     <div class="col s12 m6 grid">
       <figure class="effect-layla">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/3.png')}}" alt="img03" />
+        <img src="{{asset('public/images/gallery/3.png')}}" alt="img03" />
         <figcaption>
           <h2>Crazy
             <span>Layla</span>
@@ -138,7 +138,7 @@
     <h4 class="col s12">Zoe</h4>
     <div class="col s12 m6 grid">
       <figure class="effect-zoe">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/25.png')}}" alt="img25" />
+        <img src="{{asset('public/images/gallery/25.png')}}" alt="img25" />
         <figcaption>
           <h2>Creative
             <span>Zoe</span>
@@ -161,7 +161,7 @@
     </div>
     <div class="col s12 m6 grid">
       <figure class="effect-zoe">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/26.png')}}" alt="img26" />
+        <img src="{{asset('public/images/gallery/26.png')}}" alt="img26" />
         <figcaption>
           <h2>Creative
             <span>Zoe</span>
@@ -187,7 +187,7 @@
     <h4 class="col s12">Oscar</h4>
     <div class="col s12 m6 grid">
       <figure class="effect-oscar">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/9.png')}}" alt="img09" />
+        <img src="{{asset('public/images/gallery/9.png')}}" alt="img09" />
         <figcaption>
           <h2>Warm
             <span>Oscar</span>
@@ -199,7 +199,7 @@
     </div>
     <div class="col s12 m6 grid">
       <figure class="effect-oscar">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/10.png')}}" alt="img10" />
+        <img src="{{asset('public/images/gallery/10.png')}}" alt="img10" />
         <figcaption>
           <h2>Warm
             <span>Oscar</span>
@@ -214,7 +214,7 @@
     <h4 class="col s12">Marley</h4>
     <div class="col s12 m6 grid">
       <figure class="effect-marley">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/11.png')}}" alt="img11" />
+        <img src="{{asset('public/images/gallery/11.png')}}" alt="img11" />
         <figcaption>
           <h2>Sweet
             <span>Marley</span>
@@ -226,7 +226,7 @@
     </div>
     <div class="col s12 m6 grid">
       <figure class="effect-marley">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/12.png')}}" alt="img12" />
+        <img src="{{asset('public/images/gallery/12.png')}}" alt="img12" />
         <figcaption>
           <h2>Sweet
             <span>Marley</span>
@@ -241,7 +241,7 @@
     <h4 class="col s12">Ruby</h4>
     <div class="col s12 m6 grid">
       <figure class="effect-ruby">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/13.png')}}" alt="img13" />
+        <img src="{{asset('public/images/gallery/13.png')}}" alt="img13" />
         <figcaption>
           <h2>Glowing
             <span>Ruby</span>
@@ -253,7 +253,7 @@
     </div>
     <div class="col s12 m6 grid">
       <figure class="effect-ruby">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/14.png')}}" alt="img14" />
+        <img src="{{asset('public/images/gallery/14.png')}}" alt="img14" />
         <figcaption>
           <h2>Glowing
             <span>Ruby</span>
@@ -268,7 +268,7 @@
     <h4 class="col s12">Roxy</h4>
     <div class="col s12 m6 grid">
       <figure class="effect-roxy">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/15.png')}}" alt="img15" />
+        <img src="{{asset('public/images/gallery/15.png')}}" alt="img15" />
         <figcaption>
           <h2>Charming
             <span>Roxy</span>
@@ -280,7 +280,7 @@
     </div>
     <div class="col s12 m6 grid">
       <figure class="effect-roxy">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/1.png')}}" alt="img01" />
+        <img src="{{asset('public/images/gallery/1.png')}}" alt="img01" />
         <figcaption>
           <h2>Charming
             <span>Roxy</span>
@@ -295,7 +295,7 @@
     <h4 class="col s12">Bubba</h4>
     <div class="col s12 m6 grid">
       <figure class="effect-bubba">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/2.png')}}" alt="img02" />
+        <img src="{{asset('public/images/gallery/2.png')}}" alt="img02" />
         <figcaption>
           <h2>Fresh
             <span>Bubba</span>
@@ -307,7 +307,7 @@
     </div>
     <div class="col s12 m6 grid">
       <figure class="effect-bubba">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/16.png')}}" alt="img16" />
+        <img src="{{asset('public/images/gallery/16.png')}}" alt="img16" />
         <figcaption>
           <h2>Fresh
             <span>Bubba</span>
@@ -322,7 +322,7 @@
     <h4 class="col s12">Romeo</h4>
     <div class="col s12 m6 grid">
       <figure class="effect-romeo">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/17.png')}}" alt="img17" />
+        <img src="{{asset('public/images/gallery/17.png')}}" alt="img17" />
         <figcaption>
           <h2>Wild
             <span>Romeo</span>
@@ -334,7 +334,7 @@
     </div>
     <div class="col s12 m6 grid">
       <figure class="effect-romeo">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/18.png')}}" alt="img18" />
+        <img src="{{asset('public/images/gallery/18.png')}}" alt="img18" />
         <figcaption>
           <h2>Wild
             <span>Romeo</span>
@@ -349,7 +349,7 @@
     <h4 class="col s12">Dexter</h4>
     <div class="col s12 m6 grid">
       <figure class="effect-dexter">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/19.png')}}" alt="img19" />
+        <img src="{{asset('public/images/gallery/19.png')}}" alt="img19" />
         <figcaption>
           <h2>Strange
             <span>Dexter</span>
@@ -361,7 +361,7 @@
     </div>
     <div class="col s12 m6 grid">
       <figure class="effect-dexter">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/12.png')}}" alt="img12" />
+        <img src="{{asset('public/images/gallery/12.png')}}" alt="img12" />
         <figcaption>
           <h2>Strange
             <span>Dexter</span>
@@ -376,7 +376,7 @@
     <h4 class="col s12">Sarah</h4>
     <div class="col s12 m6 grid">
       <figure class="effect-sarah">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/13.png')}}" alt="img13" />
+        <img src="{{asset('public/images/gallery/13.png')}}" alt="img13" />
         <figcaption>
           <h2>Free
             <span>Sarah</span>
@@ -388,7 +388,7 @@
     </div>
     <div class="col s12 m6 grid">
       <figure class="effect-sarah">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/20.png')}}" alt="img20" />
+        <img src="{{asset('public/images/gallery/20.png')}}" alt="img20" />
         <figcaption>
           <h2>Free
             <span>Sarah</span>
@@ -403,7 +403,7 @@
     <h4 class="col s12">Chico</h4>
     <div class="col s12 m6 grid">
       <figure class="effect-chico">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/15.png')}}" alt="img15" />
+        <img src="{{asset('public/images/gallery/15.png')}}" alt="img15" />
         <figcaption>
           <h2>Silly
             <span>Chico</span>
@@ -415,7 +415,7 @@
     </div>
     <div class="col s12 m6 grid">
       <figure class="effect-chico">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/4.png')}}" alt="img04" />
+        <img src="{{asset('public/images/gallery/4.png')}}" alt="img04" />
         <figcaption>
           <h2>Silly
             <span>Chico</span>
@@ -430,7 +430,7 @@
     <h4 class="col s12">Milo</h4>
     <div class="col s12 m6 grid">
       <figure class="effect-milo">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/11.png')}}" alt="img11" />
+        <img src="{{asset('public/images/gallery/11.png')}}" alt="img11" />
         <figcaption>
           <h2>Faithful
             <span>Milo</span>
@@ -442,7 +442,7 @@
     </div>
     <div class="col s12 m6 grid">
       <figure class="effect-milo">
-        <img src="{{asset('marbia/marbia-crm/public/images/gallery/3.png')}}" alt="img03" />
+        <img src="{{asset('public/images/gallery/3.png')}}" alt="img03" />
         <figcaption>
           <h2>Faithful
             <span>Milo</span>
@@ -458,12 +458,12 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('marbia/marbia-crm/public/vendors/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
-<script src="{{asset('marbia/marbia-crm/public/vendors/imagesloaded.pkgd.min.js')}}"></script>
-<script src="{{asset('marbia/marbia-crm/public/vendors/masonry.pkgd.min.js')}}"></script>
+<script src="{{asset('public/vendors/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{asset('public/vendors/imagesloaded.pkgd.min.js')}}"></script>
+<script src="{{asset('public/vendors/masonry.pkgd.min.js')}}"></script>
 @endsection
 
 {{-- -page script --}}
 @section('page-script')
-<script src="{{asset('marbia/marbia-crm/public/js/scripts/media-hover-effects.js')}}"></script>
+<script src="{{asset('public/js/scripts/media-hover-effects.js')}}"></script>
 @endsection

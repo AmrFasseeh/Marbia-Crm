@@ -6,7 +6,7 @@
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/login.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/login.css')}}">
 @endsection
 
 {{-- page content --}}

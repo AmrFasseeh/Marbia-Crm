@@ -6,15 +6,15 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/data-tables/css/jquery.dataTables.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/data-tables/css/jquery.dataTables.min.css')}}">
 <link rel="stylesheet" type="text/css"
-  href="{{asset('marbia/marbia-crm/public/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/data-tables/css/dataTables.checkboxes.css')}}">
+  href="{{asset('public/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/data-tables/css/dataTables.checkboxes.css')}}">
 @endsection
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/app-invoice.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/app-invoice.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -381,12 +381,12 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('marbia/marbia-crm/public/vendors/data-tables/js/jquery.dataTables.min.js')}}"></script>
-<script src="{{asset('marbia/marbia-crm/public/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js')}}"></script>
-<script src="{{asset('marbia/marbia-crm/public/vendors/data-tables/js/datatables.checkboxes.min.js')}}"></script>
+<script src="{{asset('public/vendors/data-tables/js/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('public/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js')}}"></script>
+<script src="{{asset('public/vendors/data-tables/js/datatables.checkboxes.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('marbia/marbia-crm/public/js/scripts/app-invoice.js')}}"></script>
+<script src="{{asset('public/js/scripts/app-invoice.js')}}"></script>
 @endsection

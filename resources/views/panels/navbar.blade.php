@@ -35,7 +35,7 @@
           <a class="waves-effect waves-block waves-light profile-button" href="javascript:void(0);"
             data-target="profile-dropdown">
             <span class="avatar-status avatar-online">
-              <img src="{{ Auth::user()->image ? Auth::user()->image->url():asset('marbia/marbia-crm/public/images/avatar/default.png')}}" alt="avatar">
+              <img src="{{ Auth::user()->image ? Auth::user()->image->url():asset('public/images/avatar/default.png')}}" alt="avatar">
               <i></i>
             </span>
           </a>
@@ -183,7 +183,7 @@
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
           <div class="avatar">
-            <img src="{{asset('marbia/marbia-crm/public/images/icon/pdf-image.png')}}" width="24" height="30" alt="sample image">
+            <img src="{{asset('public/images/icon/pdf-image.png')}}" width="24" height="30" alt="sample image">
           </div>
           <div class="member-info display-flex flex-column">
             <span class="black-text">
@@ -200,7 +200,7 @@
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
           <div class="avatar">
-            <img src="{{asset('marbia/marbia-crm/public/images/icon/doc-image.png')}}" width="24" height="30" alt="sample image">
+            <img src="{{asset('public/images/icon/doc-image.png')}}" width="24" height="30" alt="sample image">
           </div>
           <div class="member-info display-flex flex-column">
             <span class="black-text">52 Doc file Generator</span>
@@ -216,7 +216,7 @@
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
           <div class="avatar">
-            <img src="{{asset('marbia/marbia-crm/public/images/icon/xls-image.png')}}" width="24" height="30" alt="sample image">
+            <img src="{{asset('public/images/icon/xls-image.png')}}" width="24" height="30" alt="sample image">
           </div>
           <div class="member-info display-flex flex-column">
             <span class="black-text">25 Xls File Uploaded</span>
@@ -232,7 +232,7 @@
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
           <div class="avatar">
-            <img src="{{asset('marbia/marbia-crm/public/images/icon/jpg-image.png')}}" width="24" height="30" alt="sample image">
+            <img src="{{asset('public/images/icon/jpg-image.png')}}" width="24" height="30" alt="sample image">
           </div>
           <div class="member-info display-flex flex-column">
             <span class="black-text">Anna Strong</span>
@@ -253,7 +253,7 @@
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
           <div class="avatar">
-            <img class="circle" src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-7.png')}}" width="30" alt="sample image"></div>
+            <img class="circle" src="{{asset('public/images/avatar/avatar-7.png')}}" width="30" alt="sample image"></div>
           <div class="member-info display-flex flex-column">
             <span class="black-text">John Doe</span>
             <small class="grey-text">UI designer</small>
@@ -267,7 +267,7 @@
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
           <div class="avatar">
-            <img class="circle" src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-8.png')}}" width="30" alt="sample image">
+            <img class="circle" src="{{asset('public/images/avatar/avatar-8.png')}}" width="30" alt="sample image">
           </div>
           <div class="member-info display-flex flex-column">
             <span class="black-text">Michal Clark</span>
@@ -282,7 +282,7 @@
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
           <div class="avatar">
-            <img class="circle" src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-10.png')}}" width="30" alt="sample image">
+            <img class="circle" src="{{asset('public/images/avatar/avatar-10.png')}}" width="30" alt="sample image">
           </div>
           <div class="member-info display-flex flex-column">
             <span class="black-text">Milena Gibson</span>
@@ -297,7 +297,7 @@
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
           <div class="avatar">
-            <img class="circle" src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-12.png')}}" width="30" alt="sample image">
+            <img class="circle" src="{{asset('public/images/avatar/avatar-12.png')}}" width="30" alt="sample image">
           </div>
           <div class="member-info display-flex flex-column">
             <span class="black-text">Anna Strong</span>

@@ -6,7 +6,7 @@
 
 {{-- Page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/page-timeline.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/page-timeline.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -22,10 +22,10 @@
       <div class="timeline-panel">
         <div class="card m-0 hoverable" id="profile-card">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator responsive-img" src="{{asset('marbia/marbia-crm/public/images/gallery/28.png')}}" alt="user bg" />
+            <img class="activator responsive-img" src="{{asset('public/images/gallery/28.png')}}" alt="user bg" />
           </div>
           <div class="card-content">
-            <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-7.png')}}" alt=""
+            <img src="{{asset('public/images/avatar/avatar-7.png')}}" alt=""
               class="circle responsive-img activator card-profile-image orange padding-1" />
             <a class="btn-floating activator btn-move-up waves-effect waves-light red accent-2 z-depth-4 right">
               <i class="material-icons">edit</i>
@@ -60,7 +60,7 @@
           <div class="card-content">
             <div class="card-header pb-1">
               <div class="avatar mr-2">
-                <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-1.png')}}" alt="avatar-1.png"
+                <img src="{{asset('public/images/avatar/avatar-1.png')}}" alt="avatar-1.png"
                   class="responsive-img border-radius-4" width="38">
               </div>
               <div class="card-text">
@@ -70,7 +70,7 @@
             </div>
             <div class="divider"></div>
             <div class="card-image waves-effect waves-block waves-light mt-1">
-              <img class="responsive-img " src="{{asset('marbia/marbia-crm/public/images/gallery/profile-bg.png')}}" alt="28.png">
+              <img class="responsive-img " src="{{asset('public/images/gallery/profile-bg.png')}}" alt="28.png">
             </div>
             <p class="card-text mt-1">
               Nullam facilisis fermentum aliquam. Suspendisse ornare dolor vitae libero hendrerit auctor lacinia a
@@ -99,7 +99,7 @@
         <div class="card m-0 hoverable">
           <div class="card-content">
             <div class="card-img">
-              <img src="{{asset('marbia/marbia-crm/public/images/gallery/44.jpg')}}" alt="" class="responsive-img">
+              <img src="{{asset('public/images/gallery/44.jpg')}}" alt="" class="responsive-img">
             </div>
             <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris,
               paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé
@@ -119,7 +119,7 @@
       </div>
       <div class="timeline-panel">
         <div class="card-panel hoverable border-radius-6 m-0 card-animation-1">
-          <img class="responsive-img border-radius-4 z-depth-4 image-n-margin" src="{{asset('marbia/marbia-crm/public/images/gallery/48.jpg')}}"
+          <img class="responsive-img border-radius-4 z-depth-4 image-n-margin" src="{{asset('public/images/gallery/48.jpg')}}"
             alt="" />
           <h6><a href="#" class="mt-5">Festivals</a></h6>
           <p>Fashion is a popular style, especially in clothing, footwear, lifestyle, accessories,
@@ -128,7 +128,7 @@
             body.</p>
           <div class="row mt-4">
             <div class="col s2">
-              <a href="#"><img src="{{asset('marbia/marbia-crm/public/images/user/9.jpg')}}" alt="" width="40"
+              <a href="#"><img src="{{asset('public/images/user/9.jpg')}}" alt="" width="40"
                   class="circle responsive-img mr-3" /></a>
             </div>
             <a href="#">
@@ -162,47 +162,47 @@
             <div class="divider mb-2"></div>
             <ul class="horizontal-avatar mb-0">
               <li>
-                <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-2.png')}}" width="45" class="mr-1 border-radius-4"
+                <img src="{{asset('public/images/avatar/avatar-2.png')}}" width="45" class="mr-1 border-radius-4"
                   alt="avatar-2.png">
               </li>
               <li>
-                <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-3.png')}}" width="45" class="mr-1 border-radius-4"
+                <img src="{{asset('public/images/avatar/avatar-3.png')}}" width="45" class="mr-1 border-radius-4"
                   alt="avatar-3.png">
               </li>
               <li>
-                <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-4.png')}}" width="45" class="mr-1 border-radius-4"
+                <img src="{{asset('public/images/avatar/avatar-4.png')}}" width="45" class="mr-1 border-radius-4"
                   alt="avatar-4.png">
               </li>
               <li>
-                <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-1.png')}}" width="45" class="mr-1 border-radius-4"
+                <img src="{{asset('public/images/avatar/avatar-1.png')}}" width="45" class="mr-1 border-radius-4"
                   alt="avatar-4.png">
               </li>
               <li>
-                <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-6.png')}}" width="45" class="mr-1 border-radius-4"
+                <img src="{{asset('public/images/avatar/avatar-6.png')}}" width="45" class="mr-1 border-radius-4"
                   alt="avatar-6.png">
               </li>
               <li>
-                <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-7.png')}}" width="45" class="mr-1 border-radius-4"
+                <img src="{{asset('public/images/avatar/avatar-7.png')}}" width="45" class="mr-1 border-radius-4"
                   alt="avatar-7.png">
               </li>
               <li>
-                <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-9.png')}}" width="45" class="mr-1 border-radius-4"
+                <img src="{{asset('public/images/avatar/avatar-9.png')}}" width="45" class="mr-1 border-radius-4"
                   alt="avatar-9.png">
               </li>
               <li>
-                <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-8.png')}}" width="45" class="mr-1 border-radius-4"
+                <img src="{{asset('public/images/avatar/avatar-8.png')}}" width="45" class="mr-1 border-radius-4"
                   alt="avatar-8.png">
               </li>
               <li>
-                <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-10.png')}}" width="45" class="mr-1 border-radius-4"
+                <img src="{{asset('public/images/avatar/avatar-10.png')}}" width="45" class="mr-1 border-radius-4"
                   alt="avatar-10.png">
               </li>
               <li>
-                <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-11.png')}}" width="45" class="mr-1 border-radius-4"
+                <img src="{{asset('public/images/avatar/avatar-11.png')}}" width="45" class="mr-1 border-radius-4"
                   alt="avatar-11.png">
               </li>
               <li>
-                <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-12.png')}}" width="45" class="mr-1 border-radius-4"
+                <img src="{{asset('public/images/avatar/avatar-12.png')}}" width="45" class="mr-1 border-radius-4"
                   alt="avatar-12.png">
               </li>
             </ul>
@@ -229,16 +229,16 @@
             <div class="card-text display-flex mt-2">
               <span class="flow-text mr-1">with</span>
               <a href="" class="mr-1">
-                <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-10.png')}}" class="circle" width="38" alt="">
+                <img src="{{asset('public/images/avatar/avatar-10.png')}}" class="circle" width="38" alt="">
               </a>
               <a href="" class="mr-1">
-                <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-11.png')}}" class="circle" width="38" alt="">
+                <img src="{{asset('public/images/avatar/avatar-11.png')}}" class="circle" width="38" alt="">
               </a>
               <a href="" class="mr-1">
-                <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-12.png')}}" class="circle" width="38" alt="">
+                <img src="{{asset('public/images/avatar/avatar-12.png')}}" class="circle" width="38" alt="">
               </a>
               <a href="" class="mr-1">
-                <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-13.png')}}" class="circle" width="38" alt="">
+                <img src="{{asset('public/images/avatar/avatar-13.png')}}" class="circle" width="38" alt="">
               </a>
             </div>
           </div>
@@ -252,7 +252,7 @@
       </div>
       <div class="timeline-panel">
         <div class="card-panel hoverable border-radius-6 m-0 card-animation-1">
-          <img class="responsive-img border-radius-4 z-depth-4 image-n-margin" src="{{asset('marbia/marbia-crm/public/images/gallery/46.jpg')}}"
+          <img class="responsive-img border-radius-4 z-depth-4 image-n-margin" src="{{asset('public/images/gallery/46.jpg')}}"
             alt="" />
           <h6><a href="#" class="mt-5">Twitter Brings Its 'Data Saver'</a></h6>
           <p>Microblogging site Twitter has rolled out its latest update for Android and iOS users
@@ -262,7 +262,7 @@
           </p>
           <div class="row mt-4">
             <div class="col s2">
-              <a href="#"><img src="{{asset('marbia/marbia-crm/public/images/user/8.jpg')}}" width="40" alt="news"
+              <a href="#"><img src="{{asset('public/images/user/8.jpg')}}" width="40" alt="news"
                   class="circle responsive-img mr-3" /></a>
             </div>
             <a href="#">
@@ -300,7 +300,7 @@
           <div class="card-content grey lighten-4">
             <div id="test4">
               <div class="card-img">
-                <img src="{{asset('marbia/marbia-crm/public/images/gallery/breadcrumb-bg.jpg')}}" class="responsive-img" alt="">
+                <img src="{{asset('public/images/gallery/breadcrumb-bg.jpg')}}" class="responsive-img" alt="">
               </div>
             </div>
             <div id="test5">

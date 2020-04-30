@@ -6,8 +6,8 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/flag-icon/css/flag-icon.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/dropify/css/dropify.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/dropify/css/dropify.min.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -91,7 +91,7 @@
       </div>
       <div class="col s12 m8 l9">
         <input type="file" id="input-file-events" class="dropify-event"
-          data-default-file="{{asset('marbia/marbia-crm/public/images/gallery/1.png')}}" />
+          data-default-file="{{asset('public/images/gallery/1.png')}}" />
       </div>
     </div>
   </div>
@@ -100,10 +100,10 @@
 
 {{-- vendor script --}}
 @section('vendor-script')
-<script src="{{asset('marbia/marbia-crm/public/vendors/dropify/js/dropify.min.js')}}"></script>
+<script src="{{asset('public/vendors/dropify/js/dropify.min.js')}}"></script>
 @endsection
 
 {{-- page script --}}
 @section('page-script')
-<script src="{{asset('marbia/marbia-crm/public/js/scripts/form-file-uploads.js')}}"></script>
+<script src="{{asset('public/js/scripts/form-file-uploads.js')}}"></script>
 @endsection

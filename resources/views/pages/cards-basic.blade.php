@@ -6,7 +6,7 @@
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/cards-basic.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/cards-basic.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -66,7 +66,7 @@
     <div class="col s12 m6 l6">
       <div class="card">
         <div class="card-image">
-          <img src="{{asset('marbia/marbia-crm/public/images/gallery/4.png')}}" alt="sample" /> <span class="card-title">Card
+          <img src="{{asset('public/images/gallery/4.png')}}" alt="sample" /> <span class="card-title">Card
             Title</span>
         </div>
         <div class="card-content">
@@ -82,7 +82,7 @@
     <div class="col s12 m6 l6">
       <div class="card">
         <div class="card-image">
-          <img src="{{asset('marbia/marbia-crm/public/images/gallery/3.png')}}" alt="sample" /> <span class="card-title">Card
+          <img src="{{asset('public/images/gallery/3.png')}}" alt="sample" /> <span class="card-title">Card
             Title</span>
         </div>
         <div class="card-content">
@@ -110,7 +110,7 @@
     <div class="col s12 m6 l6">
       <div class="card">
         <div class="card-image">
-          <img src="{{asset('marbia/marbia-crm/public/images/gallery/6.png')}}" alt="" /> <span class="card-title">Card
+          <img src="{{asset('public/images/gallery/6.png')}}" alt="" /> <span class="card-title">Card
             Title</span>
           <a class="btn-floating halfway-fab waves-effect waves-light red"> <i class="material-icons">add</i>
           </a>
@@ -127,7 +127,7 @@
     <div class="col s12 m6 l6">
       <div class="card">
         <div class="card-image">
-          <img src="{{asset('marbia/marbia-crm/public/images/gallery/8.png')}}" alt="" /> <span class="card-title">Card
+          <img src="{{asset('public/images/gallery/8.png')}}" alt="" /> <span class="card-title">Card
             Title</span>
           <a
             class="btn-floating btn-large halfway-fab waves-effect waves-light gradient-45deg-red-pink gradient-shadow">
@@ -155,7 +155,7 @@
   <div class="row">
     <div class="col s12 m6 l6">
       <div class="card horizontal">
-        <div class="card-image"><img src="{{asset('marbia/marbia-crm/public/images/gallery/11.png')}}" alt="" /></div>
+        <div class="card-image"><img src="{{asset('public/images/gallery/11.png')}}" alt="" /></div>
         <div class="card-stacked">
           <div class="card-content">
             <p>I am a very simple card with link. I am good at containing small bits of
@@ -167,7 +167,7 @@
     </div>
     <div class="col s12 m6 l6">
       <div class="card horizontal">
-        <div class="card-image"><img src="{{asset('marbia/marbia-crm/public/images/gallery/18.png')}}" alt="" /></div>
+        <div class="card-image"><img src="{{asset('public/images/gallery/18.png')}}" alt="" /></div>
         <div class="card-stacked">
           <div class="card-content">
             <p>I am a very simple card with button. I am good at containing small bits of.</p>
@@ -191,7 +191,7 @@
     <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="{{asset('marbia/marbia-crm/public/images/gallery/12.png')}}" alt="office" />
+          <img class="activator" src="{{asset('public/images/gallery/12.png')}}" alt="office" />
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">Card Title <i
@@ -218,7 +218,7 @@
     <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="{{asset('marbia/marbia-crm/public/images/gallery/19.png')}}" alt="" />
+          <img class="activator" src="{{asset('public/images/gallery/19.png')}}" alt="" />
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">Card Title <i
@@ -240,7 +240,7 @@
     <div class="col s12 m6 l4">
       <div class="card sticky-action">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="{{asset('marbia/marbia-crm/public/images/gallery/21.png')}}" alt="" />
+          <img class="activator" src="{{asset('public/images/gallery/21.png')}}" alt="" />
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">Card Title <i
@@ -349,7 +349,7 @@
     <div class="col s12 m6 l6">
       <div class="card small">
         <div class="card-image">
-          <img src="{{asset('marbia/marbia-crm/public/images/gallery/23.png')}}" alt="sample" />
+          <img src="{{asset('public/images/gallery/23.png')}}" alt="sample" />
           <span class="card-title">Card Title</span>
         </div>
         <div class="card-content">
@@ -369,7 +369,7 @@
     <div class="col s12 m7 l7">
       <div class="card medium">
         <div class="card-image">
-          <img src="{{asset('marbia/marbia-crm/public/images/gallery/25.png')}}" alt="sample" />
+          <img src="{{asset('public/images/gallery/25.png')}}" alt="sample" />
           <span class="card-title">Card Title</span>
         </div>
         <div class="card-content">
@@ -391,7 +391,7 @@
     <div class="col s12 m8 l8">
       <div class="card large">
         <div class="card-image">
-          <img src="{{asset('marbia/marbia-crm/public/images/gallery/28.png')}}" alt="sample" />
+          <img src="{{asset('public/images/gallery/28.png')}}" alt="sample" />
           <span class="card-title">Card Title</span>
         </div>
         <div class="card-content">

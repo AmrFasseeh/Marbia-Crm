@@ -6,7 +6,7 @@
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/app-invoice.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/app-invoice.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -44,7 +44,7 @@
           <!-- logo and title -->
           <div class="row mb-3">
             <div class="col m6 s12 invoice-logo display-flex pt-1 push-m6">
-              <img src="{{asset('marbia/marbia-crm/public/images/gallery/pixinvent-logo.png')}}" alt="logo" height="46" width="164" />
+              <img src="{{asset('public/images/gallery/pixinvent-logo.png')}}" alt="logo" height="46" width="164" />
             </div>
             <div class="col m6 s12 pull-m6">
               <h4 class="indigo-text">Invoice</h4>
@@ -306,10 +306,10 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('marbia/marbia-crm/public/vendors/form_repeater/jquery.repeater.min.js')}}"></script>
+<script src="{{asset('public/vendors/form_repeater/jquery.repeater.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('marbia/marbia-crm/public/js/scripts/app-invoice.js')}}"></script>
+<script src="{{asset('public/js/scripts/app-invoice.js')}}"></script>
 @endsection

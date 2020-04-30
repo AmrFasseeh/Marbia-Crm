@@ -101,7 +101,7 @@
 
 @elseif($configData['mainLayoutType'] === 'vertical-dark-menu')
 {{-- vertical-dark-menu --}}
-<div id="breadcrumbs-wrapper" data-image="{{asset('marbia/marbia-crm/public/images/gallery/breadcrumb-bg.jpg')}}">
+<div id="breadcrumbs-wrapper" data-image="{{asset('public/images/gallery/breadcrumb-bg.jpg')}}">
   <!-- Search for small screen-->
   <div class="container">
     <div class="row">

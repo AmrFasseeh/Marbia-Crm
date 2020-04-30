@@ -4,7 +4,7 @@
 @section('title','Form Validation')
 {{-- vendor style --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -287,10 +287,10 @@
 
 {{-- vendor script --}}
 @section('vendor-script')
-<script src="{{asset('marbia/marbia-crm/public/vendors/jquery-validation/jquery.validate.min.js')}}"></script>
+<script src="{{asset('public/vendors/jquery-validation/jquery.validate.min.js')}}"></script>
 @endsection
 
 {{-- page script --}}
 @section('page-script')
-<script src="{{asset('marbia/marbia-crm/public/js/scripts/form-validation.js')}}"></script>
+<script src="{{asset('public/js/scripts/form-validation.js')}}"></script>
 @endsection

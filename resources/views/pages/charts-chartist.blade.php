@@ -6,12 +6,12 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/chartist-js/chartist.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/chartist-js/chartist.css')}}">
 @endsection
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/charts-chartist.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/charts-chartist.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -147,10 +147,10 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('marbia/marbia-crm/public/vendors/chartist-js/chartist.min.js')}}"></script>
+<script src="{{asset('public/vendors/chartist-js/chartist.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('marbia/marbia-crm/public/js/scripts/charts-chartist.js')}}"></script>
+<script src="{{asset('public/js/scripts/charts-chartist.js')}}"></script>
 @endsection

@@ -6,13 +6,13 @@
 
 {{-- vendor style --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/flag-icon/css/flag-icon.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/select2/select2.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/select2/select2-materialize.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2-materialize.css')}}">
 @endsection
 
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/page-users.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/page-users.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -115,9 +115,9 @@
 </div>
 @endsection
 @section('vendor-script')
-<script src="{{asset('marbia/marbia-crm/public/vendors/select2/select2.full.min.js')}}"></script>
-<script src="{{asset('marbia/marbia-crm/public/vendors/formatter/jquery.formatter.min.js')}}"></script>
+<script src="{{asset('public/vendors/select2/select2.full.min.js')}}"></script>
+<script src="{{asset('public/vendors/formatter/jquery.formatter.min.js')}}"></script>
 @endsection
 @section('page-script')
-<script src="{{asset('marbia/marbia-crm/public/js/custom/leads-edit.js')}}"></script>
+<script src="{{asset('public/js/custom/leads-edit.js')}}"></script>
 @endsection

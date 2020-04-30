@@ -6,14 +6,14 @@
 
 {{-- vendor style --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/flag-icon/css/flag-icon.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/select2/select2.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/select2/select2-materialize.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/dropify/css/dropify.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2-materialize.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/dropify/css/dropify.min.css')}}">
 @endsection
 
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/page-users.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/page-users.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -212,8 +212,8 @@
 @endsection
 
 @section('vendor-script')
-<script src="{{asset('marbia/marbia-crm/public/vendors/select2/select2.full.min.js')}}"></script>
-<script src="{{asset('marbia/marbia-crm/public/vendors/dropify/js/dropify.min.js')}}"></script>
+<script src="{{asset('public/vendors/select2/select2.full.min.js')}}"></script>
+<script src="{{asset('public/vendors/dropify/js/dropify.min.js')}}"></script>
 @endsection
 
 @section('page-script')

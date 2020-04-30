@@ -6,7 +6,7 @@
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/page-faq.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/page-faq.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -87,7 +87,7 @@
           <span class="card-title mt-10">Supporters</span>
           <div class="display-flex">
             <div class="mr-4">
-              <img height="38" width="38" src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-1.png')}}" alt="avatar">
+              <img height="38" width="38" src="{{asset('public/images/avatar/avatar-1.png')}}" alt="avatar">
             </div>
             <div class="pl-0">
               <a href="#">Mike</a>
@@ -96,7 +96,7 @@
           </div>
           <div class="display-flex mt-4">
             <div class="mr-4">
-              <img height="38" width="38" src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-2.png')}}" alt="avatar">
+              <img height="38" width="38" src="{{asset('public/images/avatar/avatar-2.png')}}" alt="avatar">
             </div>
             <div class="pl-0">
               <a href="#">Howard Morgan</a>
@@ -105,7 +105,7 @@
           </div>
           <div class="display-flex mt-4">
             <div class="mr-4">
-              <img height="38" width="38" src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-3.png')}}" alt="avatar">
+              <img height="38" width="38" src="{{asset('public/images/avatar/avatar-3.png')}}" alt="avatar">
             </div>
             <div class="pl-0">
               <a href="#">Kenneth Pierce</a>
@@ -114,7 +114,7 @@
           </div>
           <div class="display-flex mt-4">
             <div class="mr-4">
-              <img height="38" width="38" src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-4.png')}}" alt="avatar">
+              <img height="38" width="38" src="{{asset('public/images/avatar/avatar-4.png')}}" alt="avatar">
             </div>
             <div class="pl-0">
               <a href="#">Steven Owens</a>

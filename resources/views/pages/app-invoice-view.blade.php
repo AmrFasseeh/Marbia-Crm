@@ -6,7 +6,7 @@
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/app-invoice.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/app-invoice.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -40,7 +40,7 @@
           <!-- logo and title -->
           <div class="row mt-3 invoice-logo-title">
             <div class="col m6 s12 display-flex invoice-logo mt-1 push-m6">
-              <img src="{{asset('marbia/marbia-crm/public/images/gallery/pixinvent-logo.png')}}" alt="logo" height="46" width="164">
+              <img src="{{asset('public/images/gallery/pixinvent-logo.png')}}" alt="logo" height="46" width="164">
             </div>
             <div class="col m6 s12 pull-m6">
               <h4 class="indigo-text">Invoice</h4>
@@ -197,5 +197,5 @@
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('marbia/marbia-crm/public/js/scripts/app-invoice.js')}}"></script>
+<script src="{{asset('public/js/scripts/app-invoice.js')}}"></script>
 @endsection
