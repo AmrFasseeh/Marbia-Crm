@@ -67,5 +67,5 @@
 
 {{-- page script --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/extra-components-i18n.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/js/scripts/extra-components-i18n.js')}}"></script>
 @endsection

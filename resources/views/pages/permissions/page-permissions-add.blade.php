@@ -6,7 +6,7 @@
 
 {{-- vendor style --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/flag-icon/css/flag-icon.min.css')}}">
 @endsection
 
 {{-- page content --}}

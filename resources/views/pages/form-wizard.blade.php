@@ -5,12 +5,12 @@
 
 {{-- vendor style --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/materialize-stepper/materialize-stepper.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/materialize-stepper/materialize-stepper.min.css')}}">
 @endsection
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/form-wizard.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/form-wizard.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -590,10 +590,10 @@
 
 {{-- vendor script --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/materialize-stepper/materialize-stepper.min.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/vendors/materialize-stepper/materialize-stepper.min.js')}}"></script>
 @endsection
 
 {{-- page script --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/form-wizard.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/js/scripts/form-wizard.js')}}"></script>
 @endsection

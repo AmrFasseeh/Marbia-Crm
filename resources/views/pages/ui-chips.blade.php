@@ -35,7 +35,7 @@
             <div class="row">
               <div class="col s12">
                 <div class="chip">
-                  <img src="{{asset('public/images/avatar/avatar-1.png')}}" alt="Contact Person">
+                  <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-1.png')}}" alt="Contact Person">
                   John Doe
                 </div>
                 <div class="chip">
@@ -113,21 +113,21 @@
               </p>
               <div class="section">
                 <div class="chip cyan white-text">
-                  <img src="{{asset('public/images/logo/login-logo.png')}}" alt="Materialize"> Solid
+                  <img src="{{asset('marbia/marbia-crm/public/images/logo/login-logo.png')}}" alt="Materialize"> Solid
                   color background
                 </div>
                 <div class="chip cyan white-text z-depth-4">
-                  <img src="{{asset('public/images/logo/login-logo.png')}}" alt="Materialize"> Solid
+                  <img src="{{asset('marbia/marbia-crm/public/images/logo/login-logo.png')}}" alt="Materialize"> Solid
                   color with shadow
                 </div>
               </div>
               <div class="section">
                 <div class="chip gradient-45deg-purple-deep-orange white-text">
-                  <img src="{{asset('public/images/avatar/avatar-2.png')}}" alt="Materialize">
+                  <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-2.png')}}" alt="Materialize">
                   Gradient color background
                 </div>
                 <div class="chip gradient-45deg-purple-deep-orange gradient-shadow white-text">
-                  <img src="{{asset('public/images/avatar/avatar-3.png')}}" alt="Materialize">
+                  <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-3.png')}}" alt="Materialize">
                   Gradient color with shadow
                 </div>
               </div>
@@ -170,22 +170,22 @@
               </div>
               <div class="section">
                 <div class="chip cyan white-text">
-                  <img src="{{asset('public/images/avatar/avatar-1.png')}}" alt="Contact Person">
+                  <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-1.png')}}" alt="Contact Person">
                   John Doe
                   <i class="material-icons close">close</i>
                 </div>
                 <div class="chip cyan z-depth-4 white-text">
-                  <img src="{{asset('public/images/logo/login-logo.png')}}" alt="Materialize">
+                  <img src="{{asset('marbia/marbia-crm/public/images/logo/login-logo.png')}}" alt="Materialize">
                   Materialize Admin Theme
                   <i class="material-icons close">close</i>
                 </div>
                 <div class="chip gradient-45deg-purple-deep-orange white-text">
-                  <img src="{{asset('public/images/avatar/avatar-4.png')}}" alt="Materialize">
+                  <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-4.png')}}" alt="Materialize">
                   Materialize Admin Theme
                   <i class="material-icons close">close</i>
                 </div>
                 <div class="chip gradient-45deg-purple-deep-orange gradient-shadow white-text">
-                  <img src="{{asset('public/images/avatar/avatar-4.png')}}" alt="Materialize">
+                  <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-4.png')}}" alt="Materialize">
                   Materialize Admin Theme
                   <i class="material-icons close">close</i>
                 </div>
@@ -497,5 +497,5 @@ instance.selectChip(2); // Select 2nd chip
 
 {{-- page script --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/ui-chips.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/js/scripts/ui-chips.js')}}"></script>
 @endsection

@@ -6,8 +6,8 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/noUiSlider/nouislider.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/noUiSlider/nouislider.min.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -1426,10 +1426,10 @@ $(document).ready(function(){
 
 {{-- vendor script --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/noUiSlider/nouislider.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/vendors/noUiSlider/nouislider.js')}}"></script>
 @endsection
 
 {{-- page script --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/form-elements.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/js/scripts/form-elements.js')}}"></script>
 @endsection

@@ -6,7 +6,7 @@
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/app-chat.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/app-chat.css')}}">
 @endsection
 
 {{-- main page content --}}
@@ -38,7 +38,7 @@
                       <div class="sidebar-header">
                         <div class="row valign-wrapper">
                           <div class="col s2 media-image pr-0">
-                            <img src="{{asset('public/images/user/12.jpg')}}" alt="" class="circle z-depth-2 responsive-img">
+                            <img src="{{asset('marbia/marbia-crm/public/images/user/12.jpg')}}" alt="" class="circle z-depth-2 responsive-img">
                           </div>
                           <div class="col s10">
                             <p class="m-0 blue-grey-text text-darken-4 font-weight-700">Lawrence Collins</p>
@@ -72,7 +72,7 @@
                             <div class="user-section">
                               <div class="row valign-wrapper">
                                 <div class="col s2 media-image online pr-0">
-                                  <img src="{{asset('public/images/user/2.jpg')}}" alt=""
+                                  <img src="{{asset('marbia/marbia-crm/public/images/user/2.jpg')}}" alt=""
                                     class="circle z-depth-2 responsive-img">
                                 </div>
                                 <div class="col s10">
@@ -97,7 +97,7 @@
                             <div class="user-section">
                               <div class="row valign-wrapper">
                                 <div class="col s2 media-image online pr-0">
-                                  <img src="{{asset('public/images/user/7.jpg')}}" alt=""
+                                  <img src="{{asset('marbia/marbia-crm/public/images/user/7.jpg')}}" alt=""
                                     class="circle z-depth-2 responsive-img">
                                 </div>
                                 <div class="col s10">
@@ -118,7 +118,7 @@
                             <div class="user-section">
                               <div class="row valign-wrapper">
                                 <div class="col s2 media-image away pr-0">
-                                  <img src="{{asset('public/images/user/10.jpg')}}" alt=""
+                                  <img src="{{asset('marbia/marbia-crm/public/images/user/10.jpg')}}" alt=""
                                     class="circle z-depth-2 responsive-img">
                                 </div>
                                 <div class="col s10">
@@ -140,7 +140,7 @@
                             <div class="user-section">
                               <div class="row valign-wrapper">
                                 <div class="col s2 media-image offline pr-0">
-                                  <img src="{{asset('public/images/user/4.jpg')}}" alt=""
+                                  <img src="{{asset('marbia/marbia-crm/public/images/user/4.jpg')}}" alt=""
                                     class="circle z-depth-2 responsive-img">
                                 </div>
                                 <div class="col s10">
@@ -161,7 +161,7 @@
                             <div class="user-section">
                               <div class="row valign-wrapper">
                                 <div class="col s2 media-image pr-0">
-                                  <img src="{{asset('public/images/user/8.jpg')}}" alt=""
+                                  <img src="{{asset('marbia/marbia-crm/public/images/user/8.jpg')}}" alt=""
                                     class="circle z-depth-2 responsive-img">
                                 </div>
                                 <div class="col s10">
@@ -186,7 +186,7 @@
                             <div class="user-section">
                               <div class="row valign-wrapper">
                                 <div class="col s2 media-image pr-0">
-                                  <img src="{{asset('public/images/user/1.jpg')}}" alt=""
+                                  <img src="{{asset('marbia/marbia-crm/public/images/user/1.jpg')}}" alt=""
                                     class="circle z-depth-2 responsive-img">
                                 </div>
                                 <div class="col s10">
@@ -207,7 +207,7 @@
                             <div class="user-section">
                               <div class="row valign-wrapper">
                                 <div class="col s2 media-image away pr-0">
-                                  <img src="{{asset('public/images/user/9.jpg')}}" alt=""
+                                  <img src="{{asset('marbia/marbia-crm/public/images/user/9.jpg')}}" alt=""
                                     class="circle z-depth-2 responsive-img">
                                 </div>
                                 <div class="col s10">
@@ -229,7 +229,7 @@
                             <div class="user-section">
                               <div class="row valign-wrapper">
                                 <div class="col s2 media-image offline pr-0">
-                                  <img src="{{asset('public/images/user/5.jpg')}}" alt=""
+                                  <img src="{{asset('marbia/marbia-crm/public/images/user/5.jpg')}}" alt=""
                                     class="circle z-depth-2 responsive-img">
                                 </div>
                                 <div class="col s10">
@@ -265,7 +265,7 @@
               <div class="chat-header">
                 <div class="row valign-wrapper">
                   <div class="col media-image online pr-0">
-                    <img src="{{asset('public/images/user/7.jpg')}}" alt="" class="circle z-depth-2 responsive-img">
+                    <img src="{{asset('marbia/marbia-crm/public/images/user/7.jpg')}}" alt="" class="circle z-depth-2 responsive-img">
                   </div>
                   <div class="col">
                     <p class="m-0 blue-grey-text text-darken-4 font-weight-700">Alice Hawker</p>
@@ -289,7 +289,7 @@
                     <div class="chat chat-right">
                       <div class="chat-avatar">
                         <a class="avatar">
-                          <img src="{{asset('public/images/user/12.jpg')}}" class="circle" alt="avatar" />
+                          <img src="{{asset('marbia/marbia-crm/public/images/user/12.jpg')}}" class="circle" alt="avatar" />
                         </a>
                       </div>
                       <div class="chat-body">
@@ -301,7 +301,7 @@
                     <div class="chat">
                       <div class="chat-avatar">
                         <a class="avatar">
-                          <img src="{{asset('public/images/user/7.jpg')}}" class="circle" alt="avatar" />
+                          <img src="{{asset('marbia/marbia-crm/public/images/user/7.jpg')}}" class="circle" alt="avatar" />
                         </a>
                       </div>
                       <div class="chat-body">
@@ -317,7 +317,7 @@
                     <div class="chat chat-right">
                       <div class="chat-avatar">
                         <a class="avatar">
-                          <img src="{{asset('public/images/user/12.jpg')}}" class="circle" alt="avatar" />
+                          <img src="{{asset('marbia/marbia-crm/public/images/user/12.jpg')}}" class="circle" alt="avatar" />
                         </a>
                       </div>
                       <div class="chat-body">
@@ -332,7 +332,7 @@
                     <div class="chat">
                       <div class="chat-avatar">
                         <a class="avatar">
-                          <img src="{{asset('public/images/user/7.jpg')}}" class="circle" alt="avatar" />
+                          <img src="{{asset('marbia/marbia-crm/public/images/user/7.jpg')}}" class="circle" alt="avatar" />
                         </a>
                       </div>
                       <div class="chat-body">
@@ -350,7 +350,7 @@
                     <div class="chat chat-right">
                       <div class="chat-avatar">
                         <a class="avatar">
-                          <img src="{{asset('public/images/user/12.jpg')}}" class="circle" alt="avatar" />
+                          <img src="{{asset('marbia/marbia-crm/public/images/user/12.jpg')}}" class="circle" alt="avatar" />
                         </a>
                       </div>
                       <div class="chat-body">
@@ -362,7 +362,7 @@
                     <div class="chat">
                       <div class="chat-avatar">
                         <a class="avatar">
-                          <img src="{{asset('public/images/user/7.jpg')}}" class="circle" alt="avatar" />
+                          <img src="{{asset('marbia/marbia-crm/public/images/user/7.jpg')}}" class="circle" alt="avatar" />
                         </a>
                       </div>
                       <div class="chat-body">
@@ -377,7 +377,7 @@
                     <div class="chat chat-right">
                       <div class="chat-avatar">
                         <a class="avatar">
-                          <img src="{{asset('public/images/user/12.jpg')}}" class="circle" alt="avatar" />
+                          <img src="{{asset('marbia/marbia-crm/public/images/user/12.jpg')}}" class="circle" alt="avatar" />
                         </a>
                       </div>
                       <div class="chat-body">
@@ -416,5 +416,5 @@
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/app-chat.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/js/scripts/app-chat.js')}}"></script>
 @endsection

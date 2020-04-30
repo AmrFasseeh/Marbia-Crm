@@ -6,7 +6,7 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/jquery.nestable/nestable.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/jquery.nestable/nestable.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -161,10 +161,10 @@
 
 {{-- page script --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/jquery.nestable/jquery.nestable.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/vendors/jquery.nestable/jquery.nestable.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/extra-components-nestable.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/js/scripts/extra-components-nestable.js')}}"></script>
 @endsection

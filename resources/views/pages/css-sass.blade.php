@@ -117,7 +117,7 @@
             </a>
             <ul>
               <li>
-                <a href="{{asset('public/css-helpers')}}" class="btn-floating blue">
+                <a href="{{asset('marbia/marbia-crm/public/css-helpers')}}" class="btn-floating blue">
                   <i class="material-icons">help_outline</i>
                 </a>
               </li>

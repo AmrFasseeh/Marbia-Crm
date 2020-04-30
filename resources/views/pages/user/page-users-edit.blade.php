@@ -6,13 +6,13 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2-materialize.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/select2/select2.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/select2/select2-materialize.css')}}">
 @endsection
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/page-users.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/page-users.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -46,7 +46,7 @@
           @enderror
           <div class="media display-flex align-items-center mb-2">
             <a class="mr-2" href="#">
-              <img src="{{ $user->image ? $user->image->url():asset('public/images/avatar/default.png') }}" alt="users avatar"
+              <img src="{{ $user->image ? $user->image->url():asset('marbia/marbia-crm/public/images/avatar/default.png') }}" alt="users avatar"
                 class="z-depth-4 circle" height="64" width="64">
               {{-- {{ $user->image->url() }} --}}
             </a>
@@ -241,13 +241,13 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/select2/select2.full.min.js')}}"></script>
-<script src="{{asset('public/vendors/jquery-validation/jquery.validate.min.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/vendors/select2/select2.full.min.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/vendors/jquery-validation/jquery.validate.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-{{-- <script src="{{asset('public/js/scripts/page-users.js')}}"></script> --}}
+{{-- <script src="{{asset('marbia/marbia-crm/public/js/scripts/page-users.js')}}"></script> --}}
 <script>
   $("#change_image").on("click", function () {
       $(".getfileInput input").click();

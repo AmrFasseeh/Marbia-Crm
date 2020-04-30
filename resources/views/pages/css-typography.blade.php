@@ -156,5 +156,5 @@
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/css-typography.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/js/scripts/css-typography.js')}}"></script>
 @endsection

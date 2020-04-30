@@ -40,19 +40,19 @@
               <div class="col s12">
                 <div class="carousel">
                   <a class="carousel-item" href="#one!">
-                    <img src="{{asset('public/images/gallery/1.png')}}" alt="">
+                    <img src="{{asset('marbia/marbia-crm/public/images/gallery/1.png')}}" alt="">
                   </a>
                   <a class="carousel-item" href="#two!">
-                    <img src="{{asset('public/images/gallery/2.png')}}" alt="">
+                    <img src="{{asset('marbia/marbia-crm/public/images/gallery/2.png')}}" alt="">
                   </a>
                   <a class="carousel-item" href="#three!">
-                    <img src="{{asset('public/images/gallery/3.png')}}" alt="">
+                    <img src="{{asset('marbia/marbia-crm/public/images/gallery/3.png')}}" alt="">
                   </a>
                   <a class="carousel-item" href="#four!">
-                    <img src="{{asset('public/images/gallery/4.png')}}" alt="">
+                    <img src="{{asset('marbia/marbia-crm/public/images/gallery/4.png')}}" alt="">
                   </a>
                   <a class="carousel-item" href="#five!">
-                    <img src="{{asset('public/images/gallery/5.png')}}" alt="">
+                    <img src="{{asset('marbia/marbia-crm/public/images/gallery/5.png')}}" alt="">
                   </a>
                 </div>
               </div>
@@ -190,16 +190,16 @@ $('.carousel').carousel('destroy');
               <div class="col s12">
                 <div class="carousel carousel-slider">
                   <a class="carousel-item" href="#one!">
-                    <img src="{{asset('public/images/gallery/28.png')}}" alt="">
+                    <img src="{{asset('marbia/marbia-crm/public/images/gallery/28.png')}}" alt="">
                   </a>
                   <a class="carousel-item" href="#two!">
-                    <img src="{{asset('public/images/gallery/29.png')}}" alt="">
+                    <img src="{{asset('marbia/marbia-crm/public/images/gallery/29.png')}}" alt="">
                   </a>
                   <a class="carousel-item" href="#three!">
-                    <img src="{{asset('public/images/gallery/30.png')}}" alt="">
+                    <img src="{{asset('marbia/marbia-crm/public/images/gallery/30.png')}}" alt="">
                   </a>
                   <a class="carousel-item" href="#four!">
-                    <img src="{{asset('public/images/gallery/31.png')}}" alt="">
+                    <img src="{{asset('marbia/marbia-crm/public/images/gallery/31.png')}}" alt="">
                   </a>
                 </div>
               </div>
@@ -320,5 +320,5 @@ $('.carousel').carousel('destroy');
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/advance-ui-carousel.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/js/scripts/advance-ui-carousel.js')}}"></script>
 @endsection

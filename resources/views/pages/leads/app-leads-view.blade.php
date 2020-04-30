@@ -6,7 +6,7 @@
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/page-users.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/page-users.css')}}">
 @endsection
 
 {{-- page content  --}}
@@ -19,7 +19,7 @@
             <div class="col s12 m7">
                 <div class="display-flex media">
                     <a href="#" class="avatar">
-                        <img src="{{ isset($lead->image) ? $lead->image->url():asset('public/images/avatar/default.png') }}"
+                        <img src="{{ isset($lead->image) ? $lead->image->url():asset('marbia/marbia-crm/public/images/avatar/default.png') }}"
                             alt="users view avatar" class="z-depth-4 circle" height="64" width="64">
                     </a>
                     <div class="media-body">
@@ -238,7 +238,7 @@
                     <div class="card blue lighten-5">
                         <div class="card-content">
                             <span class="card-title"><img
-                                    src="{{ isset($lead->image) ? $lead->image->url():asset('public/images/avatar/default.png') }}"
+                                    src="{{ isset($lead->image) ? $lead->image->url():asset('marbia/marbia-crm/public/images/avatar/default.png') }}"
                                     alt="users view avatar" class="z-depth-4 circle" height="32" width="32"><span
                                     class="red-text"> {{ $comment->user->fullname() }}</span></span>
                             <hr>
@@ -259,5 +259,5 @@
 
 {{-- page script --}}
 @section('page-script')
-{{-- <script src="{{asset('public/js/scripts/page-users.js')}}"></script> --}}
+{{-- <script src="{{asset('marbia/marbia-crm/public/js/scripts/page-users.js')}}"></script> --}}
 @endsection

@@ -37,7 +37,7 @@
             <ul class="collection right-sidebar-chat p-0 mb-0">
               <li class="collection-item right-sidebar-chat-item sidenav-trigger display-flex avatar pl-5 pb-0"
                 data-target="slide-out-chat">
-                <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-7.png')}}"
+                <span class="avatar-status avatar-online avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-7.png')}}"
                     alt="avatar" />
                   <i></i>
                 </span>
@@ -49,7 +49,7 @@
               </li>
               <li class="collection-item right-sidebar-chat-item sidenav-trigger display-flex avatar pl-5 pb-0"
                 data-target="slide-out-chat">
-                <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-1.png')}}"
+                <span class="avatar-status avatar-online avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-1.png')}}"
                     alt="avatar" />
                   <i></i>
                 </span>
@@ -61,7 +61,7 @@
               </li>
               <li class="collection-item right-sidebar-chat-item sidenav-trigger display-flex avatar pl-5 pb-0"
                 data-target="slide-out-chat">
-                <span class="avatar-status avatar-off avatar-50"><img src="{{asset('public/images/avatar/avatar-2.png')}}"
+                <span class="avatar-status avatar-off avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-2.png')}}"
                     alt="avatar" />
                   <i></i>
                 </span>
@@ -73,7 +73,7 @@
               </li>
               <li class="collection-item right-sidebar-chat-item sidenav-trigger display-flex avatar pl-5 pb-0"
                 data-target="slide-out-chat">
-                <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-3.png')}}"
+                <span class="avatar-status avatar-online avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-3.png')}}"
                     alt="avatar" />
                   <i></i>
                 </span>
@@ -85,7 +85,7 @@
               </li>
               <li class="collection-item right-sidebar-chat-item sidenav-trigger display-flex avatar pl-5 pb-0"
                 data-target="slide-out-chat">
-                <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-4.png')}}"
+                <span class="avatar-status avatar-online avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-4.png')}}"
                     alt="avatar" />
                   <i></i>
                 </span>
@@ -97,7 +97,7 @@
               </li>
               <li class="collection-item right-sidebar-chat-item sidenav-trigger display-flex avatar pl-5 pb-0"
                 data-target="slide-out-chat">
-                <span class="avatar-status avatar-off avatar-50"><img src="{{asset('public/images/avatar/avatar-5.png')}}"
+                <span class="avatar-status avatar-off avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-5.png')}}"
                     alt="avatar" />
                   <i></i>
                 </span>
@@ -109,7 +109,7 @@
               </li>
               <li class="collection-item right-sidebar-chat-item sidenav-trigger display-flex avatar pl-5 pb-0"
                 data-target="slide-out-chat">
-                <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-6.png')}}"
+                <span class="avatar-status avatar-online avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-6.png')}}"
                     alt="avatar" />
                   <i></i>
                 </span>
@@ -121,7 +121,7 @@
               </li>
               <li class="collection-item right-sidebar-chat-item sidenav-trigger display-flex avatar pl-5 pb-0"
                 data-target="slide-out-chat">
-                <span class="avatar-status avatar-off avatar-50"><img src="{{asset('public/images/avatar/avatar-7.png')}}"
+                <span class="avatar-status avatar-off avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-7.png')}}"
                     alt="avatar" />
                   <i></i>
                 </span>
@@ -133,7 +133,7 @@
               </li>
               <li class="collection-item right-sidebar-chat-item sidenav-trigger display-flex avatar pl-5 pb-0"
                 data-target="slide-out-chat">
-                <span class="avatar-status avatar-off avatar-50"><img src="{{asset('public/images/avatar/avatar-8.png')}}"
+                <span class="avatar-status avatar-off avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-8.png')}}"
                     alt="avatar" />
                   <i></i>
                 </span>
@@ -145,7 +145,7 @@
               </li>
               <li class="collection-item right-sidebar-chat-item sidenav-trigger display-flex avatar pl-5 pb-0"
                 data-target="slide-out-chat">
-                <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-1.png')}}"
+                <span class="avatar-status avatar-online avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-1.png')}}"
                     alt="avatar" />
                   <i></i>
                 </span>
@@ -157,7 +157,7 @@
               </li>
               <li class="collection-item right-sidebar-chat-item sidenav-trigger display-flex avatar pl-5 pb-0"
                 data-target="slide-out-chat">
-                <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-9.png')}}"
+                <span class="avatar-status avatar-online avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-9.png')}}"
                     alt="avatar" />
                   <i></i>
                 </span>
@@ -169,7 +169,7 @@
               </li>
               <li class="collection-item right-sidebar-chat-item sidenav-trigger display-flex avatar pl-5 pb-0"
                 data-target="slide-out-chat">
-                <span class="avatar-status avatar-off avatar-50"><img src="{{asset('public/images/avatar/avatar-10.png')}}"
+                <span class="avatar-status avatar-off avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-10.png')}}"
                     alt="avatar" />
                   <i></i>
                 </span>
@@ -181,7 +181,7 @@
               </li>
               <li class="collection-item right-sidebar-chat-item sidenav-trigger display-flex avatar pl-5 pb-0"
                 data-target="slide-out-chat">
-                <span class="avatar-status avatar-off avatar-50"><img src="{{asset('public/images/avatar/avatar-11.png')}}"
+                <span class="avatar-status avatar-off avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-11.png')}}"
                     alt="avatar" />
                   <i></i>
                 </span>
@@ -193,7 +193,7 @@
               </li>
               <li class="collection-item right-sidebar-chat-item sidenav-trigger display-flex avatar pl-5 pb-0"
                 data-target="slide-out-chat">
-                <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-12.png')}}"
+                <span class="avatar-status avatar-online avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-12.png')}}"
                     alt="avatar" />
                   <i></i>
                 </span>
@@ -356,7 +356,7 @@
                 <h6 class="timeline-title">12 new users registered</h6>
                 <p class="timeline-text">Here are some news feed interactions concepts.</p>
                 <div class="timeline-content">
-                  <img src="{{asset('public/images/icon/pdf.png')}}" alt="document" height="30" width="25"
+                  <img src="{{asset('marbia/marbia-crm/public/images/icon/pdf.png')}}" alt="document" height="30" width="25"
                     class="mr-1">Registration.doc
                 </div>
               </li>
@@ -365,7 +365,7 @@
                 <h6 class="timeline-title">Tina is attending your activity</h6>
                 <p class="timeline-text">Here are some news feed interactions concepts.</p>
                 <div class="timeline-content">
-                  <img src="{{asset('public/images/icon/pdf.png')}}" alt="document" height="30" width="25"
+                  <img src="{{asset('marbia/marbia-crm/public/images/icon/pdf.png')}}" alt="document" height="30" width="25"
                     class="mr-1">Activity.doc
                 </div>
               </li>
@@ -395,7 +395,7 @@
                 <h6 class="timeline-title">Database overloaded 89%</h6>
                 <p class="timeline-text">Here are some news feed interactions concepts.</p>
                 <div class="timeline-content">
-                  <img src="{{asset('public/images/icon/pdf.png')}}" alt="document" height="30" width="25"
+                  <img src="{{asset('marbia/marbia-crm/public/images/icon/pdf.png')}}" alt="document" height="30" width="25"
                     class="mr-1">Database-log.doc
                 </div>
               </li>
@@ -429,7 +429,7 @@
     <li class="chat-body">
       <ul class="collection">
         <li class="collection-item display-flex avatar pl-5 pb-0" data-target="slide-out-chat">
-          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-7.png')}}"
+          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-7.png')}}"
               alt="avatar" />
           </span>
           <div class="user-content speech-bubble">
@@ -442,7 +442,7 @@
           </div>
         </li>
         <li class="collection-item display-flex avatar pl-5 pb-0" data-target="slide-out-chat">
-          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-7.png')}}"
+          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-7.png')}}"
               alt="avatar" />
           </span>
           <div class="user-content speech-bubble">
@@ -460,7 +460,7 @@
         </li>
 
         <li class="collection-item display-flex avatar pl-5 pb-0" data-target="slide-out-chat">
-          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-7.png')}}"
+          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-7.png')}}"
               alt="avatar" />
           </span>
           <div class="user-content speech-bubble">
@@ -473,7 +473,7 @@
           </div>
         </li>
         <li class="collection-item display-flex avatar pl-5 pb-0" data-target="slide-out-chat">
-          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-7.png')}}"
+          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-7.png')}}"
               alt="avatar" />
           </span>
           <div class="user-content speech-bubble">
@@ -496,7 +496,7 @@
           </div>
         </li>
         <li class="collection-item display-flex avatar pl-5 pb-0" data-target="slide-out-chat">
-          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-7.png')}}"
+          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-7.png')}}"
               alt="avatar" />
           </span>
           <div class="user-content speech-bubble">
@@ -504,7 +504,7 @@
           </div>
         </li>
         <li class="collection-item display-flex avatar pl-5 pb-0" data-target="slide-out-chat">
-          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-7.png')}}"
+          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-7.png')}}"
               alt="avatar" />
           </span>
           <div class="user-content speech-bubble">

@@ -88,5 +88,5 @@
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/advance-ui-feature-discovery.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/js/scripts/advance-ui-feature-discovery.js')}}"></script>
 @endsection

@@ -4,13 +4,13 @@
 {{-- page title --}}
 @section('title','Form Select2')
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2-materialize.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/select2/select2.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/select2/select2-materialize.css')}}">
 @endsection
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/form-select2.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/form-select2.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -1063,10 +1063,10 @@ $('.select2-size-sm').select2({
 
 {{-- vendor script --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/select2/select2.full.min.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/vendors/select2/select2.full.min.js')}}"></script>
 @endsection
 
 {{-- page script --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/form-select2.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/js/scripts/form-select2.js')}}"></script>
 @endsection

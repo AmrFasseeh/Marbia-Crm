@@ -363,10 +363,10 @@
          <h4 class="header">Profile Card</h4>
          <div id="profile-card" class="card">
             <div class="card-image waves-effect waves-block waves-light">
-               <img class="activator" src="{{asset('public/images/gallery/28.png')}}" alt="user bg" />
+               <img class="activator" src="{{asset('marbia/marbia-crm/public/images/gallery/28.png')}}" alt="user bg" />
             </div>
             <div class="card-content">
-               <img src="{{asset('public/images/avatar/avatar-7.png')}}" alt=""
+               <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-7.png')}}" alt=""
                   class="circle responsive-img activator card-profile-image cyan lighten-1 padding-2" />
                <a class="btn-floating activator btn-move-up waves-effect waves-light red accent-2 z-depth-4 right">
                   <i class="material-icons">edit</i>
@@ -574,11 +574,11 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/sparkline/jquery.sparkline.min.js')}}"></script>
-<script src="{{asset('public/vendors/chartjs/chart.min.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/vendors/sparkline/jquery.sparkline.min.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/vendors/chartjs/chart.min.js')}}"></script>
 @endsection
 
 {{-- page scripts  --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/card-advanced.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/js/scripts/card-advanced.js')}}"></script>
 @endsection

@@ -6,14 +6,14 @@
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/user-profile-page.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/user-profile-page.css')}}">
 @endsection
 
 {{-- page content --}}
 @section('content')
 <div class="section">
   <div class="row user-profile mt-1 ml-0 mr-0">
-    <img class="responsive-img" alt="" src="{{asset('public/images/gallery/profile-bg')}}.png">
+    <img class="responsive-img" alt="" src="{{asset('marbia/marbia-crm/public/images/gallery/profile-bg')}}.png">
   </div>
   <div class="section" id="user-profile">
     <div class="row">
@@ -21,7 +21,7 @@
       <div class="col s12 m4 l3 user-section-negative-margin">
         <div class="row">
           <div class="col s12 center-align">
-            <img class="responsive-img circle z-depth-5" width="120" src="{{asset('public/images/user/12.jpg')}}" alt="">
+            <img class="responsive-img circle z-depth-5" width="120" src="{{asset('marbia/marbia-crm/public/images/user/12.jpg')}}" alt="">
             <br>
             <a class="waves-effect waves-light btn mt-5 border-radius-4"> Follow</a>
           </div>
@@ -47,31 +47,31 @@
         <div class="row user-projects">
           <h6 class="col s12">Projects</h6>
           <div class="col s4">
-            <img class="responsive-img photo-border mt-10" alt="" src="{{asset('public/images/gallery/35.png')}}">
+            <img class="responsive-img photo-border mt-10" alt="" src="{{asset('marbia/marbia-crm/public/images/gallery/35.png')}}">
           </div>
           <div class="col s4">
-            <img class="responsive-img photo-border mt-10" alt="" src="{{asset('public/images/gallery/36.png')}}">
+            <img class="responsive-img photo-border mt-10" alt="" src="{{asset('marbia/marbia-crm/public/images/gallery/36.png')}}">
           </div>
           <div class="col s4">
-            <img class="responsive-img photo-border mt-10" alt="" src="{{asset('public/images/gallery/37.png')}}">
+            <img class="responsive-img photo-border mt-10" alt="" src="{{asset('marbia/marbia-crm/public/images/gallery/37.png')}}">
           </div>
           <div class="col s4">
-            <img class="responsive-img photo-border mt-10" alt="" src="{{asset('public/images/gallery/38.png')}}">
+            <img class="responsive-img photo-border mt-10" alt="" src="{{asset('marbia/marbia-crm/public/images/gallery/38.png')}}">
           </div>
           <div class="col s4">
-            <img class="responsive-img photo-border mt-10" alt="" src="{{asset('public/images/gallery/39.png')}}">
+            <img class="responsive-img photo-border mt-10" alt="" src="{{asset('marbia/marbia-crm/public/images/gallery/39.png')}}">
           </div>
           <div class="col s4">
-            <img class="responsive-img photo-border mt-10" alt="" src="{{asset('public/images/gallery/40.png')}}">
+            <img class="responsive-img photo-border mt-10" alt="" src="{{asset('marbia/marbia-crm/public/images/gallery/40.png')}}">
           </div>
           <div class="col s4">
-            <img class="responsive-img photo-border mt-10" alt="" src="{{asset('public/images/gallery/41.png')}}">
+            <img class="responsive-img photo-border mt-10" alt="" src="{{asset('marbia/marbia-crm/public/images/gallery/41.png')}}">
           </div>
           <div class="col s4">
-            <img class="responsive-img photo-border mt-10" alt="" src="{{asset('public/images/gallery/42.png')}}">
+            <img class="responsive-img photo-border mt-10" alt="" src="{{asset('marbia/marbia-crm/public/images/gallery/42.png')}}">
           </div>
           <div class="col s4">
-            <img class="responsive-img photo-border mt-10" alt="" src="{{asset('public/images/gallery/43.png')}}">
+            <img class="responsive-img photo-border mt-10" alt="" src="{{asset('marbia/marbia-crm/public/images/gallery/43.png')}}">
           </div>
         </div>
         <hr class="mt-5">
@@ -82,7 +82,7 @@
         </div>
         <div class="row mt-2">
           <div class="col s2 mt-2 pr-0 circle">
-            <a href="#"><img class="responsive-img circle" src="{{asset('public/images/user/1.jpg')}}" alt=""></a>
+            <a href="#"><img class="responsive-img circle" src="{{asset('marbia/marbia-crm/public/images/user/1.jpg')}}" alt=""></a>
           </div>
           <div class="col s9">
             <a href="#">
@@ -97,7 +97,7 @@
         </div>
         <div class="row mt-2">
           <div class="col s2 mt-2 pr-0 circle">
-            <a href="#"><img class="responsive-img circle" src="{{asset('public/images/user/11.jpg')}}" alt=""></a>
+            <a href="#"><img class="responsive-img circle" src="{{asset('marbia/marbia-crm/public/images/user/11.jpg')}}" alt=""></a>
           </div>
           <div class="col s9">
             <a href="#">
@@ -112,7 +112,7 @@
         </div>
         <div class="row mt-2">
           <div class="col s2 mt-2 pr-0 circle">
-            <a href="#"><img class="responsive-img circle" src="{{asset('public/images/user/5.jpg')}}" alt=""></a>
+            <a href="#"><img class="responsive-img circle" src="{{asset('marbia/marbia-crm/public/images/user/5.jpg')}}" alt=""></a>
           </div>
           <div class="col s9">
             <a href="#">
@@ -127,7 +127,7 @@
         </div>
         <div class="row mt-2">
           <div class="col s2 mt-2 pr-0 circle pb-2">
-            <a href="#"><img class="responsive-img circle" src="{{asset('public/images/user/8.jpg')}}" alt=""></a>
+            <a href="#"><img class="responsive-img circle" src="{{asset('marbia/marbia-crm/public/images/user/8.jpg')}}" alt=""></a>
           </div>
           <div class="col s9">
             <a href="#">
@@ -177,7 +177,7 @@
               </div>
               <div class="row mt-5">
                 <div class="col s1 pr-0 circle">
-                  <a href="#"><img class="responsive-img circle" src="{{asset('public/images/user/12.jpg')}}" alt=""></a>
+                  <a href="#"><img class="responsive-img circle" src="{{asset('marbia/marbia-crm/public/images/user/12.jpg')}}" alt=""></a>
                 </div>
                 <div class="col s11">
                   <a href="#">
@@ -189,7 +189,7 @@
                     <div class="col s12">
                       <div class="card card-border z-depth-2">
                         <div class="card-image">
-                          <img src="{{asset('public/images/gallery/post-1')}}.png" alt="">
+                          <img src="{{asset('marbia/marbia-crm/public/images/gallery/post-1')}}.png" alt="">
                         </div>
                         <div class="card-content">
                           <h6 class="font-weight-900 text-uppercase"><a href="#">Designing Services</a></h6>
@@ -208,7 +208,7 @@
               <hr class="mt-5">
               <div class="row mt-5">
                 <div class="col s1 pr-0 circle">
-                  <a href="#"><img class="responsive-img circle" src="{{asset('public/images/user/12.jpg')}}" alt=""></a>
+                  <a href="#"><img class="responsive-img circle" src="{{asset('marbia/marbia-crm/public/images/user/12.jpg')}}" alt=""></a>
                 </div>
                 <div class="col s11">
                   <a href="#">
@@ -220,7 +220,7 @@
                     <div class="col s12">
                       <div class="card card-border z-depth-2">
                         <div class="card-image">
-                          <img src="{{asset('public/images/gallery/post-2')}}.png" alt="">
+                          <img src="{{asset('marbia/marbia-crm/public/images/gallery/post-2')}}.png" alt="">
                         </div>
                         <div class="card-content">
                           <h6 class="font-weight-900 text-uppercase"><a href="#">Australia office hours</a></h6>
@@ -239,7 +239,7 @@
               <hr class="mt-5">
               <div class="row mt-5">
                 <div class="col s1 pr-0 circle">
-                  <a href="#"><img class="responsive-img circle" src="{{asset('public/images/user/7.jpg')}}" alt=""></a>
+                  <a href="#"><img class="responsive-img circle" src="{{asset('marbia/marbia-crm/public/images/user/7.jpg')}}" alt=""></a>
                 </div>
                 <div class="col s11">
                   <a href="#">
@@ -252,7 +252,7 @@
                         <div class="card-content">
                           <div class="row">
                             <div class="col s2 pr-0 circle">
-                              <a href="#"><img class="responsive-img circle" src="{{asset('public/images/user/1.jpg')}}"
+                              <a href="#"><img class="responsive-img circle" src="{{asset('marbia/marbia-crm/public/images/user/1.jpg')}}"
                                   alt=""></a>
                             </div>
                             <div class="col s10">
@@ -290,7 +290,7 @@
         <div class="row mt-5">
           <div class="col s12">
             <h6>Today Highlight</h6>
-            <img class="responsive-img card-border z-depth-2 mt-2" src="{{asset('public/images/gallery/post-3')}}.png" alt="">
+            <img class="responsive-img card-border z-depth-2 mt-2" src="{{asset('marbia/marbia-crm/public/images/gallery/post-3')}}.png" alt="">
             <p><a href="#">Meeting with clients</a></p>
             <p>Crediting isn’t required, but is appreciated and allows photographers to gain exposure. Copy the text
               below or embed a credit badge</p>
@@ -304,7 +304,7 @@
         </div>
         <div class="row mt-2">
           <div class="col s2 mt-2 pr-0 circle">
-            <a href="#"><img class="responsive-img circle" src="{{asset('public/images/user/2.jpg')}}" alt=""></a>
+            <a href="#"><img class="responsive-img circle" src="{{asset('marbia/marbia-crm/public/images/user/2.jpg')}}" alt=""></a>
           </div>
           <div class="col s9">
             <a href="#">
@@ -315,7 +315,7 @@
         </div>
         <div class="row mt-2">
           <div class="col s2 mt-2 pr-0 circle">
-            <a href="#"><img class="responsive-img circle" src="{{asset('public/images/user/7.jpg')}}" alt=""></a>
+            <a href="#"><img class="responsive-img circle" src="{{asset('marbia/marbia-crm/public/images/user/7.jpg')}}" alt=""></a>
           </div>
           <div class="col s9">
             <a href="#">
@@ -326,7 +326,7 @@
         </div>
         <div class="row mt-2">
           <div class="col s2 mt-2 pr-0 circle">
-            <a href="#"><img class="responsive-img circle" src="{{asset('public/images/user/4.jpg')}}" alt=""></a>
+            <a href="#"><img class="responsive-img circle" src="{{asset('marbia/marbia-crm/public/images/user/4.jpg')}}" alt=""></a>
           </div>
           <div class="col s9">
             <a href="#">
@@ -337,7 +337,7 @@
         </div>
         <div class="row mt-2">
           <div class="col s2 mt-2 pr-0 circle">
-            <a href="#"><img class="responsive-img circle" src="{{asset('public/images/user/8.jpg')}}" alt=""></a>
+            <a href="#"><img class="responsive-img circle" src="{{asset('marbia/marbia-crm/public/images/user/8.jpg')}}" alt=""></a>
           </div>
           <div class="col s9">
             <a href="#">

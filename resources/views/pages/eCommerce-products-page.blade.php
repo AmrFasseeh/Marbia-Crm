@@ -6,12 +6,12 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/noUiSlider/nouislider.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/noUiSlider/nouislider.min.css')}}">
 @endsection
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/eCommerce-products-page.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/eCommerce-products-page.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -215,7 +215,7 @@
           <div class="card-content">
             <p>Smartwatches</p>
             <span class="card-title text-ellipsis">Smartwatch 2.0 LTE Wifi</span>
-            <img src="{{asset('public/images/cards/watch-2.png')}}" class="responsive-img" alt="">
+            <img src="{{asset('marbia/marbia-crm/public/images/cards/watch-2.png')}}" class="responsive-img" alt="">
             <div class="display-flex flex-wrap justify-content-center">
               <h5 class="mt-3">$399.00</h5>
               <a class="mt-2 waves-effect waves-light gradient-45deg-deep-purple-blue btn btn-block z-depth-4 modal-trigger"
@@ -231,7 +231,7 @@
                 <a class="modal-close right"><i class="material-icons">close</i></a>
               </div>
               <div class="col m6 s12">
-                <img src="{{asset('public/images/cards/watch-2.png')}}" class="responsive-img" alt="">
+                <img src="{{asset('marbia/marbia-crm/public/images/cards/watch-2.png')}}" class="responsive-img" alt="">
               </div>
               <div class="col m6 s12">
                 <p>Smartwatches</p>
@@ -259,7 +259,7 @@
           <div class="card-content">
             <p>Headphone</p>
             <span class="card-title text-ellipsis">Purple Solo 2 Wireless</span>
-            <img src="{{asset('public/images/cards/headphone.png')}}" class="responsive-img" alt="">
+            <img src="{{asset('marbia/marbia-crm/public/images/cards/headphone.png')}}" class="responsive-img" alt="">
             <div class="display-flex flex-wrap justify-content-center">
               <h5 class="mt-3">$249.00</h5>
               <a class="mt-2 waves-effect waves-light gradient-45deg-deep-purple-blue btn btn-block z-depth-4 modal-trigger"
@@ -274,7 +274,7 @@
             <a class="modal-close right"><i class="material-icons">close</i></a>
             <div class="row" id="product-two">
               <div class="col m6 s12">
-                <img src="{{asset('public/images/cards/headphone.png')}}" class="responsive-img" alt="">
+                <img src="{{asset('marbia/marbia-crm/public/images/cards/headphone.png')}}" class="responsive-img" alt="">
               </div>
               <div class="col m6 s12">
                 <p>Headphone</p>
@@ -302,7 +302,7 @@
           <div class="card-content">
             <p>Smartphone</p>
             <span class="card-title">iPhone x</span>
-            <img src="{{asset('public/images/cards/iphone-x.png')}}" class="responsive-img" alt="">
+            <img src="{{asset('marbia/marbia-crm/public/images/cards/iphone-x.png')}}" class="responsive-img" alt="">
             <div class="display-flex flex-wrap justify-content-center">
               <h5 class="mt-3">$899.00</h5>
               <a class="mt-2 waves-effect waves-light gradient-45deg-deep-purple-blue btn btn-block modal-trigger z-depth-4"
@@ -316,7 +316,7 @@
             <a class="modal-close right"><i class="material-icons">close</i></a>
             <div class="row" id="product-three">
               <div class="col m6 s12">
-                <img src="{{asset('public/images/cards/iphone-x.png')}}" class="responsive-img" alt="">
+                <img src="{{asset('marbia/marbia-crm/public/images/cards/iphone-x.png')}}" class="responsive-img" alt="">
               </div>
               <div class="col m6 s12">
                 <p>Smartphone</p>
@@ -346,7 +346,7 @@
           <div class="card-content">
             <div class="row" id="product-four">
               <div class="col m6 s12">
-                <img src="{{asset('public/images/cards/remote.png')}}" class="responsive-img" alt="">
+                <img src="{{asset('marbia/marbia-crm/public/images/cards/remote.png')}}" class="responsive-img" alt="">
               </div>
               <div class="col m6 s12">
                 <p>Powerbank</p>
@@ -376,7 +376,7 @@
             <div class="card-content">
               <p>Powerbank</p>
               <span class="card-title text-ellipsis">Powerbank 11300 MAH</span>
-              <img src="{{asset('public/images/cards/powerbank.png')}}" class="responsive-img" alt="">
+              <img src="{{asset('marbia/marbia-crm/public/images/cards/powerbank.png')}}" class="responsive-img" alt="">
               <div class="display-flex flex-wrap justify-content-center">
                 <h5 class="mt-3">$1,300.00</h5>
                 <a class="mt-2 waves-effect waves-light gradient-45deg-deep-purple-blue btn btn-block modal-trigger z-depth-4"
@@ -390,7 +390,7 @@
               <a class="modal-close right"><i class="material-icons">close</i></a>
               <div class="row" id="product-five">
                 <div class="col m6 s12">
-                  <img src="{{asset('public/images/cards/powerbank.png')}}" class="responsive-img" alt="">
+                  <img src="{{asset('marbia/marbia-crm/public/images/cards/powerbank.png')}}" class="responsive-img" alt="">
                 </div>
                 <div class="col m6 s12">
                   <p>Powerbank</p>
@@ -420,7 +420,7 @@
             <div class="card-content">
               <p>Speakers</p>
               <span class="card-title text-ellipsis">Wireless Audio System</span>
-              <img src="{{asset('public/images/cards/speakers.png')}}" class="responsive-img" alt="">
+              <img src="{{asset('marbia/marbia-crm/public/images/cards/speakers.png')}}" class="responsive-img" alt="">
               <div class="display-flex flex-wrap justify-content-center">
                 <h5 class="mt-3">$2,299.00</h5>
                 <a class="mt-2 waves-effect waves-light gradient-45deg-deep-purple-blue btn btn-block modal-trigger z-depth-4"
@@ -434,7 +434,7 @@
               <a class="modal-close right"><i class="material-icons">close</i></a>
               <div class="row" id="product-six">
                 <div class="col m6 s12">
-                  <img src="{{asset('public/images/cards/speakers.png')}}" class="responsive-img" alt="">
+                  <img src="{{asset('marbia/marbia-crm/public/images/cards/speakers.png')}}" class="responsive-img" alt="">
                 </div>
                 <div class="col m6 s12">
                   <p>Audio Speakers</p>
@@ -463,7 +463,7 @@
             <div class="card-content">
               <p>Cameras</p>
               <span class="card-title text-ellipsis">White NX Mini F1</span>
-              <img src="{{asset('public/images/cards/cameras.png')}}" class="responsive-img" alt="">
+              <img src="{{asset('marbia/marbia-crm/public/images/cards/cameras.png')}}" class="responsive-img" alt="">
               <div class="display-flex flex-wrap justify-content-center">
                 <h5 class="mt-3">$559.00</h5>
                 <a class="mt-2 waves-effect waves-light gradient-45deg-deep-purple-blue btn btn-block modal-trigger z-depth-4"
@@ -477,7 +477,7 @@
               <a class="modal-close right"><i class="material-icons">close</i></a>
               <div class="row" id="product-seven">
                 <div class="col m6 s12">
-                  <img src="{{asset('public/images/cards/cameras.png')}}" class="responsive-img" alt="">
+                  <img src="{{asset('marbia/marbia-crm/public/images/cards/cameras.png')}}" class="responsive-img" alt="">
                 </div>
                 <div class="col m6 s12">
                   <p>Cameras</p>
@@ -506,7 +506,7 @@
             <div class="card-content">
               <p>Phone</p>
               <span class="card-title text-ellipsis">OnePlus 6T</span>
-              <img src="{{asset('public/images/cards/oneplus-6t.png')}}" class="responsive-img" alt="">
+              <img src="{{asset('marbia/marbia-crm/public/images/cards/oneplus-6t.png')}}" class="responsive-img" alt="">
               <div class="display-flex flex-wrap justify-content-center">
                 <h5 class="mt-3">$499.00</h5>
                 <a class="mt-2 waves-effect waves-light gradient-45deg-deep-purple-blue btn btn-block modal-trigger z-depth-4"
@@ -520,7 +520,7 @@
               <a class="modal-close right"><i class="material-icons">close</i></a>
               <div class="row" id="product-eight">
                 <div class="col m6 s12">
-                  <img src="{{asset('public/images/cards/oneplus-6t.png')}}" class="responsive-img" alt="">
+                  <img src="{{asset('marbia/marbia-crm/public/images/cards/oneplus-6t.png')}}" class="responsive-img" alt="">
                 </div>
                 <div class="col m6 s12">
                   <p>Phone</p>
@@ -549,7 +549,7 @@
             <div class="card-content">
               <p>Smart Speakers</p>
               <span class="card-title text-ellipsis">Amazon Alexa</span>
-              <img src="{{asset('public/images/cards/smartspeakers.png')}}" class="responsive-img" alt="">
+              <img src="{{asset('marbia/marbia-crm/public/images/cards/smartspeakers.png')}}" class="responsive-img" alt="">
               <div class="display-flex flex-wrap justify-content-center">
                 <h5 class="mt-3">$799.00</h5>
                 <a class="mt-2 waves-effect waves-light gradient-45deg-deep-purple-blue btn btn-block modal-trigger z-depth-4"
@@ -563,7 +563,7 @@
               <a class="modal-close right"><i class="material-icons">close</i></a>
               <div class="row" id="product-nine">
                 <div class="col m6 s12">
-                  <img src="{{asset('public/images/cards/smartspeakers.png')}}" class="responsive-img" alt="">
+                  <img src="{{asset('marbia/marbia-crm/public/images/cards/smartspeakers.png')}}" class="responsive-img" alt="">
                 </div>
                 <div class="col m6 s12">
                   <p>Smart Speakers</p>
@@ -592,7 +592,7 @@
             <div class="card-content">
               <p>Mouse</p>
               <span class="card-title text-ellipsis">Apple Magic Mouse</span>
-              <img src="{{asset('public/images/cards/magic-mouse.png')}}" class="responsive-img" alt="">
+              <img src="{{asset('marbia/marbia-crm/public/images/cards/magic-mouse.png')}}" class="responsive-img" alt="">
               <div class="display-flex flex-wrap justify-content-center">
                 <h5 class="mt-3">$359.00</h5>
                 <a class="mt-2 waves-effect waves-light gradient-45deg-deep-purple-blue btn btn-block modal-trigger z-depth-4"
@@ -606,7 +606,7 @@
               <a class="modal-close right"><i class="material-icons">close</i></a>
               <div class="row" id="product-ten">
                 <div class="col m6 s12">
-                  <img src="{{asset('public/images/cards/magic-mouse.png')}}" class="responsive-img" alt="">
+                  <img src="{{asset('marbia/marbia-crm/public/images/cards/magic-mouse.png')}}" class="responsive-img" alt="">
                 </div>
                 <div class="col m6 s12">
                   <p>Mouse</p>
@@ -663,11 +663,11 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/noUiSlider/nouislider.min.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/vendors/noUiSlider/nouislider.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/advance-ui-modals.js')}}"></script>
-<script src="{{asset('public/js/scripts/eCommerce-products-page.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/js/scripts/advance-ui-modals.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/js/scripts/eCommerce-products-page.js')}}"></script>
 @endsection

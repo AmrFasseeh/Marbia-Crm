@@ -6,7 +6,7 @@
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/page-blog.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/page-blog.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -19,13 +19,13 @@
     <div class="col s12 m6 l4">
       <div class="card-panel border-radius-6 mt-10 card-animation-1">
         <a href="#"><img class="responsive-img border-radius-8 z-depth-4 image-n-margin"
-            src="{{asset('public/images/cards/news-fashion.jpg')}}" alt=""></a>
+            src="{{asset('marbia/marbia-crm/public/images/cards/news-fashion.jpg')}}" alt=""></a>
         <h6 class="deep-purple-text text-darken-3 mt-5"><a href="#">Fashion</a></h6>
         <span>Fashion is a popular style, especially in clothing, footwear, lifestyle, accessories, makeup, hairstyle
           and body.</span>
         <div class="display-flex justify-content-between flex-wrap mt-4">
           <div class="display-flex align-items-center mt-1">
-            <img src="{{asset('public/images/user/9.jpg')}}" width="30" alt="fashion"
+            <img src="{{asset('marbia/marbia-crm/public/images/user/9.jpg')}}" width="30" alt="fashion"
               class="circle mr-10 vertical-text-middle">
             <span class="pt-2">Taniya</span>
           </div>
@@ -41,13 +41,13 @@
     <div class="col s12 m6 l4">
       <div class="card-panel border-radius-6 mt-10 card-animation-1">
         <a href="#"><img class="responsive-img border-radius-8 z-depth-4 image-n-margin"
-            src="{{asset('public/images/cards/news-apple.jpg')}}" alt=""></a>
+            src="{{asset('marbia/marbia-crm/public/images/cards/news-apple.jpg')}}" alt=""></a>
         <h6 class="deep-purple-text text-darken-3 mt-5"><a href="#">Apple News</a></h6>
         <span>Some users have reported their new phones won't charge when plugged into lightning cables when their
           screens are off.</span>
         <div class="display-flex justify-content-between flex-wrap  mt-4">
           <div class="display-flex align-items-center mt-1">
-            <img src="{{asset('public/images/user/1.jpg')}}" width="36" alt="news" class="circle mr-10 vertical-text-middle">
+            <img src="{{asset('marbia/marbia-crm/public/images/user/1.jpg')}}" width="36" alt="news" class="circle mr-10 vertical-text-middle">
             <span class="pt-2">Mike</span>
           </div>
           <div class="display-flex mt-3 right-align social-icon">
@@ -62,14 +62,14 @@
     <div class="col s12 m6 l4">
       <div class="card-panel border-radius-6 mt-10 card-animation-1">
         <a href="#"><img class="responsive-img border-radius-8 z-depth-4 image-n-margin"
-            src="{{asset('public/images/cards/news-twitter.jpg')}}" alt=""></a>
+            src="{{asset('marbia/marbia-crm/public/images/cards/news-twitter.jpg')}}" alt=""></a>
         <h6 class="deep-purple-text text-darken-3 mt-5"><a href="#">Twitter Brings Its 'Data Saver</a></h6>
         <span>Microblogging site Twitter has rolled out its latest update for Android and iOS users with the "data
           saver" twitter Application.
         </span>
         <div class="display-flex justify-content-between flex-wrap mt-4">
           <div class="display-flex align-items-center p-0 mt-1">
-            <img src="{{asset('public/images/user/8.jpg')}}" width="36" alt="news" class="circle mr-10 vertical-text-middle">
+            <img src="{{asset('marbia/marbia-crm/public/images/user/8.jpg')}}" width="36" alt="news" class="circle mr-10 vertical-text-middle">
             <span class="pt-2">Emma</span>
           </div>
           <div class="display-flex mt-3 right-align social-icon">
@@ -92,7 +92,7 @@
         </span>
         <div class="display-flex justify-content-between flex-wrap mt-4">
           <div class="display-flex align-items-center mt-1">
-            <img src="{{asset('public/images/user/2.jpg')}}" width="36" alt="news" class="circle mr-10 vertical-text-middle">
+            <img src="{{asset('marbia/marbia-crm/public/images/user/2.jpg')}}" width="36" alt="news" class="circle mr-10 vertical-text-middle">
             <span class="pt-2">Alex</span>
           </div>
           <div class="display-flex mt-3 right-align social-icon">
@@ -112,7 +112,7 @@
         </span>
         <div class="display-flex justify-content-between flex-wrap mt-4">
           <div class="display-flex align-items-center mt-1">
-            <img src="{{asset('public/images/user/8.jpg')}}" width="36" alt="news" class="circle mr-10 vertical-text-middle">
+            <img src="{{asset('marbia/marbia-crm/public/images/user/8.jpg')}}" width="36" alt="news" class="circle mr-10 vertical-text-middle">
             <span class="pt-2">Taniya</span>
           </div>
           <div class="display-flex mt-3 right-align social-icon">
@@ -132,7 +132,7 @@
         </span>
         <div class="display-flex justify-content-between flex-wrap mt-4">
           <div class="display-flex align-items-center p-0 mt-1">
-            <img src="{{asset('public/images/user/4.jpg')}}" width="36" alt="news" class="circle mr-10 vertical-text-middle">
+            <img src="{{asset('marbia/marbia-crm/public/images/user/4.jpg')}}" width="36" alt="news" class="circle mr-10 vertical-text-middle">
             <span class="pt-2">Peter</span>
           </div>
           <div class="display-flex mt-3 right-align social-icon">
@@ -154,7 +154,7 @@
         <p class="mt-4 mb-0">Bringing smooth animation transition in android</p>
         <div class="display-flex justify-content-between flex-wrap mt-2">
           <div class="display-flex align-items-center mt-1">
-            <img src="{{asset('public/images/user/2.jpg')}}" width="36" alt="news" class="circle mr-10 vertical-text-middle">
+            <img src="{{asset('marbia/marbia-crm/public/images/user/2.jpg')}}" width="36" alt="news" class="circle mr-10 vertical-text-middle">
             <span class="pt-2">Alex</span>
           </div>
           <div class="display-flex mt-3 right-align social-icon">
@@ -172,7 +172,7 @@
         <p class="mt-4 mb-0">Bringing smooth animation transition in android</p>
         <div class="display-flex justify-content-between flex-wrap mt-2">
           <div class="display-flex align-items-center mt-1">
-            <img src="{{asset('public/images/user/4.jpg')}}" width="36" alt="news" class="circle mr-10 vertical-text-middle">
+            <img src="{{asset('marbia/marbia-crm/public/images/user/4.jpg')}}" width="36" alt="news" class="circle mr-10 vertical-text-middle">
             <span class="pt-2">John</span>
           </div>
           <div class="display-flex mt-3 right-align social-icon">
@@ -190,7 +190,7 @@
         <p class="mt-4 mb-0">Bringing smooth animation transition in android</p>
         <div class="display-flex justify-content-between flex-wrap mt-2">
           <div class="display-flex align-items-center mt-1">
-            <img src="{{asset('public/images/user/3.jpg')}}" width="36" alt="news" class="circle mr-10 vertical-text-middle">
+            <img src="{{asset('marbia/marbia-crm/public/images/user/3.jpg')}}" width="36" alt="news" class="circle mr-10 vertical-text-middle">
             <span class="pt-2">Mike</span>
           </div>
           <div class="display-flex mt-3 right-align social-icon">
@@ -209,7 +209,7 @@
     <div class="col s12 m6 l6">
       <div class="card horizontal border-radius-6">
         <div class="card-image">
-          <a href="#"><img class="responsive-img image-n-margin" src="{{asset('public/images/cards/horizontal-news-1.jpg')}}"
+          <a href="#"><img class="responsive-img image-n-margin" src="{{asset('marbia/marbia-crm/public/images/cards/horizontal-news-1.jpg')}}"
               alt=""></a>
         </div>
         <div class="card-stacked">
@@ -236,7 +236,7 @@
     <div class="col s12 m6 l6">
       <div class="card horizontal border-radius-6">
         <div class="card-image">
-          <a href="#"><img class="responsive-img image-n-margin" src="{{asset('public/images/cards/horizontal-news-2.jpg')}}"
+          <a href="#"><img class="responsive-img image-n-margin" src="{{asset('marbia/marbia-crm/public/images/cards/horizontal-news-2.jpg')}}"
               alt=""></a>
         </div>
         <div class="card-stacked">

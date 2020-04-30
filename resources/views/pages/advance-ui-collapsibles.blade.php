@@ -380,7 +380,7 @@
          <div id="using-color">
             <h4 class="header">Using Color</h4>
             <p class="caption">
-               This theme has various <a href="{{asset('public/css-color')}}" target="_blank">color palette</a> based on the
+               This theme has various <a href="{{asset('marbia/marbia-crm/public/css-color')}}" target="_blank">color palette</a> based on the
                material
                design
                base

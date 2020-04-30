@@ -6,14 +6,14 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/quill/quill.snow.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/vendors/quill/quill.snow.css')}}">
 @endsection
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/app-sidebar.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/app-email.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/app-sidebar.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('marbia/marbia-crm/public/css/pages/app-email.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -28,7 +28,7 @@
           <h5 class="m-0 sidebar-title"><i class="material-icons app-header-icon text-top">mail_outline</i> Mailbox</h5>
           <div class="row valign-wrapper mt-10 pt-2 animate fadeLeft">
             <div class="col s3 media-image">
-              <img src="{{asset('public/images/user/2.jpg')}}" alt="" class="circle z-depth-2 responsive-img">
+              <img src="{{asset('marbia/marbia-crm/public/images/user/2.jpg')}}" alt="" class="circle z-depth-2 responsive-img">
               <!-- notice the "circle" class -->
             </div>
             <div class="col s9">
@@ -117,7 +117,7 @@
               <a class="list-content" href="{{asset('app-email/content')}}">
                 <div class="list-title-area">
                   <div class="user-media">
-                    <img src="{{asset('public/images/user/2.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
+                    <img src="{{asset('marbia/marbia-crm/public/images/user/2.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
                     <div class="list-title">Gorge Fernandis</div>
                   </div>
                   <div class="title-right">
@@ -152,7 +152,7 @@
               <a class="list-content" href="{{asset('app-email/content')}}">
                 <div class="list-title-area">
                   <div class="user-media">
-                    <img src="{{asset('public/images/user/10.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
+                    <img src="{{asset('marbia/marbia-crm/public/images/user/10.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
                     <div class="list-title">Pari Kalin</div>
                   </div>
                   <div class="title-right">
@@ -187,7 +187,7 @@
               <a class="list-content" href="{{asset('app-email/content')}}">
                 <div class="list-title-area">
                   <div class="user-media">
-                    <img src="{{asset('public/images/user/4.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
+                    <img src="{{asset('marbia/marbia-crm/public/images/user/4.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
                     <div class="list-title">Alin Kystal</div>
                   </div>
                   <div class="title-right">
@@ -222,7 +222,7 @@
               <a class="list-content" href="{{asset('app-email/content')}}">
                 <div class="list-title-area">
                   <div class="user-media">
-                    <img src="{{asset('public/images/user/8.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
+                    <img src="{{asset('marbia/marbia-crm/public/images/user/8.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
                     <div class="list-title">Amy berry</div>
                   </div>
                   <div class="title-right">
@@ -257,7 +257,7 @@
               <a class="list-content" href="{{asset('app-email/content')}}">
                 <div class="list-title-area">
                   <div class="user-media">
-                    <img src="{{asset('public/images/user/1.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
+                    <img src="{{asset('marbia/marbia-crm/public/images/user/1.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
                     <div class="list-title">John Doe</div>
                   </div>
                   <div class="title-right">
@@ -292,7 +292,7 @@
               <a class="list-content" href="{{asset('app-email/content')}}">
                 <div class="list-title-area">
                   <div class="user-media">
-                    <img src="{{asset('public/images/user/9.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
+                    <img src="{{asset('marbia/marbia-crm/public/images/user/9.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
                     <div class="list-title">Kellin Blue</div>
                   </div>
                   <div class="title-right">
@@ -327,7 +327,7 @@
               <a class="list-content" href="{{asset('app-email/content')}}">
                 <div class="list-title-area">
                   <div class="user-media">
-                    <img src="{{asset('public/images/user/5.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
+                    <img src="{{asset('marbia/marbia-crm/public/images/user/5.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
                     <div class="list-title">Albert Henry</div>
                   </div>
                   <div class="title-right">
@@ -362,7 +362,7 @@
               <a class="list-content" href="{{asset('app-email/content')}}">
                 <div class="list-title-area">
                   <div class="user-media">
-                    <img src="{{asset('public/images/user/11.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
+                    <img src="{{asset('marbia/marbia-crm/public/images/user/11.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
                     <div class="list-title">Kim Catty</div>
                   </div>
                   <div class="title-right">
@@ -397,7 +397,7 @@
               <a class="list-content" href="{{asset('app-email/content')}}">
                 <div class="list-title-area">
                   <div class="user-media">
-                    <img src="{{asset('public/images/user/7.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
+                    <img src="{{asset('marbia/marbia-crm/public/images/user/7.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
                     <div class="list-title">Lina Shalin</div>
                   </div>
                   <div class="title-right">
@@ -432,7 +432,7 @@
               <a class="list-content" href="{{asset('app-email/content')}}">
                 <div class="list-title-area">
                   <div class="user-media">
-                    <img src="{{asset('public/images/user/3.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
+                    <img src="{{asset('marbia/marbia-crm/public/images/user/3.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
                     <div class="list-title">Peter Patric</div>
                   </div>
                   <div class="title-right">
@@ -467,7 +467,7 @@
               <a class="list-content" href="{{asset('app-email/content')}}">
                 <div class="list-title-area">
                   <div class="user-media">
-                    <img src="{{asset('public/images/user/12.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
+                    <img src="{{asset('marbia/marbia-crm/public/images/user/12.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
                     <div class="list-title">Colin Phelin</div>
                   </div>
                   <div class="title-right">
@@ -502,7 +502,7 @@
               <a class="list-content" href="{{asset('app-email/content')}}">
                 <div class="list-title-area">
                   <div class="user-media">
-                    <img src="{{asset('public/images/user/6.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
+                    <img src="{{asset('marbia/marbia-crm/public/images/user/6.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
                     <div class="list-title">Jack Hawk</div>
                   </div>
                   <div class="title-right">
@@ -617,11 +617,11 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/sortable/jquery-sortable-min.js')}}"></script>
-<script src="{{asset('public/vendors/quill/quill.min.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/vendors/sortable/jquery-sortable-min.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/vendors/quill/quill.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/app-email.js')}}"></script>
+<script src="{{asset('marbia/marbia-crm/public/js/scripts/app-email.js')}}"></script>
 @endsection

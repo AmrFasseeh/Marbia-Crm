@@ -6,6 +6,7 @@ use App\Customer;
 use App\Deal;
 use Illuminate\Http\Request;
 
+
 class CommentController extends Controller
 {
     public function storeLeadComment(Request $request, $id, $user)

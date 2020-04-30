@@ -247,7 +247,7 @@
               <div class="col s12">
                 <ul class="collection">
                   <li class="collection-item avatar">
-                    <img src="{{asset('public/images/avatar/avatar-7.png')}}" alt="" class="circle">
+                    <img src="{{asset('marbia/marbia-crm/public/images/avatar/avatar-7.png')}}" alt="" class="circle">
                     <span class="title">Title</span>
                     <p>First Line
                       <br> Second Line
