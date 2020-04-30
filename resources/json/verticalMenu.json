@@ -1,0 +1,185 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Home",
+      "i18n": "Home",
+      "class": "waves-effect waves-cyan",
+      "slug": "home",
+      "icon": "home",
+      "tagcustom": "badge pill orange float-right mr-10"
+    },
+    {
+      "navheader": "Applications",
+      "icon": "more_horiz"
+    },
+    {
+      "url": "app-calendar",
+      "name": "Calendar",
+      "i18n": "Calendar",
+      "class": "waves-effect waves-cyan",
+      "icon": "today",
+      "slug": "app-calendar"
+    },
+    {
+      "url": "javascript:void(0)",
+      "name": "Contacts",
+      "i18n": "Contacts",
+      "class": "collapsible-header waves-effect waves-cyan",
+      "icon": "contacts_outline",
+      "slug": "app-contacts",
+      "tagcustom": "badge pill pink accent-2 float-right mr-2",
+      "submenu": [
+        {
+          "url": "app-contacts",
+          "name": "Contacts View",
+          "i18n": "Contacts View",
+          "slug": "app-contacts"
+        }
+      ]
+    },
+    {
+      "url": "javascript:void(0)",
+      "name": "Leads",
+      "i18n": "Leads",
+      "class": "collapsible-header waves-effect waves-cyan",
+      "icon": "contact_phone",
+      "slug": "app-leads",
+      "submenu": [
+        {
+          "url": "app-leads-list",
+          "name": "Leads List",
+          "i18n": "Leads List",
+          "slug": "app-leads-list"
+        },
+        {
+          "url": "app-leads-add",
+          "name": "Leads Add",
+          "i18n": "Leads Add",
+          "slug": "app-leads-add"
+        }
+      ]
+    },
+    {
+      "url": "javascript:void(0)",
+      "name": "Customers",
+      "i18n": "Customers",
+      "class": "collapsible-header waves-effect waves-cyan",
+      "icon": "assignment_ind",
+      "slug": "app-customers",
+      "submenu": [
+        {
+          "url": "app-customers",
+          "name": "Customers View",
+          "i18n": "Customers View",
+          "slug": "app-customers"
+        }
+      ]
+    },
+    {
+      "url": "javascript:void(0)",
+      "name": "Projects",
+      "i18n": "Projects",
+      "class": "collapsible-header waves-effect waves-cyan",
+      "icon": "format_list_bulleted",
+      "slug": "app-projects",
+      "submenu": [
+        {
+          "url": "app-projects-list",
+          "name": "Projects View",
+          "i18n": "Projects View",
+          "slug": "app-projects-list"
+        },
+        {
+          "url": "app-stages-all",
+          "name": "Stages View",
+          "i18n": "Stages View",
+          "slug": "app-stages-all"
+        },
+        {
+          "url": "app-buildings-all",
+          "name": "Buildings View",
+          "i18n": "Buildings View",
+          "slug": "app-buildings-all"
+        },
+        {
+          "url": "app-properties-all",
+          "name": "Properties View",
+          "i18n": "Properties View",
+          "slug": "app-properties-all"
+        }
+      ]
+    },
+    {
+      "url": "javascript:void(0)",
+      "name": "Deals",
+      "i18n": "Deals",
+      "class": "collapsible-header waves-effect waves-cyan",
+      "icon": "content_paste",
+      "slug": "app-deals",
+      "submenu": [
+        {
+          "url": "app-deals-list",
+          "name": "Deals View",
+          "i18n": "Deals View",
+          "slug": "app-deals-list"
+        },
+        {
+          "url": "app-deals-add",
+          "name": "Deals Add",
+          "i18n": "Deals Add",
+          "slug": "app-deals-add"
+        }
+      ]
+    },
+    {
+      "url": "app-reports",
+      "name": "Reports",
+      "i18n": "Reports",
+      "class": "waves-effect waves-cyan",
+      "icon": "insert_drive_file",
+      "slug": "app-reports"
+    },
+    {
+      "navheader": "Others ",
+      "icon": "more_horiz"
+    },
+    {
+      "url": "javascript:void(0)",
+      "name": "User",
+      "i18n": "User",
+      "class": "collapsible-header waves-effect waves-cyan",
+      "slug": "user",
+      "icon": "face",
+      "tagcustom": "badge pill purple float-right mr-10",
+      "submenu": [
+        {
+          "url": "page-users-list",
+          "name": "List",
+          "i18n": "List",
+          "slug": "users-list"
+        },
+        {
+          "url": "page-roles-list",
+          "name": "Roles",
+          "i18n": "Roles",
+          "slug": "roles-list"
+        },
+        {
+          "url": "page-permissions-list",
+          "name": "Permissions",
+          "i18n": "Permissions",
+          "slug": "permissions-list"
+        }
+      ]
+    },
+    {
+      "url": "app-settings",
+      "name": "Settings",
+      "i18n": "Settings",
+      "class": "waves-effect waves-cyan",
+      "slug": "app-settings",
+      "icon": "settings"
+    }
+  ]
+}
