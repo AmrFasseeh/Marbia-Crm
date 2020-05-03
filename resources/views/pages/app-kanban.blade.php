@@ -6,13 +6,13 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/jkanban/jkanban.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/quill/quill.snow.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/jkanban/jkanban.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/quill/quill.snow.css')}}">
 @endsection
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/app-kanban.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/app-kanban.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -71,7 +71,7 @@
                 <small>Member</small>
                 <div class="display-flex">
                   <div class="avatar ">
-                    <img src="{{asset('public/images/avatar/avatar-11.png')}}" class="circle" height="36" width="36"
+                    <img src="{{asset('/images/avatar/avatar-11.png')}}" class="circle" height="36" width="36"
                       alt="avtar img holder">
                   </div>
                   <a class="btn-floating btn-small pulse ml-10">
@@ -126,11 +126,11 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/jkanban/jkanban.min.js')}}"></script>
-<script src="{{asset('public/vendors/quill/quill.min.js')}}"></script>
+<script src="{{asset('/vendors/jkanban/jkanban.min.js')}}"></script>
+<script src="{{asset('/vendors/quill/quill.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/app-kanban.js')}}"></script>
+<script src="{{asset('/js/scripts/app-kanban.js')}}"></script>
 @endsection

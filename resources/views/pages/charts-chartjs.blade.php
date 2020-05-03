@@ -108,10 +108,10 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/chartjs/chart.min.js')}}"></script>
+<script src="{{asset('/vendors/chartjs/chart.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/charts-chartjs.js')}}"></script>
+<script src="{{asset('/js/scripts/charts-chartjs.js')}}"></script>
 @endsection

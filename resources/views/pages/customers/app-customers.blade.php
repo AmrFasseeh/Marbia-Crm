@@ -6,17 +6,17 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/data-tables/css/jquery.dataTables.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2-materialize.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/data-tables/css/jquery.dataTables.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/select2/select2.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/select2/select2-materialize.css')}}">
 <link rel="stylesheet" type="text/css"
-    href="{{asset('public/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css')}}">
+    href="{{asset('/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css')}}">
 @endsection
 
 {{-- page styles --}}
 @section('page-style')
-{{-- <link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/form-select2.css')}}"> --}}
+{{-- <link rel="stylesheet" type="text/css" href="{{asset('/css/pages/form-select2.css')}}"> --}}
 @endsection
 
 {{-- page content --}}
@@ -80,7 +80,7 @@
 </div>
 @endsection
 @section('vendor-script')
-<script src="{{asset('public/vendors/data-tables/js/jquery.dataTables.min.js')}}"></script>
-<script src="{{asset('public/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js')}}"></script>
-<script src="{{asset('public/vendors/select2/select2.full.min.js')}}"></script>
+<script src="{{asset('/vendors/data-tables/js/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js')}}"></script>
+<script src="{{asset('/vendors/select2/select2.full.min.js')}}"></script>
 @endsection

@@ -6,7 +6,7 @@
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/lock.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/lock.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -16,7 +16,7 @@
     <form class="login-form">
       <div class="row">
         <div class="input-field col s12 center-align mt-10">
-          <img class="z-depth-4 circle responsive-img" width="100" src="{{asset('public/images/user/4.jpg')}}" alt="">
+          <img class="z-depth-4 circle responsive-img" width="100" src="{{asset('/images/user/4.jpg')}}" alt="">
           <h5>John Doe</h5>
         </div>
       </div>

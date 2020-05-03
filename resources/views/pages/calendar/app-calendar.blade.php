@@ -6,15 +6,15 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/fullcalendar/css/fullcalendar.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/fullcalendar/daygrid/daygrid.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/fullcalendar/timegrid/timegrid.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/fullcalendar/css/fullcalendar.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/fullcalendar/daygrid/daygrid.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/fullcalendar/timegrid/timegrid.min.css')}}">
 @endsection
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/app-calendar.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/app-calendar.css')}}">
 <style>
   .modal.datepicker-modal.open {
     z-index: 5000;
@@ -128,11 +128,11 @@
 
 {{--vendor scripts  --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/fullcalendar/lib/moment.min.js')}}"></script>
-<script src="{{asset('public/vendors/fullcalendar/js/fullcalendar.min.js')}}"></script>
-<script src="{{asset('public/vendors/fullcalendar/daygrid/daygrid.min.js')}}"></script>
-<script src="{{asset('public/vendors/fullcalendar/timegrid/timegrid.min.js')}}"></script>
-<script src="{{asset('public/vendors/fullcalendar/interaction/interaction.min.js')}}"></script>
+<script src="{{asset('/vendors/fullcalendar/lib/moment.min.js')}}"></script>
+<script src="{{asset('/vendors/fullcalendar/js/fullcalendar.min.js')}}"></script>
+<script src="{{asset('/vendors/fullcalendar/daygrid/daygrid.min.js')}}"></script>
+<script src="{{asset('/vendors/fullcalendar/timegrid/timegrid.min.js')}}"></script>
+<script src="{{asset('/vendors/fullcalendar/interaction/interaction.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
@@ -145,5 +145,5 @@
              }
            });
 </script>
-<script src="{{asset('public/js/scripts/app-calendar.js')}}"></script>
+<script src="{{asset('/js/scripts/app-calendar.js')}}"></script>
 @endsection

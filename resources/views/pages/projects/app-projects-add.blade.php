@@ -6,14 +6,14 @@
 
 {{-- vendor style --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2-materialize.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/dropify/css/dropify.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/select2/select2.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/select2/select2-materialize.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/dropify/css/dropify.min.css')}}">
 @endsection
 
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/page-users.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/page-users.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -116,8 +116,8 @@
 @endsection
 
 @section('vendor-script')
-<script src="{{asset('public/vendors/select2/select2.full.min.js')}}"></script>
-<script src="{{asset('public/vendors/dropify/js/dropify.min.js')}}"></script>
+<script src="{{asset('/vendors/select2/select2.full.min.js')}}"></script>
+<script src="{{asset('/vendors/dropify/js/dropify.min.js')}}"></script>
 @endsection
 
 @section('page-script')
@@ -158,7 +158,7 @@
             $('.city option:eq(0)').text('Data is being loaded...');
             $.ajax({
                 type: 'POST',
-                url: SITEURL + '/ajax/getcity',
+                url: 'https://rmztech.net/marbia/marbia-crm//ajax/getcity',
                 data: {
                     "country_code": country
                 }, // Any data that is needed to pass to the controller
@@ -185,7 +185,7 @@
             $('.neigh option:eq(0)').text('Data is being loaded...');
             $.ajax({
                 type: 'POST',
-                url: SITEURL + '/ajax/getdistrict',
+                url: 'https://rmztech.net/marbia/marbia-crm//ajax/getdistrict',
                 data: {
                     "id": city_id
                 }, // Any data that is needed to pass to the controller
@@ -210,7 +210,7 @@
             $('.neigh option:eq(0)').text('Data is being loaded...');
             $.ajax({
                 type: 'POST',
-                url: SITEURL + '/ajax/getdistrict',
+                url: 'https://rmztech.net/marbia/marbia-crm//ajax/getdistrict',
                 data: {
                     "id": id
                 }, // Any data that is needed to pass to the controller

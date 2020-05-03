@@ -62,7 +62,7 @@ $(document).ready(function () {
 ];
 
 $.ajax({
-    url: SITEURL + '/app-calendar/populate',
+    url: 'https://rmztech.net/marbia/marbia-crm//app-calendar/populate',
     type: 'GET',
     success: function(resp) {
         console.log(resp);
@@ -160,7 +160,7 @@ $.ajax({
             allDay: allDay
         });
         $.ajax({
-            url: SITEURL + '/app-calendar/store',
+            url: 'https://rmztech.net/marbia/marbia-crm//app-calendar/store',
             data: 'title=' + title + '&description=' + description + '&start=' + start + '&end=' + end + '&color=' + color,
             type: "POST",
             success: function (response) {

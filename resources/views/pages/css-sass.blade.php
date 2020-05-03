@@ -117,7 +117,7 @@
             </a>
             <ul>
               <li>
-                <a href="{{asset('public/css-helpers')}}" class="btn-floating blue">
+                <a href="{{asset('/css-helpers')}}" class="btn-floating blue">
                   <i class="material-icons">help_outline</i>
                 </a>
               </li>

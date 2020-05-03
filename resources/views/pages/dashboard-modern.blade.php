@@ -6,15 +6,15 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/animate-css/animate.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/chartist-js/chartist.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/chartist-js/chartist-plugin-tooltip.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/animate-css/animate.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/chartist-js/chartist.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/chartist-js/chartist-plugin-tooltip.css')}}">
 @endsection
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/dashboard-modern.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/intro.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/dashboard-modern.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/intro.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -94,19 +94,19 @@
                <p class="medium-small pt-2">Today</p>
                <ul class="collection mb-0">
                   <li class="collection-item avatar">
-                     <img src="{{asset('public/images/avatar/avatar-7.png')}}" alt="" class="circle" />
+                     <img src="{{asset('/images/avatar/avatar-7.png')}}" alt="" class="circle" />
                      <p class="font-weight-600">John Doe</p>
                      <p class="medium-small">18, January 2019</p>
                      <a href="#!" class="secondary-content"><i class="material-icons">star_border</i></a>
                   </li>
                   <li class="collection-item avatar">
-                     <img src="{{asset('public/images/avatar/avatar-3.png')}}" alt="" class="circle" />
+                     <img src="{{asset('/images/avatar/avatar-3.png')}}" alt="" class="circle" />
                      <p class="font-weight-600">Adam Garza</p>
                      <p class="medium-small">20, January 2019</p>
                      <a href="#!" class="secondary-content"><i class="material-icons">star_border</i></a>
                   </li>
                   <li class="collection-item avatar">
-                     <img src="{{asset('public/images/avatar/avatar-5.png')}}" alt="" class="circle" />
+                     <img src="{{asset('/images/avatar/avatar-5.png')}}" alt="" class="circle" />
                      <p class="font-weight-600">Jennifer Rice</p>
                      <p class="medium-small">25, January 2019</p>
                      <a href="#!" class="secondary-content"><i class="material-icons">star_border</i></a>
@@ -218,14 +218,14 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/chartjs/chart.min.js')}}"></script>
-<script src="{{asset('public/vendors/chartist-js/chartist.min.js')}}"></script>
-<script src="{{asset('public/vendors/chartist-js/chartist-plugin-tooltip.js')}}"></script>
-<script src="{{asset('public/vendors/chartist-js/chartist-plugin-fill-donut.min.js')}}"></script>
+<script src="{{asset('/vendors/chartjs/chart.min.js')}}"></script>
+<script src="{{asset('/vendors/chartist-js/chartist.min.js')}}"></script>
+<script src="{{asset('/vendors/chartist-js/chartist-plugin-tooltip.js')}}"></script>
+<script src="{{asset('/vendors/chartist-js/chartist-plugin-fill-donut.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/dashboard-modern.js')}}"></script>
-<script src="{{asset('public/js/scripts/intro.js')}}"></script>
+<script src="{{asset('/js/scripts/dashboard-modern.js')}}"></script>
+<script src="{{asset('/js/scripts/intro.js')}}"></script>
 @endsection

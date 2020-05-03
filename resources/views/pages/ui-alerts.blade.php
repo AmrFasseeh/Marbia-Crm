@@ -269,7 +269,7 @@
               <div class="card-alert card cyan lighten-5">
                 <div class="card-content cyan-text">
                   <p class="single-alert">
-                    <img src="{{asset('public/images/avatar/avatar-2.png')}}" alt="avatar"
+                    <img src="{{asset('/images/avatar/avatar-2.png')}}" alt="avatar"
                       class="alert-circle responsive-img valign profile-image" />
                     <span>You have new task.</span>
                   </p>
@@ -281,7 +281,7 @@
               <div class="card-alert card purple">
                 <div class="card-content white-text">
                   <p class="single-alert">
-                    <img src="{{asset('public/images/avatar/avatar-1.png')}}" alt="avatar"
+                    <img src="{{asset('/images/avatar/avatar-1.png')}}" alt="avatar"
                       class="alert-circle responsive-img valign profile-image" />
                     <span>You have new task.</span>
                   </p>
@@ -292,7 +292,7 @@
               </div>
               <div class="card-alert card cyan">
                 <div class="card-content white-text">
-                  <img src="{{asset('public/images/avatar/avatar-3.png')}}" alt="avatar"
+                  <img src="{{asset('/images/avatar/avatar-3.png')}}" alt="avatar"
                     class="alert-circle responsive-img valign profile-image" />
                   <span class="card-title white-text darken-1">Some Message</span>
                   <p>Lorem ipsum Minim ad pariatur eiusmod ea ut nulla aliqua est quis id dolore minim voluptate.</p>
@@ -307,7 +307,7 @@
               </div>
               <div class="card-alert card green">
                 <div class="card-content white-text">
-                  <img src="{{asset('public/images/avatar/avatar-4.png')}}" alt="avatar"
+                  <img src="{{asset('/images/avatar/avatar-4.png')}}" alt="avatar"
                     class="alert-circle responsive-img valign profile-image" />
                   <span class="card-title white-text darken-1">
                     <i class="material-icons">notifications</i> Some Message</span>
@@ -334,5 +334,5 @@
 
 {{-- page script --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/ui-alerts.js')}}"></script>
+<script src="{{asset('/js/scripts/ui-alerts.js')}}"></script>
 @endsection

@@ -6,7 +6,7 @@
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/charts-sparkline.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/charts-sparkline.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -145,10 +145,10 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/sparkline/jquery.sparkline.min.js')}}"></script>
+<script src="{{asset('/vendors/sparkline/jquery.sparkline.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/charts-sparklines.js')}}"></script>
+<script src="{{asset('/js/scripts/charts-sparklines.js')}}"></script>
 @endsection

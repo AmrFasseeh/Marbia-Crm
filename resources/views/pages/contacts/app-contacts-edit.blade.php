@@ -6,13 +6,13 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2-materialize.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/select2/select2.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/select2/select2-materialize.css')}}">
 @endsection
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/page-users.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/page-users.css')}}">
 <style>
 .col.s12.input-field {
     height: 54px;
@@ -51,7 +51,7 @@
                     @enderror
                     <div class="media display-flex align-items-center mb-2">
                         <a class="mr-2" href="#">
-                            <img src="{{ $contact->image ? $contact->image->url():asset('public/images/avatar/default.png') }}"
+                            <img src="{{ $contact->image ? $contact->image->url():asset('/images/avatar/default.png') }}"
                                 alt="users avatar" class="z-depth-4 circle" height="64" width="64">
                             {{-- {{ $contact->image->url() }} --}}
                         </a>
@@ -252,13 +252,13 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/select2/select2.full.min.js')}}"></script>
-<script src="{{asset('public/vendors/jquery-validation/jquery.validate.min.js')}}"></script>
+<script src="{{asset('/vendors/select2/select2.full.min.js')}}"></script>
+<script src="{{asset('/vendors/jquery-validation/jquery.validate.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-{{-- <script src="{{asset('public/js/scripts/page-users.js')}}"></script> --}}
+{{-- <script src="{{asset('/js/scripts/page-users.js')}}"></script> --}}
 <script>
     $("#change_image").on("click", function () {
         $(".getfileInput input").click();
@@ -301,7 +301,7 @@ $(document).ready(function () {
             $('.city option:eq(0)').text('Data is being loaded...');
             $.ajax({
                 type: 'POST',
-                url: SITEURL + '/ajax/getcity',
+                url: 'https://rmztech.net/marbia/marbia-crm//ajax/getcity',
                 data: {
                     "country_code": country
                 }, // Any data that is needed to pass to the controller
@@ -335,7 +335,7 @@ $(document).ready(function () {
             $('.city option:eq(0)').text('Data is being loaded...');
             $.ajax({
                 type: 'POST',
-                url: SITEURL + '/ajax/getcity',
+                url: 'https://rmztech.net/marbia/marbia-crm//ajax/getcity',
                 data: {
                     "country_code": country_id
                 }, // Any data that is needed to pass to the controller
@@ -360,7 +360,7 @@ $(document).ready(function () {
             $('.neigh option:eq(0)').text('Data is being loaded...');
             $.ajax({
                 type: 'POST',
-                url: SITEURL + '/ajax/getdistrict',
+                url: 'https://rmztech.net/marbia/marbia-crm//ajax/getdistrict',
                 data: {
                     "id": city_id
                 }, // Any data that is needed to pass to the controller
@@ -387,7 +387,7 @@ $(document).ready(function () {
             $('.neigh option:eq(0)').text('Data is being loaded...');
             $.ajax({
                 type: 'POST',
-                url: SITEURL + '/ajax/getdistrict',
+                url: 'https://rmztech.net/marbia/marbia-crm//ajax/getdistrict',
                 data: {
                     "id": id
                 }, // Any data that is needed to pass to the controller

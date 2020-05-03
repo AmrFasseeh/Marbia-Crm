@@ -6,11 +6,11 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/quill/katex.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/quill/monokai-sublime.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/quill/quill.snow.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/quill/quill.bubble.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/quill/katex.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/quill/monokai-sublime.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/quill/quill.snow.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/quill/quill.bubble.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -242,12 +242,12 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/quill/katex.min.js')}}"></script>
-<script src="{{asset('public/vendors/quill/highlight.min.js')}}"></script>
-<script src="{{asset('public/vendors/quill/quill.min.js')}}"></script>
+<script src="{{asset('/vendors/quill/katex.min.js')}}"></script>
+<script src="{{asset('/vendors/quill/highlight.min.js')}}"></script>
+<script src="{{asset('/vendors/quill/quill.min.js')}}"></script>
 @endsection
 
 {{-- page script --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/form-editor.js')}}"></script>
+<script src="{{asset('/js/scripts/form-editor.js')}}"></script>
 @endsection

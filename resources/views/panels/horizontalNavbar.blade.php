@@ -53,7 +53,7 @@
           <a class="waves-effect waves-block waves-light profile-button" href="javascript:void(0);"
             data-target="profile-dropdown">
             <span class="avatar-status avatar-online">
-              <img src="{{asset('public/images/avatar/avatar-7.png')}}" alt="avatar">
+              <img src="{{asset('/images/avatar/avatar-7.png')}}" alt="avatar">
               <p>{{ Auth::user()->username }}</p>
               <i></i>
             </span>
@@ -232,7 +232,7 @@
   <li class="auto-suggestion"><a class="collection-item" href="#">
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
-          <div class="avatar"><img src="{{asset('public/images/icon/pdf-image.png')}}" width="24" height="30"
+          <div class="avatar"><img src="{{asset('/images/icon/pdf-image.png')}}" width="24" height="30"
               alt="sample image">
           </div>
           <div class="member-info display-flex flex-column"><span class="black-text">Two new item submitted</span><small
@@ -244,7 +244,7 @@
   <li class="auto-suggestion"><a class="collection-item" href="#">
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
-          <div class="avatar"><img src="{{asset('public/images/icon/doc-image.png')}}" width="24" height="30"
+          <div class="avatar"><img src="{{asset('/images/icon/doc-image.png')}}" width="24" height="30"
               alt="sample image">
           </div>
           <div class="member-info display-flex flex-column"><span class="black-text">52 Doc file Generator</span><small
@@ -256,7 +256,7 @@
   <li class="auto-suggestion"><a class="collection-item" href="#">
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
-          <div class="avatar"><img src="{{asset('public/images/icon/xls-image.png')}}" width="24" height="30"
+          <div class="avatar"><img src="{{asset('/images/icon/xls-image.png')}}" width="24" height="30"
               alt="sample image">
           </div>
           <div class="member-info display-flex flex-column"><span class="black-text">25 Xls File Uploaded</span><small
@@ -268,7 +268,7 @@
   <li class="auto-suggestion"><a class="collection-item" href="#">
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
-          <div class="avatar"><img src="{{asset('public/images/icon/jpg-image.png')}}" width="24" height="30"
+          <div class="avatar"><img src="{{asset('/images/icon/jpg-image.png')}}" width="24" height="30"
               alt="sample image">
           </div>
           <div class="member-info display-flex flex-column"><span class="black-text">Anna Strong</span><small
@@ -283,7 +283,7 @@
   <li class="auto-suggestion"><a class="collection-item" href="#">
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
-          <div class="avatar"><img class="circle" src="{{asset('public/images/avatar/avatar-7.png')}}" width="30"
+          <div class="avatar"><img class="circle" src="{{asset('/images/avatar/avatar-7.png')}}" width="30"
               alt="sample image"></div>
           <div class="member-info display-flex flex-column"><span class="black-text">John Doe</span><small
               class="grey-text">UI designer</small></div>
@@ -293,7 +293,7 @@
   <li class="auto-suggestion"><a class="collection-item" href="#">
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
-          <div class="avatar"><img class="circle" src="{{asset('public/images/avatar/avatar-8.png')}}" width="30"
+          <div class="avatar"><img class="circle" src="{{asset('/images/avatar/avatar-8.png')}}" width="30"
               alt="sample image"></div>
           <div class="member-info display-flex flex-column"><span class="black-text">Michal Clark</span><small
               class="grey-text">FontEnd Developer</small></div>
@@ -303,7 +303,7 @@
   <li class="auto-suggestion"><a class="collection-item" href="#">
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
-          <div class="avatar"><img class="circle" src="{{asset('public/images/avatar/avatar-10.png')}}" width="30"
+          <div class="avatar"><img class="circle" src="{{asset('/images/avatar/avatar-10.png')}}" width="30"
               alt="sample image"></div>
           <div class="member-info display-flex flex-column"><span class="black-text">Milena Gibson</span><small
               class="grey-text">Digital Marketing</small></div>
@@ -313,7 +313,7 @@
   <li class="auto-suggestion"><a class="collection-item" href="#">
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
-          <div class="avatar"><img class="circle" src="{{asset('public/images/avatar/avatar-12.png')}}" width="30"
+          <div class="avatar"><img class="circle" src="{{asset('/images/avatar/avatar-12.png')}}" width="30"
               alt="sample image"></div>
           <div class="member-info display-flex flex-column"><span class="black-text">Anna Strong</span><small
               class="grey-text">Web Designer</small></div>

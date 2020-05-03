@@ -6,19 +6,19 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/data-tables/css/jquery.dataTables.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2-materialize.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/data-tables/css/jquery.dataTables.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/select2/select2.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/select2/select2-materialize.css')}}">
 <link rel="stylesheet" type="text/css"
-  href="{{asset('public/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css')}}">
+  href="{{asset('/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css')}}">
 @endsection
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/app-sidebar.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/app-contacts.css')}}">
-{{-- <link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/form-select2.css')}}"> --}}
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/app-sidebar.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/app-contacts.css')}}">
+{{-- <link rel="stylesheet" type="text/css" href="{{asset('/css/pages/form-select2.css')}}"> --}}
 <style>
   .select2-container--default .select2-selection--single {
     background-color: transparent !important;
@@ -148,7 +148,7 @@
                   <span></span>
                 </label>
               </td>
-              <td><span class="avatar-contact avatar-online"><img src="{{asset('public/images/avatar/avatar-1.png')}}"
+              <td><span class="avatar-contact avatar-online"><img src="{{asset('/images/avatar/avatar-1.png')}}"
                     alt="avatar"></span></td>
               <td><a href="{{ route('view.contact', $contact->id) }}">{{ $contact->fullname }}</a></td>
               <td>{{ $contact->email }}</td>
@@ -307,15 +307,15 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/data-tables/js/jquery.dataTables.min.js')}}"></script>
-<script src="{{asset('public/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js')}}"></script>
-<script src="{{asset('public/vendors/select2/select2.full.min.js')}}"></script>
+<script src="{{asset('/vendors/data-tables/js/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js')}}"></script>
+<script src="{{asset('/vendors/select2/select2.full.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/app-contacts.js')}}"></script>
-{{-- <script src="{{asset('public/js/scripts/form-select2.js')}}"></script> --}}
+<script src="{{asset('/js/scripts/app-contacts.js')}}"></script>
+{{-- <script src="{{asset('/js/scripts/form-select2.js')}}"></script> --}}
 <script>
   $(document).ready(function(){
 
@@ -344,7 +344,7 @@
       $('.city option:eq(0)').text('Data is being loaded...');
       $.ajax({
         type: 'POST',
-        url: SITEURL + '/ajax/getcity',
+        url: 'https://rmztech.net/marbia/marbia-crm//ajax/getcity',
         data: {"country_code": country}, // Any data that is needed to pass to the controller
         dataType: 'json',
         success: function(returnedData) {
@@ -367,7 +367,7 @@ function getDistricts(city_id) {
       $('.neigh option:eq(0)').text('Data is being loaded...');
       $.ajax({
         type: 'POST',
-        url: SITEURL + '/ajax/getdistrict',
+        url: 'https://rmztech.net/marbia/marbia-crm//ajax/getdistrict',
         data: {"id": city_id}, // Any data that is needed to pass to the controller
         dataType: 'json',
         success: function(returnedData) {
@@ -388,7 +388,7 @@ $('.city').on('change',function(){
       $('.neigh option:eq(0)').text('Data is being loaded...');
       $.ajax({
         type: 'POST',
-        url: SITEURL + '/ajax/getdistrict',
+        url: 'https://rmztech.net/marbia/marbia-crm//ajax/getdistrict',
         data: {"id": id}, // Any data that is needed to pass to the controller
         dataType: 'json',
         success: function(returnedData) {

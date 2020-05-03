@@ -6,16 +6,16 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/quill/quill.snow.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2-materialize.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/quill/quill.snow.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/select2/select2.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/select2/select2-materialize.css')}}">
 @endsection
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/app-sidebar.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/app-todo.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/app-sidebar.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/app-todo.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -30,7 +30,7 @@
           <h5 class="m-0 sidebar-title"><i class="material-icons app-header-icon text-top">check_box</i> To-Do</h5>
           <div class="row valign-wrapper mt-10 pt-2 animate fadeLeft">
             <div class="col s3 media-image">
-              <img src="{{asset('public/images/user/2.jpg')}}" alt="" class="circle z-depth-2 responsive-img">
+              <img src="{{asset('/images/user/2.jpg')}}" alt="" class="circle z-depth-2 responsive-img">
               <!-- notice the "circle" class -->
             </div>
             <div class="col s9">
@@ -462,7 +462,7 @@
           <div class="display-flex">
             <div class="assignto display-flex">
               <div class="avatar">
-                <img src="{{asset('public/images/avatar/avatar-10.png')}}" class="responsive-img circle z-depth-2" width="50"
+                <img src="{{asset('/images/avatar/avatar-10.png')}}" class="responsive-img circle z-depth-2" width="50"
                   alt="">
               </div>
               <select>
@@ -516,7 +516,7 @@
         <div class="divider"></div>
         <div class="display-flex align-items-center mt-5">
           <div class="avatar mr-5">
-            <img src="{{asset('public/images/avatar/avatar-2.png')}}" width="40" class="circle responsive-img" alt="">
+            <img src="{{asset('/images/avatar/avatar-2.png')}}" width="40" class="circle responsive-img" alt="">
           </div>
           <span class="mr-5">Charlie created this task</span>
           <small>13 days ago</small>
@@ -552,12 +552,12 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/sortable/jquery-sortable-min.js')}}"></script>
-<script src="{{asset('public/vendors/quill/quill.min.js')}}"></script>
-<script src="{{asset('public/vendors/select2/select2.full.min.js')}}"></script>
+<script src="{{asset('/vendors/sortable/jquery-sortable-min.js')}}"></script>
+<script src="{{asset('/vendors/quill/quill.min.js')}}"></script>
+<script src="{{asset('/vendors/select2/select2.full.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/app-todo.js')}}"></script>
+<script src="{{asset('/js/scripts/app-todo.js')}}"></script>
 @endsection

@@ -6,7 +6,7 @@
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/page-users.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/page-users.css')}}">
 @endsection
 
 {{-- page content  --}}
@@ -19,7 +19,7 @@
             <div class="col s12 m7">
                 <div class="display-flex media">
                     {{-- <a href="#" class="avatar">
-                        <img src="{{ isset($deal->image) ? $deal->image->url():asset('public/images/avatar/default.png') }}"
+                        <img src="{{ isset($deal->image) ? $deal->image->url():asset('/images/avatar/default.png') }}"
                     alt="users view avatar" class="z-depth-4 circle" height="64" width="64">
                     </a> --}}
                     <div class="media-body">
@@ -225,7 +225,7 @@
                     <div class="card blue lighten-5">
                         <div class="card-content">
                             <span class="card-title"><img
-                                    src="{{ isset($deal->image) ? $deal->image->url():asset('public/images/avatar/default.png') }}"
+                                    src="{{ isset($deal->image) ? $deal->image->url():asset('/images/avatar/default.png') }}"
                                     alt="users view avatar" class="z-depth-4 circle" height="32" width="32"><span
                                     class="red-text"> {{ $comment->user->fullname() }}</span></span>
                             <hr>
@@ -245,11 +245,11 @@
 @endsection
 
 @section('vendor-script')
-<script src="{{asset('public/vendors/sweetalert/sweetalert.min.js')}}"></script>
+<script src="{{asset('/vendors/sweetalert/sweetalert.min.js')}}"></script>
 @endsection
 {{-- page script --}}
 @section('page-script')
-{{-- <script src="{{asset('public/js/custom/deals-view.js')}}"></script> --}}
+{{-- <script src="{{asset('/js/custom/deals-view.js')}}"></script> --}}
 <script>
     function deletePrompt(){
         swal({

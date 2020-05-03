@@ -6,12 +6,12 @@
 
 {{-- vendor style --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/shepherd-js/shepherd-theme-default.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/shepherd-js/shepherd-theme-default.min.css')}}">
 @endsection
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/extra-components-tour.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/extra-components-tour.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -36,10 +36,10 @@
 @endsection
 {{-- vendor script --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/shepherd-js/shepherd.min.js')}}"></script>
+<script src="{{asset('/vendors/shepherd-js/shepherd.min.js')}}"></script>
 @endsection
 
 {{-- page script --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/extra-components-tour.js')}}"></script>
+<script src="{{asset('/js/scripts/extra-components-tour.js')}}"></script>
 @endsection
