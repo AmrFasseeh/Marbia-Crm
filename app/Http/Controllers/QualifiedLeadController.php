@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Customer;
 use Illuminate\Http\Request;
 
-class CustomerController extends Controller
+class QualifiedLeadController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,14 +15,14 @@ class CustomerController extends Controller
     public function index()
     {
         $breadcrumbs = [
-            ['link' => "modern", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Customers"], ['name' => "List Customers"],
+            ['link' => "modern", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Qualified Leads"], ['name' => "List Qualified Leads"],
         ];
         //Pageheader set true for breadcrumbs
         $pageConfigs = ['pageHeader' => true ];
 
         $customers = Customer::where('type', 2)->get();
         // dd($customers);
-        return view('pages.customers.app-customers', ['breadcrumbs' => $breadcrumbs, 'pageConfigs' => $pageConfigs, 'customers' => $customers]);
+        return view('pages.qualifiedLeads.app-qualified-lead', ['breadcrumbs' => $breadcrumbs, 'pageConfigs' => $pageConfigs, 'customers' => $customers]);
     }
 
     /**

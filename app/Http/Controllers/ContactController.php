@@ -6,9 +6,11 @@ use App\Country;
 use App\Customer;
 use App\District;
 use App\governorate;
+use App\Notifications\NewContactCreated;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Notification;
 
 class ContactController extends Controller
 {
@@ -25,7 +27,7 @@ class ContactController extends Controller
         if (Auth::user()->hasGroup('admin')) {
             $contacts = Customer::withTrashed()->get();
         } else {
-            $contacts = Customer::all();
+            $contacts = Customer::where('user_id', Auth::user()->id)->get();
         }
 
         return view('pages.contacts.app-contacts',
@@ -121,6 +123,12 @@ class ContactController extends Controller
         }
         $contact->save();
 
+        $users = User::all();
+        foreach($users as $user){
+            if($user->hasGroup('admin')){
+                $user->notify(new NewContactCreated($contact));
+            }
+        }
         $request->session()->flash('status', 'Contact Created!');
         return redirect()->route('list.contact');
     }
@@ -140,8 +148,9 @@ class ContactController extends Controller
         $pageConfigs = ['pageHeader' => true];
         $contact = Customer::findorfail($id);
         $country = Country::where('country_code', $contact->country)->first()->country_name;
-        $city = governorate::find($contact->city)->first()->name_en;
-        $district = District::find($contact->neighbourhood)->first()->name;
+        $city = governorate::find($contact->city)->name_en;
+        $district = District::find($contact->neighbourhood)->name;
+        // dd($contact->neighbourhood ,$contact->city ,$city, $district);
         // dd($contact);
         return view('pages.contacts.app-contacts-view',
             [

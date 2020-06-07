@@ -153,7 +153,8 @@
         title:'{{ $stage->title }}',
         headerBg:'{{ $stage->headerBg }}',
         item: [
-          @forelse($stage->deals as $deal)
+            @if(Auth::user()->hasGroup('admin'))
+            @forelse($stage->deals as $deal)
           {
             id: "{{ $stage->id }}_{{ $deal->id }}",
             title: "{{ $deal->title }} <br> <span class='red-text darken-1' style='font-weight:bold'>{{ $deal->customer->fullname }}</span>",
@@ -165,6 +166,20 @@
           @empty
 
           @endforelse
+          @else
+          @forelse($stage->deals->where('user_id', Auth::user()->id) as $deal)
+          {
+            id: "{{ $stage->id }}_{{ $deal->id }}",
+            title: "{{ $deal->title }} <br> <span class='red-text darken-1' style='font-weight:bold'>{{ $deal->customer->fullname }}</span>",
+            username: "{{ $deal->user->fullname() }}",
+            border: "blue",
+            dueDate: "{{ Carbon\Carbon::make($deal->due_date)->toFormattedDateString() }}",
+            comment: {{ $deal->comments->count() }}
+          },
+          @empty
+
+          @endforelse
+          @endif
         ]
         },
         @endforeach
@@ -228,7 +243,7 @@
       console.log(stageId);
       $.ajax({
         type: 'POST',
-        url: 'https://rmztech.net/marbia/marbia-crm//ajax/changeStage',
+        url: 'http://marbia.crm/ajax/changeDealStage',
         data: {"id": id, "stage_id": stageId}, // Any data that is needed to pass to the controller
         dataType: 'json',
         success: function(returnedData) {
@@ -439,7 +454,7 @@
         addEventListener("click", function () {
           $.ajax({
           type: 'POST',
-          url: 'https://rmztech.net/marbia/marbia-crm//ajax/getdistrict',
+          url: 'http://marbia.crm/ajax/getdistrict',
           data: {"id": city_id}, // Any data that is needed to pass to the controller
           dataType: 'json',
           success: function(returnedData) {

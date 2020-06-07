@@ -20,6 +20,10 @@ class Deal extends Model
         'property_id',
         'customer_id',
         'user_id',
+        'payment',
+        'discount',
+        'payment_duration',
+        'down_payment'
     ];
     public function dealstages()
     {

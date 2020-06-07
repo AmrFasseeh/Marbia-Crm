@@ -25,8 +25,10 @@
 <div class="row">
     <div class="col l4 m12 right-content border-radius-6">
         <div class="card card-default scrollspy">
+            <div class="card-title pt-3 pl-5 pb-1 indigo">
+                <h5 class="mt-0 white-text">{{ $project->title }}</h5>
+            </div>
             <div class="card-content">
-                <h5 class="mt-0">{{ $project->title }}</h5>
                 <p>Owned by {{ $project->owner }}</p>
                 <img class="responsive-img mt-4 p-3 border-radius-6"
                     src="{{ $project->image ? $project->image->url() : asset('/images/gallery/34.png')}}" alt="">
@@ -34,7 +36,7 @@
                 <hr>
                 <p class="mt-2"><b class="blue-grey-text text-darken-4">Created:</b>
                     {{ Carbon\Carbon::make($project->created_at)->toDateString() }}</p>
-                <p class="mt-2"><b class="blue-grey-text text-darken-4">Stages:</b> 5</p>
+                <p class="mt-2"><b class="blue-grey-text text-darken-4">Stages:</b> {{ $project->stages->count() }}</p>
                 <p class="mt-2"><b class="blue-grey-text text-darken-4">Lastest Update:</b>
                     {{ Carbon\Carbon::make($project->updated_at)->toDateString() }}</p>
                 <p class="mt-2"><b class="blue-grey-text text-darken-4">Location:</b> {{ $project->location }}</p>
@@ -72,8 +74,14 @@
                     {{ $stage->num_of_buildings }}</p>
                 <p class="mt-2"><b class="blue-grey-text text-darken-4">Sold Buildings:</b> {{ $stage->sold_buildings }}
                 </p>
-                <a href="{{ route('view.projectStage', [$project->id, $stage->id]) }}" class="btn blue mt-2">View
-                    Stage</a>
+                <a href="{{ route('view.projectStage', [$project->id, $stage->id]) }}"
+                    class="btn-small blue mt-2">View</a>
+                <a class="btn-small btn-light-blue mt-2 ml-2" href="{{ route('edit.projectStage', $stage->id) }}"><i
+                        class="material-icons">edit</i></a>
+                <a class="btn-small btn-light-red mt-2 ml-2" onclick="deleteStage({{ $stage->id }})"><i
+                        class="material-icons">delete</i></a>
+                <form id="delete-stage-{{ $stage->id }}" action="{{ route('delete.projectStage', $stage->id) }}"
+                    method="post">@csrf</form>
             </div>
         </div>
     </div>
@@ -82,4 +90,37 @@
         <p>No stages for this project yet!</p>
     </div>
     @endforelse
+    @endsection
+
+    @section('vendor-script')
+    <script src="{{asset('/vendors/sweetalert/sweetalert.min.js')}}"></script>
+    @endsection
+
+    @section('page-script')
+    {{-- <script src="{{asset('/js/scripts/page-users.js')}}"></script> --}}
+    <script>
+        function deleteStage(id){
+        swal({
+			title: "Are you sure you want to delete this stage?",
+			icon: 'warning',
+			dangerMode: true,
+			buttons: {
+				cancel: 'No, Please!',
+				delete: 'Yes, Delete It'
+			}
+		}).then(function (willDelete) {
+			if (willDelete) {
+                $('#delete-stage-'+id).submit()
+				swal("This stage was deleted!", {
+					icon: "success",
+				});
+			} else {
+				swal("This stage is safe", {
+					title: 'Cancelled',
+					icon: "error",
+				});
+			}
+		});
+    }
+    </script>
     @endsection

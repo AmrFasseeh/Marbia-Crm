@@ -27,4 +27,13 @@ class BuildingGroup extends Model
     {
         return $this->morphOne('App\Image', 'imageable');
     }
+    public static function boot() {
+        parent::boot();
+
+        static::deleting(function($stage) { // before delete() method call this
+             $stage->buildings()->delete();
+             $stage->image()->delete();
+             // do the rest of the cleanup...
+        });
+    }
 }

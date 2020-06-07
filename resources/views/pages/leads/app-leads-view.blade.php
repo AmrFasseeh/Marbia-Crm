@@ -7,6 +7,49 @@
 {{-- page style --}}
 @section('page-style')
 <link rel="stylesheet" type="text/css" href="{{asset('/css/pages/page-users.css')}}">
+<style>
+    .rate {
+        float: left;
+        height: 46px;
+        padding: 0 10px;
+    }
+
+    .rate:not(:checked)>input {
+        position: absolute;
+        top: -9999px;
+    }
+
+    .rate:not(:checked)>label {
+        float: right;
+        width: 1em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 30px;
+        color: #ccc;
+    }
+
+    .rate:not(:checked)>label:before {
+        content: '★ ';
+    }
+
+    .rate>input:checked~label {
+        color: #ffc700;
+    }
+
+    .rate:not(:checked)>label:hover,
+    .rate:not(:checked)>label:hover~label {
+        color: #deb217;
+    }
+
+    .rate>input:checked+label:hover,
+    .rate>input:checked+label:hover~label,
+    .rate>input:checked~label:hover,
+    .rate>input:checked~label:hover~label,
+    .rate>label:hover~input:checked~label {
+        color: #c59b08;
+    }
+</style>
 @endsection
 
 {{-- page content  --}}
@@ -34,10 +77,22 @@
                 </div>
             </div>
             <div class="col s12 m5 quick-action-btns display-flex justify-content-end align-items-center pt-2">
+                @if($lead->lead_stage_id != 7)
+                <a class="btn-small green" href="{{ route('won.lead', $lead->id) }}">won</a>
+                @else
+                <a class="btn-small green" href="#">Won&#10004;</a>
+                @endif
+
+                @if ($lead->lead_stage_id != 6)
+                <a class="btn-small red" href="{{ route('lost.lead', $lead->id) }}">lost</a>
+                @else
+                <a class="btn-small red" href="#">Lost&#10004;</a>
+                @endif
+
                 <form id="delete_lead" action="{{ route('delete.lead', $lead->id) }}" method="post">
                     @csrf
-                <a class="btn-small btn-light-red" onclick="$('#delete_lead').submit()"><i
-                        class="material-icons">delete</i></a></form>
+                    <a class="btn-small btn-light-red" onclick="deleteLead()"><i
+                            class="material-icons">delete</i></a></form>
                 <a href="{{ route('edit.lead', $lead->id) }}" class="btn-small indigo">Edit</a>
             </div>
         </div>
@@ -65,9 +120,20 @@
                                     {{ Carbon\Carbon::make($lead->lead_date)->toFormattedDateString() }}</td>
                             </tr>
                             <tr>
-                                <td>Value:</td>
+                                <td>Lead Quality:</td>
                                 <td class="users-view-role">
-                                    {{ $lead->lead_value }}
+                                    <div id="rate" class="rate">
+                                        <input type="radio" id="star5" name="lead_value" value="5" {{ $lead->lead_value >= 5 ? 'checked' : '' }} disabled/>
+                                        <label for="star5" title="5">5 stars</label>
+                                        <input type="radio" id="star4" name="lead_value" value="4" disabled {{ $lead->lead_value == 4 ? 'checked' : '' }}/>
+                                        <label for="star4" title="4">4 stars</label>
+                                        <input type="radio" id="star3" name="lead_value" value="3" disabled {{ $lead->lead_value == 3 ? 'checked' : '' }}/>
+                                        <label for="star3" title="3">3 stars</label>
+                                        <input type="radio" id="star2" name="lead_value" value="2" disabled {{ $lead->lead_value == 2 ? 'checked' : '' }}/>
+                                        <label for="star2" title="2">2 stars</label>
+                                        <input type="radio" id="star1" name="lead_value" value="1" disabled {{ $lead->lead_value == 1 ? 'checked' : '' }}/>
+                                        <label for="star1" title="1">1 star</label>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
@@ -240,7 +306,14 @@
                             <span class="card-title"><img
                                     src="{{ isset($lead->image) ? $lead->image->url():asset('/images/avatar/default.png') }}"
                                     alt="users view avatar" class="z-depth-4 circle" height="32" width="32"><span
-                                    class="red-text"> {{ $comment->user->fullname() }}</span></span>
+                                    class="red-text"> {{ $comment->user->fullname() }}</span>
+                                <span class="ml-2"><button class="btn-floating red"
+                                        onclick="deleteCommentPrompt({{ $comment->id }})"><i
+                                            class="material-icons">delete</i></button>
+                                    <form id="delete-comment-{{ $comment->id }}"
+                                        action="{{ route('delete.comment', $comment->id) }}" method="POST" hidden>
+                                        @csrf</form>
+                                </span></span>
                             <hr>
                             <p style="text-indent: 20px">{{ $comment->message }}</p>
                             <br>
@@ -257,7 +330,60 @@
 <!-- users view ends -->
 @endsection
 
-{{-- page script --}}
+
+@section('vendor-script')
+<script src="{{asset('/vendors/sweetalert/sweetalert.min.js')}}"></script>
+@endsection
+
 @section('page-script')
 {{-- <script src="{{asset('/js/scripts/page-users.js')}}"></script> --}}
+<script>
+    function deleteLead(){
+        swal({
+			title: "Are you sure you want to delete this lead?",
+			icon: 'warning',
+			dangerMode: true,
+			buttons: {
+				cancel: 'No, Please!',
+				delete: 'Yes, Delete It'
+			}
+		}).then(function (willDelete) {
+			if (willDelete) {
+                $('#delete_lead').submit()
+				swal("This lead was deleted!", {
+					icon: "success",
+				});
+			} else {
+				swal("This lead is safe", {
+					title: 'Cancelled',
+					icon: "error",
+				});
+			}
+		});
+    }
+    
+    function deleteCommentPrompt(id){
+        swal({
+			title: "Are you sure you want to delete this comment?",
+			icon: 'warning',
+			dangerMode: true,
+			buttons: {
+				cancel: 'No, Please!',
+				delete: 'Yes, Delete It'
+			}
+		}).then(function (willDelete) {
+			if (willDelete) {
+                $('#delete-comment-'+id).submit();
+				swal("Your comment was deleted!", {
+					icon: "success",
+				});
+			} else {
+				swal("Your comment is safe", {
+					title: 'Cancelled',
+					icon: "error",
+				});
+			}
+		});
+    }
+</script>
 @endsection

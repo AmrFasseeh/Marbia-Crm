@@ -45,7 +45,8 @@
           <a class="waves-effect waves-block waves-light notification-button" href="javascript:void(0);"
             data-target="notifications-dropdown">
             <i class="material-icons">notifications_none
-              <small class="notification-badge orange accent-3">5</small>
+              <small
+                class="notification-badge orange accent-3">{{ auth()->user()->unreadNotifications->count() }}</small>
             </i>
           </a>
         </li>
@@ -95,44 +96,18 @@
       <!-- notifications-dropdown-->
       <ul class="dropdown-content" id="notifications-dropdown">
         <li>
-          <h6>NOTIFICATIONS<span class="new badge">5</span></h6>
+          <h6>NOTIFICATIONS<span class="new badge">{{ auth()->user()->unreadNotifications->count() }}</span></h6>
         </li>
         <li class="divider"></li>
-        <li>
-          <a class="black-text" href="#!">
-            <span class="material-icons icon-bg-circle cyan small">add_shopping_cart</span>
-            A new order has been placed!
-          </a>
-          <time class="media-meta grey-text darken-2" datetime="2015-06-12T20:50:48+08:00">2 hours ago</time>
-        </li>
+        @foreach(auth()->user()->unreadNotifications as $notification)
         <li>
           <a class="black-text" href="#!">
             <span class="material-icons icon-bg-circle red small">stars</span>
-            Completed the task
+            {{ $notification->data['data'] }}
           </a>
-          <time class="media-meta grey-text darken-2" datetime="2015-06-12T20:50:48+08:00">3 days ago</time>
+          <time class="media-meta grey-text darken-2" datetime="2015-06-12T20:50:48+08:00">{{ $notification->created_at }}</time>
         </li>
-        <li>
-          <a class="black-text" href="#!">
-            <span class="material-icons icon-bg-circle teal small">settings</span>
-            Settings updated
-          </a>
-          <time class="media-meta grey-text darken-2" datetime="2015-06-12T20:50:48+08:00">4 days ago</time>
-        </li>
-        <li>
-          <a class="black-text" href="#!">
-            <span class="material-icons icon-bg-circle deep-orange small">today</span>
-            Director meeting started
-          </a>
-          <time class="media-meta grey-text darken-2" datetime="2015-06-12T20:50:48+08:00">6 days ago</time>
-        </li>
-        <li>
-          <a class="black-text" href="#!">
-            <span class="material-icons icon-bg-circle amber small">trending_up</span>
-            Generate monthly report
-          </a>
-          <time class="media-meta grey-text darken-2" datetime="2015-06-12T20:50:48+08:00">1 week ago</time>
-        </li>
+        @endforeach
       </ul>
       <!-- profile-dropdown-->
       <ul class="dropdown-content" id="profile-dropdown">

@@ -9,7 +9,15 @@
   href="{{asset('/css/themes/'.$configData['mainLayoutType'].'-template/materialize.css')}}">
 <link rel="stylesheet" type="text/css"
   href="{{asset('/css/themes/'.$configData['mainLayoutType'].'-template/style.css')}}">
-
+<style>
+  .small-text {
+    font-size: 0.9rem !important;
+  }
+  #slide-out-right {
+    overflow: auto !important;
+    overflow-x: hidden !important;
+  }
+</style>
 @if($configData['mainLayoutType'] === 'horizontal-menu')
 {{-- horizontal style file only for horizontal layout --}}
 <link rel="stylesheet" type="text/css" href="{{asset('/css/layouts/style-horizontal.css')}}">

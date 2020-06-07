@@ -22,7 +22,7 @@ class PropertyController extends Controller
             ['link' => "modern", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => $building->buildingGroup->title], ['name' => $building->building_name . ' view'],
         ];
         //Pageheader set true for breadcrumbs
-        $pageConfigs = ['pageHeader' => true];
+        $pageConfigs = ['pageHeader' => true, 'isMenuCollapsed' => true];
 
         return view('pages.properties.app-properties',
             [
@@ -106,11 +106,15 @@ class PropertyController extends Controller
             'payment_category' => 'string',
             'description' => 'string',
         ]);
-        if (($validatedProperty['floor_no_to'] - $validatedProperty['floor_no_from']+1 == $validatedProperty['num_of_properties'])
-            && ($validatedProperty['apartment_no_to'] - $validatedProperty['appartment_no_from']+1 == $validatedProperty['num_of_properties'])) {
+        if (($validatedProperty['floor_no_to'] - $validatedProperty['floor_no_from'] + 1 == $validatedProperty['num_of_properties'])
+            && (($validatedProperty['apartment_no_to'] - $validatedProperty['appartment_no_from']) / 100 + 1 == $validatedProperty['num_of_properties'])) {
+            $k = 1;
             for ($i = 0; $i < $validatedProperty['num_of_properties']; $i++) {
 
                 $newProperty = new Property();
+                if ($k == 1) {
+                    $apt_no[$k] = $validatedProperty['appartment_no_from'];
+                }
                 $newProperty->name = $validatedProperty['name'];
                 $newProperty->property_type = $validatedProperty['property_type'];
                 $newProperty->bedrooms = $validatedProperty['bedrooms'];
@@ -120,13 +124,15 @@ class PropertyController extends Controller
                 $newProperty->value = $validatedProperty['value'];
                 // $newProperty->payment_category = $validatedProperty['payment_category']; // not needed in property
                 $newProperty->floor_no = $validatedProperty['floor_no_from'];
-                $newProperty->apartment_no = $validatedProperty['appartment_no_from'];
+                $newProperty->apartment_no = $apt_no[$k];
                 $newProperty->building_id = $id;
-
+                $k++;
                 if (($validatedProperty['floor_no_from'] < $validatedProperty['floor_no_to'])
                     && ($validatedProperty['appartment_no_from'] < $validatedProperty['apartment_no_to'])) {
                     $validatedProperty['floor_no_from']++;
-                    $validatedProperty['appartment_no_from']++;
+
+                    $apt_no[$k] = $apt_no[$k - 1] + 100;
+                    // dd($apt_no[$k], $apt_no[$k - 1], $newProperty->apartment_no);
                 }
                 $newProperty->save();
 
@@ -150,8 +156,29 @@ class PropertyController extends Controller
             return redirect()->back()->with('warning', 'Floor numbers or Appartment numbers do not match Number of properties stated!');
         }
 
-        $request->session()->flash('status', 'Building created!');
+        $request->session()->flash('status', 'Properties created!');
         return redirect()->route('view.building', $id);
+    }
+
+    public function hold(Request $request, $id)
+    {
+        // dd($request);
+        $property = Property::findorfail($id);
+        $property->hold = 1;
+        $property->hold_payment = $request->hold_payment;
+        $property->save();
+
+        return redirect()->back()->with('status', 'Property ' . $property->name . ' floor #: ' . $property->floor_no . ' is on hold!');
+    }
+
+    public function release($id)
+    {
+        $property = Property::findorfail($id);
+        $property->hold = 0;
+        $property->hold_payment = 0;
+        $property->save();
+
+        return redirect()->back()->with('status', 'Property ' . $property->name . ' floor #: ' . $property->floor_no . ' is released!');
     }
 
     /**
@@ -196,6 +223,11 @@ class PropertyController extends Controller
      */
     public function destroy(Property $property)
     {
-        //
+        if ($property->status == 1) {
+            return redirect()->back()->with('warning', 'Can\'t delete this property, it is already sold!');
+        } else {
+            $property->delete();
+            return redirect()->back()->with('status', 'Property deleted!');
+        }
     }
 }

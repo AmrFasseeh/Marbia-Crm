@@ -2,7 +2,7 @@
 
     return [
         'forGroups'                           => 'This user does not have the necessary groups to access this route.',
-        'forPermissions'                      => 'This user does not have the necessary permissions to access this route',
+        'forPermissions'                      => 'You don\'t have permission to access this zone.',
         'notLoggedIn'                         => 'You are not logged in.',
         'forGroupsOrPermissions'              => 'You do not have any of the permissions required to access this route',
         'permission_already_exists'           => 'One permission with this slug already exists!',

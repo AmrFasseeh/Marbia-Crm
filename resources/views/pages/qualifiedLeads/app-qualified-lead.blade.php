@@ -2,7 +2,7 @@
 @extends('layouts.contentLayoutMaster')
 
 {{-- page title --}}
-@section('title','Customers')
+@section('title','Qualified Leads')
 
 {{-- vendor styles --}}
 @section('vendor-style')

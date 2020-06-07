@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="{{asset('/css/pages/cards-basic.css')}}">
 <style>
 .card .card-image img {
-    min-height: 269.15px;
+    height: 269.15px;
 }
 </style>
 @endsection
@@ -50,7 +50,10 @@
                 <p>{{ App\Country::where('country_code', $project->country)->first()->country_name }}
                 </p>
                 @endif
-                <a href="#" class="btn waves-effect waves-light red lightrn-1">Delete Project</a>
+                <a href="{{ route('edit.project', $project->id) }}" class="btn waves-effect waves-light blue lightrn-1 mb-4">Edit Project</a>
+                <a onclick="deletePrompt({{ $project->id }})" class="btn waves-effect waves-light red lightrn-1">Delete Project</a>
+                <form id="delete_project_{{ $project->id }}" action="{{ route('delete.project', $project->id) }}" method="post" hidden>
+                @csrf</form>
             </div>
         </div>
     </div>
@@ -60,4 +63,35 @@
     </div>
     @endforelse
 </div>
+@endsection
+@section('vendor-script')
+<script src="{{asset('/vendors/sweetalert/sweetalert.min.js')}}"></script>
+@endsection
+@section('page-script')
+<script>
+    function deletePrompt(id){
+        swal({
+			title: "Are you sure you want to delete this Project?",
+            text: "All stages, buildings and properites that are related to this project will be deleted!",
+			icon: 'warning',
+			dangerMode: true,
+			buttons: {
+				cancel: 'No, Please!',
+				delete: 'Yes, Delete It'
+			}
+		}).then(function (willDelete) {
+			if (willDelete) {
+                $('#delete_project_'+id).submit()
+				swal("This project was deleted!", {
+					icon: "success",
+				});
+			} else {
+				swal("This project is safe", {
+					title: 'Cancelled',
+					icon: "error",
+				});
+			}
+		});
+    }
+</script>
 @endsection

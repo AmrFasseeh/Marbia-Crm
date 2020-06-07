@@ -1,6 +1,6 @@
 $(function () {
     $('#value').formatter({
-        'pattern': '{{999}},{{999}},{{999}}',
+        'pattern': '{{999}}{{999}}{{999}}',
         'persistent': true
     });
 
@@ -24,6 +24,18 @@ $(function () {
     $(".payment_method").select2({
         dropdownAutoWidth: true,
         width: '100%'
+    });
+
+    $('input[name="payment"]').click(function () {
+        // Show by current checkbox
+        var value = $(this).val();
+        if (value == 'cash') {
+            $('#cash').show();
+            $('#inst').hide();
+        } else {
+            $('#inst').show();
+            $('#cash').hide();
+        }
     });
 
 });

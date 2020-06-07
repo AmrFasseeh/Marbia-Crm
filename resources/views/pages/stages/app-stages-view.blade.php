@@ -25,8 +25,10 @@
 <div class="row">
     <div class="col l4 m12 right-content border-radius-6">
         <div class="card card-default scrollspy">
+            <div class="card-title pt-3 pl-5 pb-1 indigo">
+                <h5 class="mt-0 white-text">{{ $stage->title }}</h5>
+            </div>
             <div class="card-content">
-                <h5 class="mt-0">{{ $stage->title }}</h5>
                 <p>Related to <span class="red-text">{{ $stage->project->title }}</span> project</p>
                 <img class="responsive-img mt-4 p-3 border-radius-6"
                     src="{{ $stage->image ? $stage->image->url():asset('/images/gallery/34.png')}}" alt="">
@@ -61,7 +63,10 @@
                     {{ $building->no_of_properties }}</p>
                 <p class="mt-2"><b class="blue-grey-text text-darken-4">Sold Properties:</b>
                     {{ $building->sold_properties }}</p>
-                <a href="{{ route('view.building', $building->id) }}" class="btn blue mt-2">View Building</a>
+                <a href="{{ route('view.building', $building->id) }}" class="btn blue mt-2">View</a>
+                <a class="btn-small btn-light-blue mt-2 ml-2" href="{{ route('edit.building', $building->id) }}"><i class="material-icons">edit</i></a>
+                <a class="btn-small btn-light-red mt-2 ml-2" onclick="deleteBuilding({{ $building->id }})"><i class="material-icons">delete</i></a>
+                <form id="delete-building-{{ $building->id }}" action="{{ route('delete.building', $building->id) }}" method="post">@csrf</form>
             </div>
         </div>
     </div>
@@ -71,3 +76,35 @@
     </div>
     @endforelse
     @endsection
+    @section('vendor-script')
+<script src="{{asset('/vendors/sweetalert/sweetalert.min.js')}}"></script>
+@endsection
+
+@section('page-script')
+{{-- <script src="{{asset('/js/scripts/page-users.js')}}"></script> --}}
+<script>
+    function deleteBuilding(id){
+        swal({
+			title: "Are you sure you want to delete this building?",
+			icon: 'warning',
+			dangerMode: true,
+			buttons: {
+				cancel: 'No, Please!',
+				delete: 'Yes, Delete It'
+			}
+		}).then(function (willDelete) {
+			if (willDelete) {
+                $('#delete-building-'+id).submit()
+				swal("Deleting the building..", {
+					icon: "success",
+				});
+			} else {
+				swal("This building is safe", {
+					title: 'Cancelled',
+					icon: "error",
+				});
+			}
+		});
+    }
+</script>
+@endsection

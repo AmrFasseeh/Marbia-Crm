@@ -39,6 +39,8 @@ class AcessController extends Controller
                 $group->slug = "admin";
                 $group->description = "Monitor and manage everything";
                 $group->save();
+
+                // User permissions
                 $permission = new Permission();
                 $permission->name = "List User";
                 $permission->slug = "list-user";
@@ -69,6 +71,8 @@ class AcessController extends Controller
                 $permission->slug = "restore-user";
                 $permission->description = "ability to restore users";
                 $permission->save();
+
+                // Roles Permissions
                 $permission = new Permission();
                 $permission->name = "Add Role";
                 $permission->slug = "add-role";
@@ -119,6 +123,8 @@ class AcessController extends Controller
                 $permission->slug = "restore-permission";
                 $permission->description = "ability to restore permissions";
                 $permission->save();
+
+                // Contact permissions 
                 $permission = new Permission();
                 $permission->name = "Add Contact";
                 $permission->slug = "add-contact";
@@ -149,6 +155,8 @@ class AcessController extends Controller
                 $permission->slug = "restore-contact";
                 $permission->description = "ability to restore contacts";
                 $permission->save();
+
+                // Leads Permissions
                 $permission = new Permission();
                 $permission->name = "Add Lead";
                 $permission->slug = "add-lead";
@@ -179,6 +187,104 @@ class AcessController extends Controller
                 $permission->slug = "restore-lead";
                 $permission->description = "ability to restore lead";
                 $permission->save();
+
+                // Comments Permissions
+                $permission = new Permission();
+                $permission->name = "Add Comments";
+                $permission->slug = "add-comment";
+                $permission->description = "ability to add a comment";
+                $permission->save();
+                $permission = new Permission();
+                $permission->name = "Delete Comments";
+                $permission->slug = "delete-comment";
+                $permission->description = "ability to delete comments";
+                $permission->save();
+
+                // Projects Permissions
+                $permission = new Permission();
+                $permission->name = "List Projects";
+                $permission->slug = "list-project";
+                $permission->description = "ability to list projects";
+                $permission->save();
+                $permission = new Permission();
+                $permission->name = "Add Projects";
+                $permission->slug = "add-project";
+                $permission->description = "ability to add projects";
+                $permission->save();
+
+                // Stages Permissions
+                $permission = new Permission();
+                $permission->name = "List Stages";
+                $permission->slug = "list-stage";
+                $permission->description = "ability to list stages";
+                $permission->save();
+                $permission = new Permission();
+                $permission->name = "View stages";
+                $permission->slug = "view-stage";
+                $permission->description = "ability to view stages";
+                $permission->save();
+                $permission = new Permission();
+                $permission->name = "Add Stages";
+                $permission->slug = "add-stage";
+                $permission->description = "ability to add stages";
+                $permission->save();
+
+                // Buildings permissions
+                $permission = new Permission();
+                $permission->name = "List Buildings";
+                $permission->slug = "list-building";
+                $permission->description = "ability to list buildings";
+                $permission->save();
+                $permission = new Permission();
+                $permission->name = "View Buildings";
+                $permission->slug = "view-building";
+                $permission->description = "ability to view buildings";
+                $permission->save();
+                $permission = new Permission();
+                $permission->name = "Add Buildings";
+                $permission->slug = "add-building";
+                $permission->description = "ability to add buildings";
+                $permission->save();
+
+                //Properties permissions
+                $permission = new Permission();
+                $permission->name = "List Properties";
+                $permission->slug = "list-property";
+                $permission->description = "ability to list properties";
+                $permission->save();
+                $permission = new Permission();
+                $permission->name = "Add Properties";
+                $permission->slug = "add-property";
+                $permission->description = "ability to add properties";
+                $permission->save();
+                $permission = new Permission();
+                $permission->name = "Sell Properties";
+                $permission->slug = "sell-property";
+                $permission->description = "ability to sell properties";
+                $permission->save();
+
+                // Deals permissions
+                $permission = new Permission();
+                $permission->name = "List Deals";
+                $permission->slug = "list-deal";
+                $permission->description = "ability to list deals";
+                $permission->save();
+                $permission = new Permission();
+                $permission->name = "Add Deals";
+                $permission->slug = "add-deal";
+                $permission->description = "ability to add deals";
+                $permission->save();
+                $permission = new Permission();
+                $permission->name = "View Deals";
+                $permission->slug = "view-deal";
+                $permission->description = "ability to view deals";
+                $permission->save();
+                $permission = new Permission();
+                $permission->name = "Edit Deals";
+                $permission->slug = "edit-deal";
+                $permission->description = "ability to edit deals";
+                $permission->save();
+
                 $group->assignAllPermissions();
 
                 $group = new Group;            

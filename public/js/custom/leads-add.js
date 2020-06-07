@@ -1,6 +1,6 @@
 $(function () {
     $('#lead_value').formatter({
-        'pattern': '{{999}},{{999}},{{999}} EGP',
+        'pattern': '{{999}}{{999}}{{999}}',
         'persistent': true
     });
 

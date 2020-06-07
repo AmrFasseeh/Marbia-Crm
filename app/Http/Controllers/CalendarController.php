@@ -23,7 +23,7 @@ class CalendarController extends Controller
             $start = (!empty($_GET["start"])) ? ($_GET["start"]) : $first;
             $end = (!empty($_GET["end"])) ? ($_GET["end"]) : $last;
 
-            $data = Calendar::whereDate('start', '>=', $start)->whereDate('end', '<=', $end)->first(['id', 'title', 'start', 'end']);
+            $data = Calendar::whereDate('start', '>=', $start)->whereDate('end', '<=', $end)->get(['title', 'start', 'end']);
             // dd($data);
             // $response = [
             //     'id' => 1,

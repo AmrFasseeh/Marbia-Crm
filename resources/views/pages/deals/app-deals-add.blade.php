@@ -13,6 +13,11 @@
 
 @section('page-style')
 <link rel="stylesheet" type="text/css" href="{{asset('/css/pages/page-users.css')}}">
+<style>
+    div#inst {
+        display: none;
+    }
+</style>
 @endsection
 
 {{-- page content --}}
@@ -27,9 +32,8 @@
                     @csrf
                     <div class="row">
                         <div class="input-field col s6">
-                            <input type="text" id="title" name="title"
-                                class="@error('title') is-invalid @enderror" value="{{ old('title') }}"
-                                required autofocus autocomplete="title">
+                            <input type="text" id="title" name="title" class="@error('title') is-invalid @enderror"
+                                value="{{ old('title') }}" required autofocus autocomplete="title">
                             <label for="title">Title</label>
                             @error('title')
                             <small class="errorTxt1">
@@ -51,10 +55,9 @@
                     </div>
                     <div class="row">
                         <div class="input-field col s6">
-                            <input id="value" type="text" name="value"
-                                class="@error('value') is-invalid @enderror" value="{{ old('value') }}"
-                                required>
-                            <label for="value">Value</label>
+                            <input id="value" type="text" name="value" class="@error('value') is-invalid @enderror"
+                                value="{{ old('value') }}" required>
+                            <label for="value">Value <small>(EGP)</small></label>
                             @error('value')
                             <small class="errorTxt1">
                                 {{ $message }}
@@ -101,21 +104,63 @@
                             </select>
                             <label class="active" for="user_id">Agent</label>
                         </div>
-                        <div class="input-field col s6">
-                            <select id="payment_method" class="select2 browser-default payment_method" name="payment_method">
-                                <option disabled selected>Choose a payment method</option>
-                                <option value="full">Full</option>
-                                <option value="inst_6">6 Months Installments</option>
-                                <option value="inst_12">12 Months Installments</option>
-                                <option value="inst_18">18 Months Installments</option>
-                            </select>
-                            <label class="active" for="payment_method">Payment Method</label>
-                        </div>
                         <div class="input-field col s12">
                             <textarea id="comment" class="materialize-textarea" name="message"></textarea>
                             <label for="comment">Comment</label>
                         </div>
+                        <div class="input-field col s12">
+                            <input id="down_payment" type="text" name="down_payment">
+                            <label for="down_payment">Down payment <small>(EGP)</small></label>
+                        </div>
+                        <div class="input-field col s12">
+                            <p>
+                                <label>
+                                    <input value="cash" name="payment" type="radio" checked />
+                                    <span>Cash</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input value="inst" name="payment" type="radio" />
+                                    <span>Installments</span>
+                                </label>
+                            </p>
+                        </div>
                     </div>
+                    <div id="cash" class="row">
+
+                    </div>
+                    <div id="inst" class="row">
+                        <div class="input-field col s6">
+                            <select id="payment_method" class="select2 browser-default payment_method"
+                                name="payment_method">
+                                <option disabled selected>Choose Installments rate</option>
+                                <option value="inst_1">Monthly</option>
+                                <option value="inst_3">Each 3 Months</option>
+                                <option value="inst_6">Each 6 Months</option>
+                                <option value="inst_12">Yearly</option>
+                            </select>
+                            <label class="active" for="payment_method">Installments rate</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input type="number" name="payment_duration" id="payment_duration">
+                            <label class="active" for="payment_duration">Payment Duration <small>(in
+                                    years)</small></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="discount" type="number" name="discount"
+                                class="@error('discount') is-invalid @enderror" value="{{ old('discount') }}">
+                            <label for="discount">Discount %</label>
+                            @error('discount')
+                            <small class="errorTxt1">
+                                {{ $message }}
+                            </small>
+                            @enderror
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="row">
                             <div class="input-field col s12">

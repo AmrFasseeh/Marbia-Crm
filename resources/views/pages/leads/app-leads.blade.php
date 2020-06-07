@@ -150,7 +150,8 @@
         title:'{{ $stage->title }}',
         headerBg:'{{ $stage->headerBg }}',
         item: [
-          @foreach($stage->customers as $customer)
+          @if(Auth::user()->hasGroup('admin'))
+          @forelse($stage->customers as $customer)
           {
             id: "{{ $stage->id }}_{{ $customer->id }}",
             title: "{{ $customer->lead_title }} <br> <span class='red-text darken-1' style='font-weight:bold'>{{ $customer->fullname }}</span>",
@@ -159,7 +160,21 @@
             dueDate: "{{ Carbon\Carbon::make($customer->lead_date)->toFormattedDateString() }}",
             comment: {{ $customer->comments->count() }}
           },
-          @endforeach
+          @empty
+          @endforelse
+          @else
+          @forelse($stage->customers->where('user_id', Auth::user()->id) as $customer)
+          {
+            id: "{{ $stage->id }}_{{ $customer->id }}",
+            title: "{{ $customer->lead_title }} <br> <span class='red-text darken-1' style='font-weight:bold'>{{ $customer->fullname }}</span>",
+            username: "{{ $customer->user->fullname() }}",
+            border: "blue",
+            dueDate: "{{ Carbon\Carbon::make($customer->lead_date)->toFormattedDateString() }}",
+            comment: {{ $customer->comments->count() }}
+          },
+          @empty
+          @endforelse
+          @endif
         ]
         },
         @endforeach
@@ -349,7 +364,7 @@
       console.log(stageId);
       $.ajax({
         type: 'POST',
-        url: 'https://rmztech.net/marbia/marbia-crm//ajax/changeStage',
+        url: 'http://marbia.crm/ajax/changeStage',
         data: {"id": id, "stage_id": stageId}, // Any data that is needed to pass to the controller
         dataType: 'json',
         success: function(returnedData) {
@@ -560,7 +575,7 @@
         addEventListener("click", function () {
           $.ajax({
           type: 'POST',
-          url: 'https://rmztech.net/marbia/marbia-crm//ajax/getdistrict',
+          url: 'http://marbia.crm/ajax/getdistrict',
           data: {"id": city_id}, // Any data that is needed to pass to the controller
           dataType: 'json',
           success: function(returnedData) {

@@ -344,7 +344,7 @@
       $('.city option:eq(0)').text('Data is being loaded...');
       $.ajax({
         type: 'POST',
-        url: 'https://rmztech.net/marbia/marbia-crm//ajax/getcity',
+        url: 'http://marbia.crm/ajax/getcity',
         data: {"country_code": country}, // Any data that is needed to pass to the controller
         dataType: 'json',
         success: function(returnedData) {
@@ -367,7 +367,7 @@ function getDistricts(city_id) {
       $('.neigh option:eq(0)').text('Data is being loaded...');
       $.ajax({
         type: 'POST',
-        url: 'https://rmztech.net/marbia/marbia-crm//ajax/getdistrict',
+        url: 'http://marbia.crm/ajax/getdistrict',
         data: {"id": city_id}, // Any data that is needed to pass to the controller
         dataType: 'json',
         success: function(returnedData) {
@@ -388,7 +388,7 @@ $('.city').on('change',function(){
       $('.neigh option:eq(0)').text('Data is being loaded...');
       $.ajax({
         type: 'POST',
-        url: 'https://rmztech.net/marbia/marbia-crm//ajax/getdistrict',
+        url: 'http://marbia.crm/ajax/getdistrict',
         data: {"id": id}, // Any data that is needed to pass to the controller
         dataType: 'json',
         success: function(returnedData) {

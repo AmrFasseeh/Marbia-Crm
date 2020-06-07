@@ -34,7 +34,15 @@
                 </div>
             </div>
             <div class="col s12 m5 quick-action-btns display-flex justify-content-end align-items-center pt-2">
-                <form id="delete_deal" action="" method="post">
+                @if ($deal->deal_stages_id != 5)
+                <a class="btn-small green" href="{{ route('won.deal', $deal->id) }}">Confirm</a>
+                @else
+                <a class="btn-small green" href="#">Confirmed</a>
+                @endif
+
+                <a class="btn-small btn-light-blue" href="{{ route('edit.deal', $deal->id) }}"><i
+                        class="material-icons">edit</i></a>
+                <form id="delete_deal" action="{{ route('delete.deal', $deal->id) }}" method="GET">
                     @csrf
                     <a class="btn-small btn-light-red" onclick="deletePrompt()"><i class="material-icons">delete</i></a>
                 </form>
@@ -70,17 +78,63 @@
                                     {{ Carbon\Carbon::make($deal->due_date)->toFormattedDateString() }}</td>
                             </tr>
                             <tr>
-                                <td>Value:</td>
-                                <td class="users-view-role">
-                                    {{ $deal->value .' '. $deal->currency }}
-                                </td>
-                            </tr>
-                            <tr>
                                 <td>Deal Stage:</td>
                                 <td class="users-view-role">
                                     {{ $stage->title }}
                                 </td>
                             </tr>
+                            @if ($deal->payment == 'cash')
+                            <tr>
+                                <td>Payment Method:</td>
+                                <td class="users-view-role">
+                                    Cash
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Down Payment:</td>
+                                <td class="users-view-role">
+                                    {{ $down_payment .' '. $deal->currency }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Value:</td>
+                                <td class="users-view-role">
+                                    {{ $value .' '. $deal->currency }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Value After Discount:</td>
+                                <td class="users-view-role">
+                                    {{ $final_value .' '. $deal->currency }}
+                                </td>
+                            </tr>
+                            @else
+                            <tr>
+                                <td>Payment Method:</td>
+                                <td class="users-view-role">
+                                    Installments on {{ $deal_months }} months
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Down Payment:</td>
+                                <td class="users-view-role">
+                                    {{ $down_payment .' '. $deal->currency }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Value After Discount:</td>
+                                <td class="users-view-role">
+                                    {{ $final_value .' '. $deal->currency }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Installments:</td>
+                                <td class="users-view-role">
+                                    {{ $installments .' '. $deal->currency .' '. $rate }}
+                                </td>
+                            </tr>
+                            @endif
+
                         </tbody>
                     </table>
                 </div>
@@ -227,7 +281,13 @@
                             <span class="card-title"><img
                                     src="{{ isset($deal->image) ? $deal->image->url():asset('/images/avatar/default.png') }}"
                                     alt="users view avatar" class="z-depth-4 circle" height="32" width="32"><span
-                                    class="red-text"> {{ $comment->user->fullname() }}</span></span>
+                                    class="red-text"> {{ $comment->user->fullname() }}</span><span class="ml-2"><button
+                                        class="btn-floating red" onclick="deleteCommentPrompt({{ $comment->id }})"><i
+                                            class="material-icons">delete</i></button>
+                                    <form id="delete-comment-{{ $comment->id }}"
+                                        action="{{ route('delete.comment', $comment->id) }}" method="POST" hidden>
+                                        @csrf</form>
+                                </span></span>
                             <hr>
                             <p style="text-indent: 20px">{{ $comment->message }}</p>
                             <br>
@@ -262,11 +322,35 @@
 			}
 		}).then(function (willDelete) {
 			if (willDelete) {
+                $('#delete_deal').submit();
 				swal("Your Deal was deleted!", {
 					icon: "success",
 				});
 			} else {
 				swal("Your Deal is safe", {
+					title: 'Cancelled',
+					icon: "error",
+				});
+			}
+		});
+    }
+    function deleteCommentPrompt(id){
+        swal({
+			title: "Are you sure you want to delete this comment?",
+			icon: 'warning',
+			dangerMode: true,
+			buttons: {
+				cancel: 'No, Please!',
+				delete: 'Yes, Delete It'
+			}
+		}).then(function (willDelete) {
+			if (willDelete) {
+                $('#delete-comment-'+id).submit();
+				swal("Your comment was deleted!", {
+					icon: "success",
+				});
+			} else {
+				swal("Your comment is safe", {
 					title: 'Cancelled',
 					icon: "error",
 				});

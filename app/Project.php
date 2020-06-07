@@ -19,4 +19,14 @@ class Project extends Model
     {
         return $this->hasMany('App\BuildingGroup');
     }
+
+    public static function boot() {
+        parent::boot();
+
+        static::deleting(function($project) { // before delete() method call this
+             $project->stages()->delete();
+             $project->image()->delete();
+             // do the rest of the cleanup...
+        });
+    }
 }

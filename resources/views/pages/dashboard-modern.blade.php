@@ -26,14 +26,14 @@
          <!-- Current Balance -->
          <div class="card animate fadeLeft">
             <div class="card-content">
-               <h6 class="mb-0 mt-0 display-flex justify-content-between">Current Balance <i
+               <h6 class="mb-0 mt-0 display-flex justify-content-between">Deals Balance <i
                      class="material-icons float-right">more_vert</i>
                </h6>
                <p class="medium-small">This billing cycle</p>
                <div class="current-balance-container">
                   <div id="current-balance-donut-chart" class="current-balance-shadow"></div>
                </div>
-               <h5 class="center-align">$ 50,150.00</h5>
+               <h5 class="center-align">{{ number_format($balance) }} EGP</h5>
                <p class="medium-small center-align">Used balance this billing cycle</p>
             </div>
          </div>
@@ -93,24 +93,13 @@
                <h4 class="card-title mb-0">Recent Buyers <i class="material-icons float-right">more_vert</i></h4>
                <p class="medium-small pt-2">Today</p>
                <ul class="collection mb-0">
+                  @foreach ($latest_deals as $deal)
                   <li class="collection-item avatar">
-                     <img src="{{asset('/images/avatar/avatar-7.png')}}" alt="" class="circle" />
-                     <p class="font-weight-600">John Doe</p>
-                     <p class="medium-small">18, January 2019</p>
-                     <a href="#!" class="secondary-content"><i class="material-icons">star_border</i></a>
+                     <img src="{{asset('/images/avatar/default.png')}}" alt="" class="circle" />
+                     <p class="font-weight-600"><a href="{{ route('view.deal', $deal->id) }}">{{ $deal->customer->fullname }}</a></p>
+                     <p class="medium-small">{{ Carbon\Carbon::make($deal->created_at)->toFormattedDateString() }}</p>
                   </li>
-                  <li class="collection-item avatar">
-                     <img src="{{asset('/images/avatar/avatar-3.png')}}" alt="" class="circle" />
-                     <p class="font-weight-600">Adam Garza</p>
-                     <p class="medium-small">20, January 2019</p>
-                     <a href="#!" class="secondary-content"><i class="material-icons">star_border</i></a>
-                  </li>
-                  <li class="collection-item avatar">
-                     <img src="{{asset('/images/avatar/avatar-5.png')}}" alt="" class="circle" />
-                     <p class="font-weight-600">Jennifer Rice</p>
-                     <p class="medium-small">25, January 2019</p>
-                     <a href="#!" class="secondary-content"><i class="material-icons">star_border</i></a>
-                  </li>
+                  @endforeach
                </ul>
             </div>
          </div>
@@ -135,23 +124,23 @@
          <div class="card padding-4 animate fadeLeft">
             <div class="row">
                <div class="col s5 m5">
-                  <h5 class="mb-0">1885</h5>
+                  <h5 class="mb-0">{{ $newContacts }}</h5>
                   <p class="no-margin">New</p>
-                  <p class="mb-0 pt-8">1,12,900</p>
+                  <p class="mb-0 pt-8">{{ $contacts }}</p>
                </div>
                <div class="col s7 m7 right-align">
                   <i
                      class="material-icons background-round mt-5 mb-5 gradient-45deg-purple-amber gradient-shadow white-text">perm_identity</i>
-                  <p class="mb-0">Total Clients</p>
+                  <p class="mb-0">Total Contacts</p>
                </div>
             </div>
          </div>
          <div id="chartjs" class="card pt-0 pb-0 animate fadeLeft">
             <div class="dashboard-revenue-wrapper padding-2 ml-2">
-               <span class="new badge gradient-45deg-indigo-purple gradient-shadow mt-2 mr-2">+ $900</span>
-               <p class="mt-2 mb-0 font-weight-600">Today's revenue</p>
-               <p class="no-margin grey-text lighten-3">$40,512 avg</p>
-               <h5>$ 22,300</h5>
+               <span class="new badge gradient-45deg-indigo-purple gradient-shadow mt-2 mr-2">+ {{ number_format($last_deal_value) }} EGP</span>
+               <p class="mt-2 mb-0 font-weight-600">Today's income</p>
+               <p class="no-margin grey-text lighten-3">{{ number_format($today_deals/$today_deals_count) }} EGP</p>
+               <h5>{{ number_format($today_deals) }} EGP</h5>
             </div>
             <div class="sample-chart-wrapper card-gradient-chart">
                <canvas id="custom-line-chart-sample-three" class="center"></canvas>
@@ -161,52 +150,34 @@
       <div class="col s12 m6 l8">
          <div class="card subscriber-list-card animate fadeRight">
             <div class="card-content pb-1">
-               <h4 class="card-title mb-0">Subscriber List <i class="material-icons float-right">more_vert</i></h4>
+               <h4 class="card-title mb-0">Recent Contacts <i class="material-icons float-right">more_vert</i></h4>
             </div>
             <table class="subscription-table responsive-table highlight">
                <thead>
                   <tr>
                      <th>Name</th>
-                     <th>Company</th>
-                     <th>Start Date</th>
-                     <th>Status</th>
-                     <th>Amount</th>
-                     <th>Action</th>
+                     <th>Phone</th>
+                     <th>Added</th>
+                     <th>Stage</th>
+                     <th>City</th>
                   </tr>
                </thead>
                <tbody>
+                  @foreach ($latest_contacts as $contact)
                   <tr>
-                     <td>Michael Austin</td>
-                     <td>ABC Fintech LTD.</td>
-                     <td>Jan 1,2019</td>
-                     <td><span class="badge pink lighten-5 pink-text text-accent-2">Close</span></td>
-                     <td>$ 1000.00</td>
-                     <td class="center-align"><a href="#"><i class="material-icons pink-text">clear</i></a></td>
+                     <td><a href="{{ route('view.contact', $contact->id) }}">{{ $contact->fullname }}</a></td>
+                     <td>{{ $contact->phone }}</td>
+                     <td>{{ Carbon\Carbon::make($contact->created_at)->toFormattedDateString() }}</td>
+                     @if ($contact->type == 0)
+                     <td><span class="badge pink lighten-5 pink-text text-accent-2">Contact</span></td>
+                     @elseif($contact->type == 1)
+                     <td><span class="badge blue lighten-5 blue-text text-accent-4">Lead</span></td>  
+                     @else
+                     <td><span class="badge green lighten-5 green-text text-accent-4">Deal</span></td>
+                     @endif
+                     <td>{{ App\governorate::findorfail($contact->city)->name_en }}</td>
                   </tr>
-                  <tr>
-                     <td>Aldin Rakić</td>
-                     <td>ACME Pvt LTD.</td>
-                     <td>Jan 10,2019</td>
-                     <td><span class="badge green lighten-5 green-text text-accent-4">Open</span></td>
-                     <td>$ 3000.00</td>
-                     <td class="center-align"><a href="#"><i class="material-icons pink-text">clear</i></a></td>
-                  </tr>
-                  <tr>
-                     <td>İris Yılmaz</td>
-                     <td>Collboy Tech LTD.</td>
-                     <td>Jan 12,2019</td>
-                     <td><span class="badge green lighten-5 green-text text-accent-4">Open</span></td>
-                     <td>$ 2000.00</td>
-                     <td class="center-align"><a href="#"><i class="material-icons pink-text">clear</i></a></td>
-                  </tr>
-                  <tr>
-                     <td>Lidia Livescu</td>
-                     <td>My Fintech LTD.</td>
-                     <td>Jan 14,2019</td>
-                     <td><span class="badge pink lighten-5 pink-text text-accent-2">Close</span></td>
-                     <td>$ 1100.00</td>
-                     <td class="center-align"><a href="#"><i class="material-icons pink-text">clear</i></a></td>
-                  </tr>
+                  @endforeach
                </tbody>
             </table>
          </div>
@@ -227,5 +198,37 @@
 {{-- page scripts --}}
 @section('page-script')
 <script src="{{asset('/js/scripts/dashboard-modern.js')}}"></script>
+<script>
+   var CurrentBalanceDonutChart = new Chartist.Pie(
+    "#current-balance-donut-chart",
+    {
+      labels: [1, 2],
+      series: [
+        { meta: "Completed", value: 80 },
+        { meta: "Remaining", value: 20 }
+      ]
+    },
+
+    {
+      donut: true,
+      donutWidth: 8,
+      showLabel: false,
+      plugins: [
+        Chartist.plugins.tooltip({
+          class: "current-balance-tooltip",
+          appendToBody: true
+        }),
+        Chartist.plugins.fillDonut({
+          items: [
+            {
+              content:
+                '<p class="small">Balance</p><h5 class="mt-0 mb-0">{{ $shortBalance }}</h5>'
+            }
+          ]
+        })
+      ]
+    }
+  )
+</script>
 <script src="{{asset('/js/scripts/intro.js')}}"></script>
 @endsection

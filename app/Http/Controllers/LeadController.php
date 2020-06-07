@@ -7,6 +7,8 @@ use App\Customer;
 use App\District;
 use App\governorate;
 use App\LeadStage;
+use App\Notifications\LostLead;
+use App\Notifications\NewLeadCreated;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -18,6 +20,12 @@ class LeadController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct()
+    {
+        return $this->middleware('auth');
+    }
+
     public function index()
     {
         $breadcrumbs = [
@@ -97,6 +105,7 @@ class LeadController extends Controller
         $contacts = Customer::where('type', 0)->get();
         $stages = LeadStage::all();
         $contact = Customer::find($id);
+
         return view('pages.leads.app-leads-convert', ['pageConfigs' => $pageConfigs,
             'breadcrumbs' => $breadcrumbs,
             'users' => $users,
@@ -141,6 +150,13 @@ class LeadController extends Controller
         ]);
         $lead->save();
 
+        $users = User::all();
+        foreach ($users as $user) {
+            if ($user->hasGroup('admin')) {
+                $user->notify(new NewLeadCreated($lead));
+            }
+        }
+
         $request->session()->flash('status', 'Lead Created!');
         return redirect()->route('list.lead');
     }
@@ -158,7 +174,7 @@ class LeadController extends Controller
         ];
         //Pageheader set true for breadcrumbs
         $pageConfigs = ['pageHeader' => true];
-        $lead = Customer::where(['id' => $id, 'type' => 1])->with('leadstage')->first();
+        $lead = Customer::where(['id' => $id])->with('leadstage')->first();
         // dd($lead);
         $country = Country::where('country_code', $lead->country)->first()->country_name;
         $city = governorate::find($lead->city)->first()->name_en;
@@ -183,8 +199,7 @@ class LeadController extends Controller
         if (request()->ajax()) {
             $id = substr($request->id, strpos($request->id, "_") + 1);
             $lead = Customer::findorfail($id);
-            if($request->stage_id == 7)
-            {
+            if ($request->stage_id == 7) {
                 $lead->type = 2;
                 $lead->cust_date = Carbon::now()->toDateTimeString();
                 $lead->cust_type = 'New Customer';
@@ -194,6 +209,12 @@ class LeadController extends Controller
                 $lead->cust_date = null;
                 $lead->cust_type = null;
                 $lead->lead_stage_id = $request->stage_id;
+                $users = User::all();
+                foreach ($users as $user) {
+                    if ($user->hasGroup('admin')) {
+                        $user->notify(new LostLead($lead));
+                    }
+                }
             }
             $lead->save();
             // return response()->json($id);
@@ -263,6 +284,35 @@ class LeadController extends Controller
         $lead->save();
         $request->session()->flash('status', 'Lead updated!');
         return redirect()->route('view.lead', $id);
+    }
+
+    public function wonLead($id)
+    {
+        $lead = Customer::findorfail($id);
+        $lead->lead_stage_id = 7;
+        $lead->type = 2;
+        $lead->cust_date = Carbon::now()->toDateTimeString();
+        $lead->cust_type = 'New Customer';
+        $lead->save();
+        return redirect()->back()->with('status', 'Lead Updated!');
+    }
+
+    public function lostLead($id)
+    {
+        $lead = Customer::findorfail($id);
+        // dd($lead);
+        $lead->lead_stage_id = 6;
+        $lead->type = 1;
+        $lead->cust_date = null;
+        $lead->cust_type = null;
+        $lead->save();
+        $users = User::all();
+        foreach ($users as $user) {
+            if ($user->hasGroup('admin')) {
+                $user->notify(new LostLead($lead));
+            }
+        }
+        return redirect()->back()->with('status', 'Lead Updated!');
     }
 
     /**

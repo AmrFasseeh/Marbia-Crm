@@ -62,17 +62,17 @@
     },
     {
       "url": "javascript:void(0)",
-      "name": "Customers",
-      "i18n": "Customers",
+      "name": "Qualified Leads",
+      "i18n": "Qualified Leads",
       "class": "collapsible-header waves-effect waves-cyan",
       "icon": "assignment_ind",
-      "slug": "app-customers",
+      "slug": "app-qualified-lead",
       "submenu": [
         {
-          "url": "app-customers",
-          "name": "Customers View",
-          "i18n": "Customers View",
-          "slug": "app-customers"
+          "url": "app-qualified-lead",
+          "name": "Qualified Leads View",
+          "i18n": "Qualified Leads View",
+          "slug": "app-qualified-lead"
         }
       ]
     },
@@ -123,12 +123,6 @@
           "name": "Deals View",
           "i18n": "Deals View",
           "slug": "app-deals-list"
-        },
-        {
-          "url": "app-deals-add",
-          "name": "Deals Add",
-          "i18n": "Deals Add",
-          "slug": "app-deals-add"
         }
       ]
     },

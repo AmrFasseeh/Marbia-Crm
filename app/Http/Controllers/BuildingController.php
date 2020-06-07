@@ -119,7 +119,20 @@ class BuildingController extends Controller
      */
     public function edit(Building $building)
     {
-        //
+        $breadcrumbs = [
+            ['link' => "modern", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => $building->buildingGroup->title], ['name' => "Edit Building"],
+        ];
+        //Pageheader set true for breadcrumbs
+        $pageConfigs = ['pageHeader' => true];
+        // $build = Building::findorfail(1);
+
+        // dd($stagee->project ,$build->buildingGroup->project);
+        return view('pages.buildings.app-buildings-edit',
+            [
+                'breadcrumbs' => $breadcrumbs,
+                'pageConfigs' => $pageConfigs,
+                'building' => $building,
+            ]);
     }
 
     /**
@@ -131,7 +144,45 @@ class BuildingController extends Controller
      */
     public function update(Request $request, Building $building)
     {
-        //
+        $validatedBuilding = $request->validate([
+            'building_name' => 'required|string',
+            'building_type' => 'required|string',
+            'description' => 'string',
+            'address' => 'required|string',
+            'no_of_properties' => 'required|numeric',
+            'sold_properties' => 'required|numeric',
+        ]);
+        // dd($validatedStage);
+        // dd($building);
+        // dd($newStage);
+        $building->building_name = $validatedBuilding['building_name'];
+        $building->building_type = $validatedBuilding['building_type'];
+        $building->description = $validatedBuilding['description'];
+        $building->address = $validatedBuilding['address'];
+        $building->no_of_properties = $validatedBuilding['no_of_properties'];
+        $building->sold_properties = $validatedBuilding['sold_properties'];
+
+        $validateImage = $request->validate([
+            'image' => 'image|mimes:jpeg,png,jpg,gif',
+        ]);
+        if ($request->file('image')) {
+            $path = $request->file('image')->storeAs('project_images/' . $building->buildingGroup->project->title, 'project-' . $building->buildingGroup->project->title . '-' . $building->buildingGroup->title . '-' . $building->building_name . '.' . $request->file('image')->guessExtension());
+            // $request->file('image')->store('avatars');
+            // dd($path, $request->file('image'));
+            if ($building->image) {
+                // dd($user->image);
+                // Storage::delete($user->image->image_path);
+                $building->image()->update(['image_path' => $path]);
+            } else {
+                $building->image()->save(
+                    Image::make(['image_path' => $path])
+                );
+            }
+        }
+
+        $building->save();
+        $request->session()->flash('status', 'Building updated!');
+        return redirect()->route('view.projectStage', [$building->buildingGroup->project->id, $building->buildingGroup->id]);
     }
 
     /**
@@ -140,8 +191,18 @@ class BuildingController extends Controller
      * @param  \App\Building  $building
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Building $building)
+    public function destroy(Request $request, Building $building)
     {
-        //
+        // dd($building);
+        if ($building->properties->contains('status', 1)) {
+            return redirect()->back()->with('warning', 'Can\'t delete this building as it has sold properties.');
+        } else {
+            foreach ($building->properties as $property) {
+                $property->delete();
+            }
+        }
+        $building->delete();
+        return redirect()->back()->with('status', 'Building deleted!');
     }
+
 }

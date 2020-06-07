@@ -12,13 +12,18 @@ use App\Http\Controllers\LanguageController;
  */
 
     // Dashboard Route
-Route::get('/', 'DashboardController@dashboardModern');
+Route::get('/', 'DashboardController@dashboardModern')->name('home');
 Route::get('/modern', 'DashboardController@dashboardModern');
 Route::get('/ecommerce', 'DashboardController@dashboardEcommerce');
 Route::get('/analytics', 'DashboardController@dashboardAnalytics');
 
 
-//Calendar Route
+// Notifications Route
+
+Route::get('/markAsRead/{noti}', 'NotificationsController@markAsRead')->name('mark');
+
+
+// Calendar Route
 
 Route::get('/app-calendar', 'CalendarController@index');
 Route::get('/app-calendar/populate', 'CalendarController@index');
@@ -51,51 +56,74 @@ Route::post('app-leads-add/store', 'LeadController@store')->middleware('permissi
 Route::get('app-leads-edit/{id}', 'LeadController@edit')->middleware('permissions:edit-lead')->name('edit.lead');
 Route::post('app-leads-edit/update/{id}', 'LeadController@update')->middleware('permissions:edit-lead')->name('update.lead');
 Route::post('app-leads-view/delete/{lead}', 'LeadController@destroy')->middleware('permissions:delete-lead')->name('delete.lead');
+Route::get('app-leads-view/won/{id}', 'LeadController@wonLead')->middleware('permissions:edit-lead')->name('won.lead');
+Route::get('app-leads-view/lost/{id}', 'LeadController@lostLead')->middleware('permissions:edit-lead')->name('lost.lead');
 
 
-// Customers Route
+// Qualified Leads Route
 
-Route::get('app-customers', 'CustomerController@index')->middleware('permissions:list-customer')->name('list.customer');
+Route::get('app-qualified-lead', 'QualifiedLeadController@index')->middleware('permissions:list-qualified-leads')->name('list.qualified-leads');
 
 // Projects Route
 
-Route::get('app-projects-list', 'ProjectController@index')->name('list.project');
-Route::get('app-projects-view/{project}', 'ProjectController@show')->name('view.project');
-Route::get('app-projects-add', 'ProjectController@create')->name('add.project');
-Route::post('app-projects-add/store', 'ProjectController@store')->name('store.project');
+Route::get('app-projects-list', 'ProjectController@index')->middleware('permissions:list-project')->name('list.project');
+Route::get('app-projects-view/{project}', 'ProjectController@show')->middleware('permissions:list-project')->name('view.project');
+Route::get('app-projects-add', 'ProjectController@create')->middleware('permissions:add-project')->name('add.project');
+Route::post('app-projects-add/store', 'ProjectController@store')->middleware('permissions:add-project')->name('store.project');
+Route::get('app-projects-edit/{project}', 'ProjectController@edit')->middleware('permissions:edit-project')->name('edit.project');
+Route::post('app-projects-edit/update/{project}', 'ProjectController@update')->middleware('permissions:edit-project')->name('update.project');
+Route::post('app-projects/delete/{project}', 'ProjectController@destroy')->middleware('permissions:delete-project')->name('delete.project');
 
 // Stages Route
 
-Route::get('app-stages-all', 'BuildingGroupController@index')->name('all.stages');
-Route::get('app-projects-view/{project}/add', 'BuildingGroupController@create')->name('add.projectStage');
-Route::post('app-projects-view/{project}/store', 'BuildingGroupController@store')->name('store.projectStage');
-Route::get('app-projects-view/{project}/{stage}', 'BuildingGroupController@show')->name('view.projectStage');
-Route::get('app-stages-list', 'ProjectController@index')->name('list.stage');
+Route::get('app-stages-all', 'BuildingGroupController@index')->middleware('permissions:list-stage')->name('all.stages');
+Route::get('app-projects-view/{project}/add', 'BuildingGroupController@create')->middleware('permissions:add-stage')->name('add.projectStage');
+Route::post('app-projects-view/{project}/store', 'BuildingGroupController@store')->middleware('permissions:add-stage')->name('store.projectStage');
+Route::get('app-projects-view/{project}/{stage}', 'BuildingGroupController@show')->middleware('permissions:view-stage')->name('view.projectStage');
+Route::get('app-stages-edit/{stage}', 'BuildingGroupController@edit')->middleware('permissions:edit-stage')->name('edit.projectStage');
+Route::post('app-stages-edit/update/{stage}', 'BuildingGroupController@update')->middleware('permissions:edit-stage')->name('update.projectStage');
+Route::post('app-stages-view/delete/{stage}', 'BuildingGroupController@destroy')->middleware('permissions:delete-stage')->name('delete.projectStage');
+Route::get('app-stages-list', 'ProjectController@index')->middleware('permissions:list-stage')->name('list.stage');
 
 // Buildings Route
 
-Route::get('app-buildings-all', 'BuildingController@index')->name('all.buildings');
-Route::get('app-buildings-add/{stage}/add', 'BuildingController@create')->name('add.buildingToStage');
-Route::post('app-buildings-add/{stage}/store', 'BuildingController@store')->name('store.buildingToStage');
-Route::get('app-buildings-view/{building}', 'PropertyController@index')->name('view.building');
+Route::get('app-buildings-all', 'BuildingController@index')->middleware('permissions:list-building')->name('all.buildings');
+Route::get('app-buildings-add/{stage}/add', 'BuildingController@create')->middleware('permissions:add-building')->name('add.buildingToStage');
+Route::post('app-buildings-add/{stage}/store', 'BuildingController@store')->middleware('permissions:add-building')->name('store.buildingToStage');
+Route::get('app-buildings-view/{building}', 'PropertyController@index')->middleware('permissions:view-building')->name('view.building');
+Route::get('app-buildings-edit/{building}', 'BuildingController@edit')->middleware('permissions:edit-building')->name('edit.building');
+Route::post('app-building-edit/update/{building}', 'BuildingController@update')->middleware('permissions:edit-building')->name('update.building');
+Route::post('app-building-view/delete/{building}', 'BuildingController@destroy')->middleware('permissions:delete-building')->name('delete.building');
 
 // Properties Route
 
-Route::get('app-properties-all', 'PropertyController@allProps')->name('all.properties');
-Route::get('app-properties-add/{building}/add', 'PropertyController@create')->name('add.buildingProperty');
-Route::post('app-properties-add/{building}/store', 'PropertyController@store')->name('store.buildingProperty');
-Route::get('app-properties/sell/{property}', 'PropertyController@sell')->name('sell.property');
+Route::get('app-properties-all', 'PropertyController@allProps')->middleware('permissions:list-property')->name('all.properties');
+Route::get('app-properties-add/{building}/add', 'PropertyController@create')->middleware('permissions:add-property')->name('add.buildingProperty');
+Route::post('app-properties-add/{building}/store', 'PropertyController@store')->middleware('permissions:add-property')->name('store.buildingProperty');
+Route::get('app-properties/sell/{property}', 'PropertyController@sell')->middleware('permissions:sell-property')->name('sell.property');
+Route::get('app-properties/delete/{property}', 'PropertyController@destroy')->middleware('permissions:delete-property')->name('delete.property');
+Route::post('app-properties/hold/{property}', 'PropertyController@hold')->middleware('permissions:hold-property')->name('hold.property');
+Route::get('app-properties/release/{property}', 'PropertyController@release')->middleware('permissions:release-property')->name('release.property');
+
 
 //  Deals Route
 
-Route::get('app-deals-list', 'DealController@index')->name('list.deal');
-Route::get('app-deals-add/{property}', 'DealController@create')->name('add.deal');
-Route::post('app-deals-add/{property}/store/', 'DealController@store')->name('store.deal');
-Route::get('app-deals-view/{id}', 'DealController@show')->name('view.deal');
+Route::post('ajax/changeDealStage', 'DealController@changeDealStage');
+Route::get('app-deals-list', 'DealController@index')->middleware('permissions:list-deal')->name('list.deal');
+Route::get('app-deals-add/{property}', 'DealController@create')->middleware('permissions:add-deal')->name('add.deal');
+Route::post('app-deals-add/{property}/store/', 'DealController@store')->middleware('permissions:add-deal')->name('store.deal');
+Route::get('app-deals-view/{id}', 'DealController@show')->middleware('permissions:view-deal')->name('view.deal');
+Route::get('app-deals-edit/{id}','DealController@edit')->middleware('permissions:edit-deal')->name('edit.deal');
+Route::post('app-deals-edit/update/{id}','DealController@update')->middleware('permissions:edit-deal')->name('update.deal');
+Route::get('app-deals-view/lost/{id}', 'DealController@wonDeal')->middleware('permissions:edit-deal')->name('won.deal');
+Route::get('app-deals-view/delete/{id}', 'DealController@destroy')->middleware('permissions:edit-deal')->name('delete.deal');
 
 // Comments Route
 Route::post('app-leads-view/comment/store/{lead}/{user}', 'CommentController@storeLeadComment')->middleware('permissions:add-comment')->name('store.leadcomment');
 Route::post('app-deals-view/comment/store/{deal}/{user}', 'CommentController@storeDealComment')->middleware('permissions:add-comment')->name('store.dealcomment');
+Route::post('comment/delete/{id}', 'CommentController@deleteComment')->middleware('permissions:delete-comment')->name('delete.comment');
+
+
 
 // Application Route
 Route::get('/app-email', 'ApplicationController@emailApp');

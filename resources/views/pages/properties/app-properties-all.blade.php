@@ -26,7 +26,7 @@
 <div class="row">
     {{-- <div class="col l12">
         <a href="{{ route('add.buildingProperty', $building->id) }}" class="btn blue">Add Property</a>
-    </div> --}}
+</div> --}}
 </div>
 <!-- Page Length Options -->
 <div class="row">
@@ -56,7 +56,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($properties as $property)
+                                @forelse ($properties as $property)
                                 <tr>
                                     <td>{{ $property->name }}</td>
                                     <td>{{ $property->building->buildingGroup->project->title }}</td>
@@ -73,13 +73,24 @@
                                     @if ($property->status == 0)
                                     <td><span class="users-view-status chip green lighten-5 green-text">Available</span>
                                     </td>
-                                    <td><a href="#" class="btn btn-small indigo">Sell</a></td>
+                                    <td><a href="{{ route('sell.property', $property->id) }}"
+                                            class="btn btn-small indigo">Sell</a></td>
                                     @else
                                     <td><span class="users-view-status chip red lighten-5"><span
                                                 class="red-text">Sold</span></span></td>
+                                    @if ($property->deal == null)
+                                    <td><a href="{{ route('add.deal', $property->id) }}"
+                                            class="btn btn-small green">Deal</a></td>
+                                    @else
+                                    <td><span class="users-view-status chip red lighten-5"><span
+                                                class="red-text">Deal</span></span></td>
+                                    @endif
+
                                     @endif
                                 </tr>
-                                @endforeach
+                                @empty
+                                <td colspan="14">No properties yet!</td>
+                                @endforelse
                             </tbody>
                             <tfoot>
                                 <tr>

@@ -3,9 +3,12 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Property extends Model
 {
+    use SoftDeletes;
+    
     protected $fillable = [
         'name',
         'property_type',
@@ -22,6 +25,11 @@ class Property extends Model
     public function building()
     {
         return $this->belongsTo('App\Building');
+    }
+
+    public function deal()
+    {
+        return $this->hasOne('App\Deal');
     }
 
     public function image()
