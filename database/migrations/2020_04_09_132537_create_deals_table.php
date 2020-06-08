@@ -23,7 +23,7 @@ class CreateDealsTable extends Migration
             $table->dateTime('due_date');
             $table->dateTime('won_date')->nullable();
             $table->bigInteger('deal_stages_id')->unsigned();
-            $table->integer('status');  // 0 = Open , 1 = Closed
+            $table->integer('status')->default(0);  // 0 = Open , 1 = Closed
             $table->string('payment_method')->nullable();   // Installments rate
             $table->bigInteger('property_id')->unsigned();
             $table->bigInteger('customer_id')->unsigned();

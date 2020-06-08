@@ -110,6 +110,7 @@ class DealController extends Controller
         $deal->deal_stages_id = $validatedDeal['deal_stages_id'];
         $deal->user_id = $validatedDeal['user_id'];
         $deal->property_id = $property;
+        $deal->status = 0;
         $deal->currency = 'EGP';
         $deal->down_payment = $validatedDeal['down_payment'];
 
