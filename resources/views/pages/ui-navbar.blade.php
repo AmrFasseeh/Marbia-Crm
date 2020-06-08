@@ -6,7 +6,7 @@
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/component-navbar.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/component-navbar.css')}}">
 @endsection
 
 {{-- page content --}}

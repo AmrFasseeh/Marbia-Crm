@@ -6,7 +6,7 @@
 
 {{-- vendor style --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/vendors/sweetalert/sweetalert.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/sweetalert/sweetalert.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -615,10 +615,10 @@ content: "input",
 
 {{-- vendor script --}}
 @section('vendor-script')
-<script src="{{asset('/vendors/sweetalert/sweetalert.min.js')}}"></script>
+<script src="{{asset('public/vendors/sweetalert/sweetalert.min.js')}}"></script>
 @endsection
 
 {{-- page script --}}
 @section('page-script')
-<script src="{{asset('/js/scripts/extra-components-sweetalert.js')}}"></script>
+<script src="{{asset('public/js/scripts/extra-components-sweetalert.js')}}"></script>
 @endsection

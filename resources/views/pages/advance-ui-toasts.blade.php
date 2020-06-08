@@ -227,5 +227,5 @@ M.Toast.dismissAll();
 
 {{-- Page scripts --}}
 @section('page-script')
-<script src="{{asset('/js/scripts/advance-ui-toasts.js')}}"></script>
+<script src="{{asset('public/js/scripts/advance-ui-toasts.js')}}"></script>
 @endsection

@@ -4,7 +4,7 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/vendors/animate-css/animate.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/animate-css/animate.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -184,5 +184,5 @@
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('/js/scripts/css-animation.js')}}"></script>
+<script src="{{asset('public/js/scripts/css-animation.js')}}"></script>
 @endsection

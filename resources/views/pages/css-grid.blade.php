@@ -881,5 +881,5 @@
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('/js/scripts/css-grid.js')}}"></script>
+<script src="{{asset('public/js/scripts/css-grid.js')}}"></script>
 @endsection

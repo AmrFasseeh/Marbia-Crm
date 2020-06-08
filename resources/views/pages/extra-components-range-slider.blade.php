@@ -6,8 +6,8 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/vendors/ionRangeSlider/css/ion.rangeSlider.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('/vendors/ionRangeSlider/css/ion.rangeSlider.skinFlat.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/ionRangeSlider/css/ion.rangeSlider.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/ionRangeSlider/css/ion.rangeSlider.skinFlat.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -290,10 +290,10 @@
 
 {{-- vendor script --}}
 @section('vendor-script')
-<script src="{{asset('/vendors/ionRangeSlider/js/ion.rangeSlider.js')}}"></script>
+<script src="{{asset('public/vendors/ionRangeSlider/js/ion.rangeSlider.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('/js/scripts/extra-components-range-slider.js')}}"></script>
+<script src="{{asset('public/js/scripts/extra-components-range-slider.js')}}"></script>
 @endsection

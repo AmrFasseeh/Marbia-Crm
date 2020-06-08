@@ -6,7 +6,7 @@
 
 {{-- page style --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
 @endsection
 
 {{-- page content --}}

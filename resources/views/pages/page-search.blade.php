@@ -6,7 +6,7 @@
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/page-search.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/page-search.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -65,7 +65,7 @@
                         <div class="col s12">
                           <div class="card z-depth-0 grey lighten-4 border-radius-6">
                             <div class="card-image">
-                              <img src="{{asset('/images/gallery/18.png')}}" class="responsive-img" alt="">
+                              <img src="{{asset('public/images/gallery/18.png')}}" class="responsive-img" alt="">
                             </div>
                             <div class="card-content">
                               Materialize is a Material Design Admin Template.
@@ -80,7 +80,7 @@
                         <div class="col s12">
                           <div class="card z-depth-0 grey lighten-4 border-radius-6">
                             <div class="card-image">
-                              <img src="{{asset('/images/gallery/19.png')}}" class="responsive-img" alt="">
+                              <img src="{{asset('public/images/gallery/19.png')}}" class="responsive-img" alt="">
                             </div>
                             <div class="card-content">
                               Materialize admin is super flexible, powerful, clean.
@@ -95,7 +95,7 @@
                         <div class="col s12">
                           <div class="card z-depth-0 grey lighten-4 border-radius-6">
                             <div class="card-image">
-                              <img src="{{asset('/images/gallery/20.png')}}" class="responsive-img" alt="">
+                              <img src="{{asset('public/images/gallery/20.png')}}" class="responsive-img" alt="">
                             </div>
                             <div class="card-content">
                               Materialize admin includes 8 pre-built templates.
@@ -126,7 +126,7 @@
                   <div class="result mt-5">
                     <div class="row">
                       <div class="col s12 m3 l3">
-                        <img class="responsive-img mt-4 p-3 border-radius-6" src="{{asset('/images/gallery/37.png')}}"
+                        <img class="responsive-img mt-4 p-3 border-radius-6" src="{{asset('public/images/gallery/37.png')}}"
                           alt="">
                       </div>
                       <div class="col s12 m9 l9">
@@ -146,7 +146,7 @@
                 <div class="col l4 m12 right-content border-radius-6 mb-5">
                   <h5 class="mt-0">Materialize Admin</h5>
                   <p>Material Design Admin Template by PIXINVENT</p>
-                  <img class="responsive-img mt-4 p-3 border-radius-6" src="{{asset('/images/gallery/34.png')}}" alt="">
+                  <img class="responsive-img mt-4 p-3 border-radius-6" src="{{asset('public/images/gallery/34.png')}}" alt="">
                   <p class="mt-2 mb-2">Materialize is a Material Design Admin Template is the excellent responsive
                     google material design inspired multipurpose admin template.</p>
                   <hr>

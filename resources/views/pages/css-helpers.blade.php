@@ -283,7 +283,7 @@
               shadow as seen below. It can be used on most elements, but meant for use on cards.</p>
             <div class="card hoverable small">
               <div class="card-image">
-                <img src="{{asset('/images/gallery/33.png')}}" alt="">
+                <img src="{{asset('public/images/gallery/33.png')}}" alt="">
                 <span class="card-title">Card Title</span>
               </div>
               <div class="card-content">
