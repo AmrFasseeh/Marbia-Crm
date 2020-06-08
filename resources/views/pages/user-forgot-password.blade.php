@@ -6,7 +6,7 @@
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/forgot.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/forgot.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -29,17 +29,17 @@
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <a href="{{asset('public/')}}"
+          <a href="{{asset('/')}}"
             class="btn waves-effect waves-light border-round gradient-45deg-purple-deep-orange col s12 mb-1">Reset
             Password</a>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s6 m6 l6">
-          <p class="margin medium-small"><a href="{{asset('publicuser-login')}}">Login</a></p>
+          <p class="margin medium-small"><a href="{{asset('user-login')}}">Login</a></p>
         </div>
         <div class="input-field col s6 m6 l6">
-          <p class="margin right-align medium-small"><a href="{{asset('publicuser-register')}}">Register</a></p>
+          <p class="margin right-align medium-small"><a href="{{asset('user-register')}}">Register</a></p>
         </div>
       </div>
     </form>

@@ -6,7 +6,7 @@
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/advance-ui-media.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/advance-ui-media.css')}}">
 @endsection
 
 {{-- page main content --}}
@@ -46,7 +46,7 @@
                   ESC key.</p>
               </div>
               <div class="col s12">
-                <img class="materialboxed mt-2" src="{{asset('public/images/gallery/29.png')}}" alt="sample">
+                <img class="materialboxed mt-2" src="{{asset('/images/gallery/29.png')}}" alt="sample">
                 <p class="mt-2">Creating the above image with the effect is as simple as adding a materialboxed class
                   to the image tag.</p>
               </div>
@@ -93,7 +93,7 @@
                     attribute.</p>
                 </div>
                 <div class="col s12 mt-2">
-                  <img class="materialboxed" width="250" src="{{asset('public/images/gallery/21.png')}}" alt="sample"
+                  <img class="materialboxed" width="250" src="{{asset('/images/gallery/21.png')}}" alt="sample"
                     data-caption="A picture of some deer and tons of trees">
                 </div>
               </div>
@@ -139,7 +139,7 @@
                   <div class="slider">
                     <ul class="slides mt-2">
                       <li>
-                        <img src="{{asset('public/images/gallery/30.png')}}" alt="img-1">
+                        <img src="{{asset('/images/gallery/30.png')}}" alt="img-1">
                         <!-- random image -->
                         <div class="caption center-align">
                           <h3 class="white-text">This is our big Tagline!</h3>
@@ -147,7 +147,7 @@
                         </div>
                       </li>
                       <li>
-                        <img src="{{asset('public/images/gallery/31.png')}}" alt="img-2">
+                        <img src="{{asset('/images/gallery/31.png')}}" alt="img-2">
                         <!-- random image -->
                         <div class="caption left-align">
                           <h3 class="white-text">Left Aligned Caption</h3>
@@ -155,7 +155,7 @@
                         </div>
                       </li>
                       <li>
-                        <img src="{{asset('public/images/gallery/33.png')}}" alt="img-3">
+                        <img src="{{asset('/images/gallery/33.png')}}" alt="img-3">
                         <!-- random image -->
                         <div class="caption right-align">
                           <h3 class="white-text">Right Aligned Caption</h3>
@@ -163,7 +163,7 @@
                         </div>
                       </li>
                       <li>
-                        <img src="{{asset('public/images/gallery/28.png')}}" alt="img-4">
+                        <img src="{{asset('/images/gallery/28.png')}}" alt="img-4">
                         <!-- random image -->
                         <div class="caption center-align">
                           <h3 class="white-text">This is our big Tagline!</h3>
@@ -322,5 +322,5 @@
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/advance-ui-media.js')}}"></script>
+<script src="{{asset('/js/scripts/advance-ui-media.js')}}"></script>
 @endsection

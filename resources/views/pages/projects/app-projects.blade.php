@@ -6,7 +6,7 @@
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/cards-basic.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/cards-basic.css')}}">
 <style>
 .card .card-image img {
     height: 269.15px;
@@ -25,7 +25,7 @@
     <div class="col s4 m6 l4">
         <div class="card sticky-action">
             <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="{{ $project->image ? $project->image->url() : asset('public/images/gallery/21.png')}}" alt="" />
+                <img class="activator" src="{{ $project->image ? $project->image->url() : asset('/images/gallery/21.png')}}" alt="" />
             </div>
             <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">{{ $project->title }} <i
@@ -65,7 +65,7 @@
 </div>
 @endsection
 @section('vendor-script')
-<script src="{{asset('public/vendors/sweetalert/sweetalert.min.js')}}"></script>
+<script src="{{asset('/vendors/sweetalert/sweetalert.min.js')}}"></script>
 @endsection
 @section('page-script')
 <script>

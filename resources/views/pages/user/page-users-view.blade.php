@@ -6,7 +6,7 @@
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/page-users.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/page-users.css')}}">
 @endsection
 
 {{-- page content  --}}
@@ -19,7 +19,7 @@
       <div class="col s12 m7">
         <div class="display-flex media">
           <a href="#" class="avatar">
-            <img src="{{ $user->image ? $user->image->url():asset('public/images/avatar/default.png') }}" alt="users view avatar" class="z-depth-4 circle"
+            <img src="{{ $user->image ? $user->image->url():asset('/images/avatar/default.png') }}" alt="users view avatar" class="z-depth-4 circle"
               height="64" width="64">
           </a>
           <div class="media-body">
@@ -34,7 +34,7 @@
         </div>
       </div>
       <div class="col s12 m5 quick-action-btns display-flex justify-content-end align-items-center pt-2">
-        <a href="{{asset('publicapp-email')}}" class="btn-small btn-light-indigo"><i
+        <a href="{{asset('app-email')}}" class="btn-small btn-light-indigo"><i
             class="material-icons">mail_outline</i></a>
         <a href="{{ route('edit.user', $user->id) }}" class="btn-small indigo">Edit</a>
       </div>
@@ -166,5 +166,5 @@
 
 {{-- page script --}}
 @section('page-script')
-{{-- <script src="{{asset('public/js/scripts/page-users.js')}}"></script> --}}
+{{-- <script src="{{asset('/js/scripts/page-users.js')}}"></script> --}}
 @endsection

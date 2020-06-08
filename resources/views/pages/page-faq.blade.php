@@ -6,7 +6,7 @@
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/page-faq.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/page-faq.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -27,7 +27,7 @@
   </div>
   <div class="faq row">
     <div class="col s12 m6 l3">
-      <a class="black-text" href="{{asset('publicpage-faq-detail')}}">
+      <a class="black-text" href="{{asset('page-faq-detail')}}">
         <div class="card z-depth-0 grey lighten-3 faq-card">
           <div class="card-content center-align">
             <i class="material-icons dp48 orange-text">search</i>
@@ -38,7 +38,7 @@
       </a>
     </div>
     <div class="col s12 m6 l3">
-      <a class="black-text" href="{{asset('publicpage-faq-detail')}}">
+      <a class="black-text" href="{{asset('page-faq-detail')}}">
         <div class="card z-depth-0 grey lighten-3 faq-card">
           <div class="card-content center-align">
             <i class="material-icons dp48 red-text">chat_bubble_outline</i>
@@ -49,7 +49,7 @@
       </a>
     </div>
     <div class="col s12 m6 l3">
-      <a class="black-text" href="{{asset('publicpage-faq-detail')}}">
+      <a class="black-text" href="{{asset('page-faq-detail')}}">
         <div class="card z-depth-0 grey lighten-3 faq-card">
           <div class="card-content center-align">
             <i class="material-icons dp48 green-text">perm_identity</i>
@@ -60,7 +60,7 @@
       </a>
     </div>
     <div class="col s12 m6 l3">
-      <a class="black-text" href="{{asset('publicpage-faq-detail')}}">
+      <a class="black-text" href="{{asset('page-faq-detail')}}">
         <div class="card z-depth-0 grey lighten-3 faq-card">
           <div class="card-content center-align">
             <i class="material-icons dp48 blue-text">content_copy</i>
@@ -87,7 +87,7 @@
           <span class="card-title mt-10">Supporters</span>
           <div class="display-flex">
             <div class="mr-4">
-              <img height="38" width="38" src="{{asset('public/images/avatar/avatar-1.png')}}" alt="avatar">
+              <img height="38" width="38" src="{{asset('/images/avatar/avatar-1.png')}}" alt="avatar">
             </div>
             <div class="pl-0">
               <a href="#">Mike</a>
@@ -96,7 +96,7 @@
           </div>
           <div class="display-flex mt-4">
             <div class="mr-4">
-              <img height="38" width="38" src="{{asset('public/images/avatar/avatar-2.png')}}" alt="avatar">
+              <img height="38" width="38" src="{{asset('/images/avatar/avatar-2.png')}}" alt="avatar">
             </div>
             <div class="pl-0">
               <a href="#">Howard Morgan</a>
@@ -105,7 +105,7 @@
           </div>
           <div class="display-flex mt-4">
             <div class="mr-4">
-              <img height="38" width="38" src="{{asset('public/images/avatar/avatar-3.png')}}" alt="avatar">
+              <img height="38" width="38" src="{{asset('/images/avatar/avatar-3.png')}}" alt="avatar">
             </div>
             <div class="pl-0">
               <a href="#">Kenneth Pierce</a>
@@ -114,7 +114,7 @@
           </div>
           <div class="display-flex mt-4">
             <div class="mr-4">
-              <img height="38" width="38" src="{{asset('public/images/avatar/avatar-4.png')}}" alt="avatar">
+              <img height="38" width="38" src="{{asset('/images/avatar/avatar-4.png')}}" alt="avatar">
             </div>
             <div class="pl-0">
               <a href="#">Steven Owens</a>

@@ -6,7 +6,7 @@
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/css-media.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/css-media.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -39,7 +39,7 @@
                     class=" language-markup">height:auto</code>.</p>
               </div>
               <div class="col s12">
-                <img class="responsive-img" src="{{asset('public/images/gallery/44.jpg')}}" alt="style typography">
+                <img class="responsive-img" src="{{asset('/images/gallery/44.jpg')}}" alt="style typography">
                 <p>Media can be styled in different ways using Materialize.</p>
               </div>
             </div>
@@ -84,7 +84,7 @@
                 <div class="grey lighten-5 z-depth-1">
                   <div class="row valign-wrapper">
                     <div class="col s2">
-                      <img src="{{asset('public/images/avatar/avatar-4.png')}}" alt=""
+                      <img src="{{asset('/images/avatar/avatar-4.png')}}" alt=""
                         class="circle responsive-img indigo lighten-3">
                       <!-- notice the "circle" class -->
                     </div>

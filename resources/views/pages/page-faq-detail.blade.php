@@ -6,7 +6,7 @@
 
 {{-- Page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/page-faq.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/page-faq.css')}}">
 @endsection
 
 {{-- page content --}}

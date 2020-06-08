@@ -86,7 +86,7 @@
                     <h4>Modal Header</h4>
                     <ul class="collection">
                       <li class="collection-item avatar">
-                        <img src="{{asset('public/images/avatar/avatar-7.png')}}" alt="" class="circle">
+                        <img src="{{asset('/images/avatar/avatar-7.png')}}" alt="" class="circle">
                         <span class="title">Title</span>
                         <p>First Line
                           <br> Second Line
@@ -284,5 +284,5 @@ $('.modal').modal({
 
 {{-- page scripts  --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/advance-ui-modals.js')}}"></script>
+<script src="{{asset('/js/scripts/advance-ui-modals.js')}}"></script>
 @endsection

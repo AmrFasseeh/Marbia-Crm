@@ -5,7 +5,7 @@
       <ul class="left">
         <li>
           <h1 class="logo-wrapper">
-            <a class="brand-logo darken-1" href="{{asset('public/')}}">
+            <a class="brand-logo darken-1" href="{{asset('/')}}">
               <img src="{{asset($configData['smallScreenLogo'])}}" alt="materialize logo">
               <span class="logo-text hide-on-med-and-down">
                 @if(!empty ($configData['templateTitle']))
@@ -54,7 +54,7 @@
           <a class="waves-effect waves-block waves-light profile-button" href="javascript:void(0);"
             data-target="profile-dropdown">
             <span class="avatar-status avatar-online">
-              <img src="{{asset('public/images/avatar/avatar-7.png')}}" alt="avatar">
+              <img src="{{asset('/images/avatar/avatar-7.png')}}" alt="avatar">
               <p>{{ Auth::user()->username }}</p>
               <i></i>
             </span>
@@ -112,32 +112,32 @@
       <!-- profile-dropdown-->
       <ul class="dropdown-content" id="profile-dropdown">
         <li>
-          <a class="grey-text text-darken-1" href="{{asset('publicuser-profile-page')}}">
+          <a class="grey-text text-darken-1" href="{{asset('user-profile-page')}}">
             <i class="material-icons">person_outline</i>
             Profile
           </a>
         </li>
         <li>
-          <a class="grey-text text-darken-1" href="{{asset('publicapp-chat')}}">
+          <a class="grey-text text-darken-1" href="{{asset('app-chat')}}">
             <i class="material-icons">chat_bubble_outline</i>
             Chat
           </a>
         </li>
         <li>
-          <a class="grey-text text-darken-1" href="{{asset('publicpage-faq')}}">
+          <a class="grey-text text-darken-1" href="{{asset('page-faq')}}">
             <i class="material-icons">help_outline</i>
             Help
           </a>
         </li>
         <li class="divider"></li>
         <li>
-          <a class="grey-text text-darken-1" href="{{asset('publicuser-lock-screen')}}">
+          <a class="grey-text text-darken-1" href="{{asset('user-lock-screen')}}">
             <i class="material-icons">lock_outline</i>
             Lock
           </a>
         </li>
         <li>
-          <a class="grey-text text-darken-1" href="{{asset('publicuser-login')}}">
+          <a class="grey-text text-darken-1" href="{{asset('user-login')}}">
             <i class="material-icons">keyboard_tab</i>
             Logout
           </a>
@@ -207,7 +207,7 @@
   <li class="auto-suggestion"><a class="collection-item" href="#">
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
-          <div class="avatar"><img src="{{asset('public/images/icon/pdf-image.png')}}" width="24" height="30"
+          <div class="avatar"><img src="{{asset('/images/icon/pdf-image.png')}}" width="24" height="30"
               alt="sample image">
           </div>
           <div class="member-info display-flex flex-column"><span class="black-text">Two new item submitted</span><small
@@ -219,7 +219,7 @@
   <li class="auto-suggestion"><a class="collection-item" href="#">
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
-          <div class="avatar"><img src="{{asset('public/images/icon/doc-image.png')}}" width="24" height="30"
+          <div class="avatar"><img src="{{asset('/images/icon/doc-image.png')}}" width="24" height="30"
               alt="sample image">
           </div>
           <div class="member-info display-flex flex-column"><span class="black-text">52 Doc file Generator</span><small
@@ -231,7 +231,7 @@
   <li class="auto-suggestion"><a class="collection-item" href="#">
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
-          <div class="avatar"><img src="{{asset('public/images/icon/xls-image.png')}}" width="24" height="30"
+          <div class="avatar"><img src="{{asset('/images/icon/xls-image.png')}}" width="24" height="30"
               alt="sample image">
           </div>
           <div class="member-info display-flex flex-column"><span class="black-text">25 Xls File Uploaded</span><small
@@ -243,7 +243,7 @@
   <li class="auto-suggestion"><a class="collection-item" href="#">
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
-          <div class="avatar"><img src="{{asset('public/images/icon/jpg-image.png')}}" width="24" height="30"
+          <div class="avatar"><img src="{{asset('/images/icon/jpg-image.png')}}" width="24" height="30"
               alt="sample image">
           </div>
           <div class="member-info display-flex flex-column"><span class="black-text">Anna Strong</span><small
@@ -258,7 +258,7 @@
   <li class="auto-suggestion"><a class="collection-item" href="#">
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
-          <div class="avatar"><img class="circle" src="{{asset('public/images/avatar/avatar-7.png')}}" width="30"
+          <div class="avatar"><img class="circle" src="{{asset('/images/avatar/avatar-7.png')}}" width="30"
               alt="sample image"></div>
           <div class="member-info display-flex flex-column"><span class="black-text">John Doe</span><small
               class="grey-text">UI designer</small></div>
@@ -268,7 +268,7 @@
   <li class="auto-suggestion"><a class="collection-item" href="#">
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
-          <div class="avatar"><img class="circle" src="{{asset('public/images/avatar/avatar-8.png')}}" width="30"
+          <div class="avatar"><img class="circle" src="{{asset('/images/avatar/avatar-8.png')}}" width="30"
               alt="sample image"></div>
           <div class="member-info display-flex flex-column"><span class="black-text">Michal Clark</span><small
               class="grey-text">FontEnd Developer</small></div>
@@ -278,7 +278,7 @@
   <li class="auto-suggestion"><a class="collection-item" href="#">
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
-          <div class="avatar"><img class="circle" src="{{asset('public/images/avatar/avatar-10.png')}}" width="30"
+          <div class="avatar"><img class="circle" src="{{asset('/images/avatar/avatar-10.png')}}" width="30"
               alt="sample image"></div>
           <div class="member-info display-flex flex-column"><span class="black-text">Milena Gibson</span><small
               class="grey-text">Digital Marketing</small></div>
@@ -288,7 +288,7 @@
   <li class="auto-suggestion"><a class="collection-item" href="#">
       <div class="display-flex">
         <div class="display-flex align-item-center flex-grow-1">
-          <div class="avatar"><img class="circle" src="{{asset('public/images/avatar/avatar-12.png')}}" width="30"
+          <div class="avatar"><img class="circle" src="{{asset('/images/avatar/avatar-12.png')}}" width="30"
               alt="sample image"></div>
           <div class="member-info display-flex flex-column"><span class="black-text">Anna Strong</span><small
               class="grey-text">Web Designer</small></div>

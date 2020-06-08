@@ -26,12 +26,12 @@
           <i class="material-icons right">arrow_drop_down</i>
         </a>
         <ul class="dropdown-content" id="dropdown1" tabindex="0">
-          <li tabindex="0"><a class="grey-text text-darken-2" href="{{asset('publicuser-profile-page')}}">Profile<span
+          <li tabindex="0"><a class="grey-text text-darken-2" href="{{asset('user-profile-page')}}">Profile<span
                 class="new badge red">2</span></a></li>
-          <li tabindex="0"><a class="grey-text text-darken-2" href="{{asset('publicapp-contacts')}}">Contacts</a></li>
-          <li tabindex="0"><a class="grey-text text-darken-2" href="{{asset('publicpage-faq')}}">FAQ</a></li>
+          <li tabindex="0"><a class="grey-text text-darken-2" href="{{asset('app-contacts')}}">Contacts</a></li>
+          <li tabindex="0"><a class="grey-text text-darken-2" href="{{asset('page-faq')}}">FAQ</a></li>
           <li class="divider" tabindex="-1"></li>
-          <li tabindex="0"><a class="grey-text text-darken-2" href="{{asset('publicuser-login')}}">Logout</a></li>
+          <li tabindex="0"><a class="grey-text text-darken-2" href="{{asset('user-login')}}">Logout</a></li>
         </ul>
       </div>
     </div>
@@ -62,12 +62,12 @@
           data-target="dropdown1"><i class="material-icons">expand_more </i><i
             class="material-icons right">arrow_drop_down</i></a>
         <ul class="dropdown-content" id="dropdown1" tabindex="0">
-          <li tabindex="0"><a class="grey-text text-darken-2" href="{{asset('publicuser-profile-page')}}">Profile<span
+          <li tabindex="0"><a class="grey-text text-darken-2" href="{{asset('user-profile-page')}}">Profile<span
                 class="new badge red">2</span></a></li>
-          <li tabindex="0"><a class="grey-text text-darken-2" href="{{asset('publicapp-contacts')}}">Contacts</a></li>
-          <li tabindex="0"><a class="grey-text text-darken-2" href="{{asset('publicpage-faq')}}">FAQ</a></li>
+          <li tabindex="0"><a class="grey-text text-darken-2" href="{{asset('app-contacts')}}">Contacts</a></li>
+          <li tabindex="0"><a class="grey-text text-darken-2" href="{{asset('page-faq')}}">FAQ</a></li>
           <li class="divider" tabindex="-1"></li>
-          <li tabindex="0"><a class="grey-text text-darken-2" href="{{asset('publicuser-login')}}">Logout</a></li>
+          <li tabindex="0"><a class="grey-text text-darken-2" href="{{asset('user-login')}}">Logout</a></li>
         </ul>
       </div>
     </div>
@@ -101,7 +101,7 @@
 
 @elseif($configData['mainLayoutType'] === 'vertical-dark-menu')
 {{-- vertical-dark-menu --}}
-<div id="breadcrumbs-wrapper" data-image="{{asset('public/images/gallery/breadcrumb-bg.jpg')}}">
+<div id="breadcrumbs-wrapper" data-image="{{asset('/images/gallery/breadcrumb-bg.jpg')}}">
   <!-- Search for small screen-->
   <div class="container">
     <div class="row">

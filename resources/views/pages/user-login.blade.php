@@ -6,7 +6,7 @@
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/login.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/login.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -45,16 +45,16 @@
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <a href="{{asset('public/')}}"
+          <a href="{{asset('/')}}"
             class="btn waves-effect waves-light border-round gradient-45deg-purple-deep-orange col s12">Login</a>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s6 m6 l6">
-          <p class="margin medium-small"><a href="{{asset('publicuser-register')}}">Register Now!</a></p>
+          <p class="margin medium-small"><a href="{{asset('user-register')}}">Register Now!</a></p>
         </div>
         <div class="input-field col s6 m6 l6">
-          <p class="margin right-align medium-small"><a href="{{asset('publicuser-forgot-password')}}">Forgot password ?</a>
+          <p class="margin right-align medium-small"><a href="{{asset('user-forgot-password')}}">Forgot password ?</a>
           </p>
         </div>
       </div>

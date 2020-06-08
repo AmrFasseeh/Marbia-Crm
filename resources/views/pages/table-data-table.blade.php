@@ -6,16 +6,16 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/data-tables/css/jquery.dataTables.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/data-tables/css/jquery.dataTables.min.css')}}">
 <link rel="stylesheet" type="text/css"
-  href="{{asset('public/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/data-tables/css/select.dataTables.min.css')}}">
+  href="{{asset('/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/data-tables/css/select.dataTables.min.css')}}">
 @endsection
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/data-tables.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/data-tables.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -4057,12 +4057,12 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/data-tables/js/jquery.dataTables.min.js')}}"></script>
-<script src="{{asset('public/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js')}}"></script>
-<script src="{{asset('public/vendors/data-tables/js/dataTables.select.min.js')}}"></script>
+<script src="{{asset('/vendors/data-tables/js/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js')}}"></script>
+<script src="{{asset('/vendors/data-tables/js/dataTables.select.min.js')}}"></script>
 @endsection
 
 {{-- page script --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/data-tables.js')}}"></script>
+<script src="{{asset('/js/scripts/data-tables.js')}}"></script>
 @endsection

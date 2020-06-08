@@ -443,7 +443,7 @@
                   <div class="card card-alert green white-text">
                     <div class="card-content">
                       <p>
-                        <span class="font-weight-600">Note:</span> Please refer <a href="{{asset('public/css-color')}}"
+                        <span class="font-weight-600">Note:</span> Please refer <a href="{{asset('/css-color')}}"
                           target="_blank">css-color.html</a>
                         file for all colors classes & more details.</p>
                     </div>

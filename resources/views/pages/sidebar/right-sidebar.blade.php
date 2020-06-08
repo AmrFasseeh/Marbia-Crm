@@ -50,7 +50,7 @@
     <li class="chat-body">
       <ul class="collection">
         <li class="collection-item display-flex avatar pl-5 pb-0" data-target="slide-out-chat">
-          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-7.png')}}"
+          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('/images/avatar/avatar-7.png')}}"
               alt="avatar" />
           </span>
           <div class="user-content speech-bubble">
@@ -63,7 +63,7 @@
           </div>
         </li>
         <li class="collection-item display-flex avatar pl-5 pb-0" data-target="slide-out-chat">
-          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-7.png')}}"
+          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('/images/avatar/avatar-7.png')}}"
               alt="avatar" />
           </span>
           <div class="user-content speech-bubble">
@@ -81,7 +81,7 @@
         </li>
 
         <li class="collection-item display-flex avatar pl-5 pb-0" data-target="slide-out-chat">
-          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-7.png')}}"
+          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('/images/avatar/avatar-7.png')}}"
               alt="avatar" />
           </span>
           <div class="user-content speech-bubble">
@@ -94,7 +94,7 @@
           </div>
         </li>
         <li class="collection-item display-flex avatar pl-5 pb-0" data-target="slide-out-chat">
-          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-7.png')}}"
+          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('/images/avatar/avatar-7.png')}}"
               alt="avatar" />
           </span>
           <div class="user-content speech-bubble">
@@ -117,7 +117,7 @@
           </div>
         </li>
         <li class="collection-item display-flex avatar pl-5 pb-0" data-target="slide-out-chat">
-          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-7.png')}}"
+          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('/images/avatar/avatar-7.png')}}"
               alt="avatar" />
           </span>
           <div class="user-content speech-bubble">
@@ -125,7 +125,7 @@
           </div>
         </li>
         <li class="collection-item display-flex avatar pl-5 pb-0" data-target="slide-out-chat">
-          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('public/images/avatar/avatar-7.png')}}"
+          <span class="avatar-status avatar-online avatar-50"><img src="{{asset('/images/avatar/avatar-7.png')}}"
               alt="avatar" />
           </span>
           <div class="user-content speech-bubble">

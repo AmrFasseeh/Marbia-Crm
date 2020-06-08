@@ -6,14 +6,14 @@
 
 {{-- vendor style --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2-materialize.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/rateYo/jquery.rateyo.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/select2/select2.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/select2/select2-materialize.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/rateYo/jquery.rateyo.min.css')}}">
 @endsection
 
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/page-users.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/page-users.css')}}">
 <style>
     .rate {
         float: left;
@@ -193,11 +193,11 @@
 </div>
 @endsection
 @section('vendor-script')
-<script src="{{asset('public/vendors/select2/select2.full.min.js')}}"></script>
-<script src="{{asset('public/vendors/formatter/jquery.formatter.min.js')}}"></script>
-<script src="{{asset('public/vendors/rateYo/jquery.rateyo.min.js')}}"></script>
+<script src="{{asset('/vendors/select2/select2.full.min.js')}}"></script>
+<script src="{{asset('/vendors/formatter/jquery.formatter.min.js')}}"></script>
+<script src="{{asset('/vendors/rateYo/jquery.rateyo.min.js')}}"></script>
 @endsection
 @section('page-script')
-<script src="{{asset('public/js/custom/leads-add.js')}}"></script>
-<script src="{{asset('public/js/scripts/extra-components-ratings.js')}}"></script>
+<script src="{{asset('/js/custom/leads-add.js')}}"></script>
+<script src="{{asset('/js/scripts/extra-components-ratings.js')}}"></script>
 @endsection

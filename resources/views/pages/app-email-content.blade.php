@@ -6,13 +6,13 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/quill/quill.snow.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/vendors/quill/quill.snow.css')}}">
 @endsection
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/app-sidebar.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/app-email-content.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/app-sidebar.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/app-email-content.css')}}">
 @endsection
 
 {{-- main page content --}}
@@ -26,7 +26,7 @@
           <h5 class="m-0 sidebar-title"><i class="material-icons app-header-icon text-top">mail_outline</i> Mailbox</h5>
           <div class="row valign-wrapper mt-10 pt-2">
             <div class="col s3 media-image">
-              <img src="{{asset('public/images/user/2.jpg')}}" alt="" class="circle z-depth-2 responsive-img">
+              <img src="{{asset('/images/user/2.jpg')}}" alt="" class="circle z-depth-2 responsive-img">
               <!-- notice the "circle" class -->
             </div>
             <div class="col s9">
@@ -90,7 +90,7 @@
               <div class="email-header">
                 <div class="subject">
                   <div class="back-to-mails">
-                    <a href="{{asset('publicapp-email')}}"><i class="material-icons">arrow_back</i></a>
+                    <a href="{{asset('app-email')}}"><i class="material-icons">arrow_back</i></a>
                   </div>
                   <div class="email-title">Fruitcake sweet jelly-o sweet ice cream donut ice cream</div>
                 </div>
@@ -111,7 +111,7 @@
               <div class="email-content">
                 <div class="list-title-area">
                   <div class="user-media">
-                    <img src="{{asset('public/images/user/9.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
+                    <img src="{{asset('/images/user/9.jpg')}}" alt="" class="circle z-depth-2 responsive-img avtar">
                     <div class="list-title">
                       <span class="name">Pari Kalin</span>
                       <span class="to-person">to me</span>
@@ -143,7 +143,7 @@
                 <div class="footer-action">
                   <div class="attachment-list">
                     <div class="attachment">
-                      <img src="{{asset('public/images/gallery/35.png')}}" alt="" class="responsive-img attached-image">
+                      <img src="{{asset('/images/gallery/35.png')}}" alt="" class="responsive-img attached-image">
                       <div class="size">
                         <span class="grey-text">(0.75Mb)</span>
                       </div>
@@ -157,7 +157,7 @@
                       </div>
                     </div>
                     <div class="attachment">
-                      <img src="{{asset('public/images/gallery/36.png')}}" alt="" class="responsive-img attached-image">
+                      <img src="{{asset('/images/gallery/36.png')}}" alt="" class="responsive-img attached-image">
                       <div class="size">
                         <span class="grey-text">(1Mb)</span>
                       </div>
@@ -171,7 +171,7 @@
                       </div>
                     </div>
                     <div class="attachment">
-                      <img src="{{asset('public/images/gallery/39.png')}}" alt="" class="responsive-img attached-image">
+                      <img src="{{asset('/images/gallery/39.png')}}" alt="" class="responsive-img attached-image">
                       <div class="size">
                         <span class="grey-text">(1.2Mb)</span>
                       </div>
@@ -257,10 +257,10 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('public/vendors/quill/quill.min.js')}}"></script>
+<script src="{{asset('/vendors/quill/quill.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('public/js/scripts/app-email-content.js')}}"></script>
+<script src="{{asset('/js/scripts/app-email-content.js')}}"></script>
 @endsection
