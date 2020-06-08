@@ -6,15 +6,15 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/vendors/data-tables/css/jquery.dataTables.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/data-tables/css/jquery.dataTables.min.css')}}">
 <link rel="stylesheet" type="text/css"
-  href="{{asset('/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('/vendors/data-tables/css/dataTables.checkboxes.css')}}">
+  href="{{asset('public/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/data-tables/css/dataTables.checkboxes.css')}}">
 @endsection
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/app-invoice.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/app-invoice.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -31,7 +31,7 @@
   </div>
   <!-- create invoice button-->
   <div class="invoice-create-btn">
-    <a href="{{asset('app-invoice-add')}}" class="btn waves-effect waves-light invoice-create border-round z-depth-4">
+    <a href="{{asset('publicapp-invoice-add')}}" class="btn waves-effect waves-light invoice-create border-round z-depth-4">
       <i class="material-icons">add</i>
       <span class="hide-on-small-only">Create Invoice</span>
     </a>
@@ -75,7 +75,7 @@
           <td></td>
           <td></td>
           <td>
-            <a href="{{asset('app-invoice-view')}}">INV-00956</a>
+            <a href="{{asset('publicapp-invoice-view')}}">INV-00956</a>
           </td>
           <td><span class="invoice-amount">$459.30</span></td>
           <td><small>12-08-19</small></td>
@@ -89,10 +89,10 @@
           </td>
           <td>
             <div class="invoice-action">
-              <a href="{{asset('app-invoice-view')}}" class="invoice-action-view mr-4">
+              <a href="{{asset('publicapp-invoice-view')}}" class="invoice-action-view mr-4">
                 <i class="material-icons">remove_red_eye</i>
               </a>
-              <a href="{{asset('app-invoice-edit')}}" class="invoice-action-edit">
+              <a href="{{asset('publicapp-invoice-edit')}}" class="invoice-action-edit">
                 <i class="material-icons">edit</i>
               </a>
             </div>
@@ -102,7 +102,7 @@
           <td></td>
           <td> </td>
           <td>
-            <a href="{{asset('app-invoice-view')}}">INV-00349</a>
+            <a href="{{asset('publicapp-invoice-view')}}">INV-00349</a>
           </td>
           <td><span class="invoice-amount">$125.00</span></td>
           <td><small>08-08-19</small></td>
@@ -114,10 +114,10 @@
           <td><span class="chip lighten-5 green green-text">PAID</span></td>
           <td>
             <div class="invoice-action">
-              <a href="{{asset('app-invoice-view')}}" class="invoice-action-view mr-4">
+              <a href="{{asset('publicapp-invoice-view')}}" class="invoice-action-view mr-4">
                 <i class="material-icons">remove_red_eye</i>
               </a>
-              <a href="{{asset('app-invoice-edit')}}" class="invoice-action-edit">
+              <a href="{{asset('publicapp-invoice-edit')}}" class="invoice-action-edit">
                 <i class="material-icons">edit</i>
               </a>
             </div>
@@ -127,7 +127,7 @@
           <td></td>
           <td> </td>
           <td>
-            <a href="{{asset('app-invoice-view')}}">INV-00853</a>
+            <a href="{{asset('publicapp-invoice-view')}}">INV-00853</a>
           </td>
           <td><span class="invoice-amount">$10,503</span></td>
           <td><small>02-08-19</small></td>
@@ -139,10 +139,10 @@
           <td><span class="chip lighten-5 red red-text">UNPAID</span></td>
           <td>
             <div class="invoice-action">
-              <a href="{{asset('app-invoice-view')}}" class="invoice-action-view mr-4">
+              <a href="{{asset('publicapp-invoice-view')}}" class="invoice-action-view mr-4">
                 <i class="material-icons">remove_red_eye</i>
               </a>
-              <a href="{{asset('app-invoice-edit')}}" class="invoice-action-edit">
+              <a href="{{asset('publicapp-invoice-edit')}}" class="invoice-action-edit">
                 <i class="material-icons">edit</i>
               </a>
             </div>
@@ -152,7 +152,7 @@
           <td></td>
           <td> </td>
           <td>
-            <a href="{{asset('app-invoice-view')}}">INV-00452</a>
+            <a href="{{asset('publicapp-invoice-view')}}">INV-00452</a>
           </td>
           <td><span class="invoice-amount">$90</span></td>
           <td><small>28-07-19</small></td>
@@ -164,10 +164,10 @@
           <td><span class="chip lighten-5 orange orange-text">Partially Paid</span></td>
           <td>
             <div class="invoice-action">
-              <a href="{{asset('app-invoice-view')}}" class="invoice-action-view mr-4">
+              <a href="{{asset('publicapp-invoice-view')}}" class="invoice-action-view mr-4">
                 <i class="material-icons">remove_red_eye</i>
               </a>
-              <a href="{{asset('app-invoice-edit')}}" class="invoice-action-edit">
+              <a href="{{asset('publicapp-invoice-edit')}}" class="invoice-action-edit">
                 <i class="material-icons">edit</i>
               </a>
             </div>
@@ -177,7 +177,7 @@
           <td></td>
           <td> </td>
           <td>
-            <a href="{{asset('app-invoice-view')}}">INV-00123</a>
+            <a href="{{asset('publicapp-invoice-view')}}">INV-00123</a>
           </td>
           <td><span class="invoice-amount">$15,900</span></td>
           <td><small>23-07-19</small></td>
@@ -189,10 +189,10 @@
           <td><span class="chip lighten-5 green green-text">PAID</span></td>
           <td>
             <div class="invoice-action">
-              <a href="{{asset('app-invoice-view')}}" class="invoice-action-view mr-4">
+              <a href="{{asset('publicapp-invoice-view')}}" class="invoice-action-view mr-4">
                 <i class="material-icons">remove_red_eye</i>
               </a>
-              <a href="{{asset('app-invoice-edit')}}" class="invoice-action-edit">
+              <a href="{{asset('publicapp-invoice-edit')}}" class="invoice-action-edit">
                 <i class="material-icons">edit</i>
               </a>
             </div>
@@ -202,7 +202,7 @@
           <td></td>
           <td></td>
           <td>
-            <a href="{{asset('app-invoice-view')}}">INV-00853</a>
+            <a href="{{asset('publicapp-invoice-view')}}">INV-00853</a>
           </td>
           <td><span class="invoice-amount">$115.06</span></td>
           <td><small>24-06-19</small></td>
@@ -214,10 +214,10 @@
           <td><span class="chip lighten-5 green green-text">PAID</span></td>
           <td>
             <div class="invoice-action">
-              <a href="{{asset('app-invoice-view')}}" class="invoice-action-view mr-4">
+              <a href="{{asset('publicapp-invoice-view')}}" class="invoice-action-view mr-4">
                 <i class="material-icons">remove_red_eye</i>
               </a>
-              <a href="{{asset('app-invoice-edit')}}" class="invoice-action-edit">
+              <a href="{{asset('publicapp-invoice-edit')}}" class="invoice-action-edit">
                 <i class="material-icons">edit</i>
               </a>
             </div>
@@ -227,7 +227,7 @@
           <td></td>
           <td> </td>
           <td>
-            <a href="{{asset('app-invoice-view')}}">INV-00153</a>
+            <a href="{{asset('publicapp-invoice-view')}}">INV-00153</a>
           </td>
           <td><span class="invoice-amount">$1,090</span></td>
           <td><small>23-05-19</small></td>
@@ -239,10 +239,10 @@
           <td><span class="chip lighten-5 red red-text">UNPAID</span></td>
           <td>
             <div class="invoice-action">
-              <a href="{{asset('app-invoice-view')}}" class="invoice-action-view mr-4">
+              <a href="{{asset('publicapp-invoice-view')}}" class="invoice-action-view mr-4">
                 <i class="material-icons">remove_red_eye</i>
               </a>
-              <a href="{{asset('app-invoice-edit')}}" class="invoice-action-edit">
+              <a href="{{asset('publicapp-invoice-edit')}}" class="invoice-action-edit">
                 <i class="material-icons">edit</i>
               </a>
             </div>
@@ -252,7 +252,7 @@
           <td></td>
           <td> </td>
           <td>
-            <a href="{{asset('app-invoice-view')}}">INV-00788</a>
+            <a href="{{asset('publicapp-invoice-view')}}">INV-00788</a>
           </td>
           <td><span class="invoice-amount">$555.50</span></td>
           <td><small>10-06-19</small></td>
@@ -264,10 +264,10 @@
           <td><span class="chip lighten-5 red red-text">UNPAID</span></td>
           <td>
             <div class="invoice-action">
-              <a href="{{asset('app-invoice-view')}}" class="invoice-action-view mr-4">
+              <a href="{{asset('publicapp-invoice-view')}}" class="invoice-action-view mr-4">
                 <i class="material-icons">remove_red_eye</i>
               </a>
-              <a href="{{asset('app-invoice-edit')}}" class="invoice-action-edit">
+              <a href="{{asset('publicapp-invoice-edit')}}" class="invoice-action-edit">
                 <i class="material-icons">edit</i>
               </a>
             </div>
@@ -277,7 +277,7 @@
           <td></td>
           <td> </td>
           <td>
-            <a href="{{asset('app-invoice-view')}}">INV-00326</a>
+            <a href="{{asset('publicapp-invoice-view')}}">INV-00326</a>
           </td>
           <td><span class="invoice-amount">$8,563</span></td>
           <td><small>06-01-19</small></td>
@@ -289,10 +289,10 @@
           <td><span class="chip lighten-5 green green-text">PAID</span></td>
           <td>
             <div class="invoice-action">
-              <a href="{{asset('app-invoice-view')}}" class="invoice-action-view mr-4">
+              <a href="{{asset('publicapp-invoice-view')}}" class="invoice-action-view mr-4">
                 <i class="material-icons">remove_red_eye</i>
               </a>
-              <a href="{{asset('app-invoice-edit')}}" class="invoice-action-edit">
+              <a href="{{asset('publicapp-invoice-edit')}}" class="invoice-action-edit">
                 <i class="material-icons">edit</i>
               </a>
             </div>
@@ -302,7 +302,7 @@
           <td></td>
           <td> </td>
           <td>
-            <a href="{{asset('app-invoice-view')}}">INV-00759</a>
+            <a href="{{asset('publicapp-invoice-view')}}">INV-00759</a>
           </td>
           <td><span class="invoice-amount">$10,960.20</span></td>
           <td><small>22-05-19</small></td>
@@ -314,10 +314,10 @@
           <td><span class="chip lighten-5 orange orange-text">Partially Paid</span></td>
           <td>
             <div class="invoice-action">
-              <a href="{{asset('app-invoice-view')}}" class="invoice-action-view mr-4">
+              <a href="{{asset('publicapp-invoice-view')}}" class="invoice-action-view mr-4">
                 <i class="material-icons">remove_red_eye</i>
               </a>
-              <a href="{{asset('app-invoice-edit')}}" class="invoice-action-edit">
+              <a href="{{asset('publicapp-invoice-edit')}}" class="invoice-action-edit">
                 <i class="material-icons">edit</i>
               </a>
             </div>
@@ -327,7 +327,7 @@
           <td></td>
           <td> </td>
           <td>
-            <a href="{{asset('app-invoice-view')}}">INV-00999</a>
+            <a href="{{asset('publicapp-invoice-view')}}">INV-00999</a>
           </td>
           <td><span class="invoice-amount">$886.90</span></td>
           <td><small>12-05-19</small></td>
@@ -339,10 +339,10 @@
           <td><span class="chip lighten-5 red red-text">UNPAID</span></td>
           <td>
             <div class="invoice-action">
-              <a href="{{asset('app-invoice-view')}}" class="invoice-action-view mr-4">
+              <a href="{{asset('publicapp-invoice-view')}}" class="invoice-action-view mr-4">
                 <i class="material-icons">remove_red_eye</i>
               </a>
-              <a href="{{asset('app-invoice-edit')}}" class="invoice-action-edit">
+              <a href="{{asset('publicapp-invoice-edit')}}" class="invoice-action-edit">
                 <i class="material-icons">edit</i>
               </a>
             </div>
@@ -352,7 +352,7 @@
           <td></td>
           <td> </td>
           <td>
-            <a href="{{asset('app-invoice-view')}}">INV-00223</a>
+            <a href="{{asset('publicapp-invoice-view')}}">INV-00223</a>
           </td>
           <td><span class="invoice-amount">$459.30</span></td>
           <td><small>28-04-19</small></td>
@@ -364,10 +364,10 @@
           <td><span class="chip lighten-5 green green-text">PAID</span></td>
           <td>
             <div class="invoice-action">
-              <a href="{{asset('app-invoice-view')}}" class="invoice-action-view mr-4">
+              <a href="{{asset('publicapp-invoice-view')}}" class="invoice-action-view mr-4">
                 <i class="material-icons">remove_red_eye</i>
               </a>
-              <a href="{{asset('app-invoice-edit')}}" class="invoice-action-edit">
+              <a href="{{asset('publicapp-invoice-edit')}}" class="invoice-action-edit">
                 <i class="material-icons">edit</i>
               </a>
             </div>
@@ -381,12 +381,12 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('/vendors/data-tables/js/jquery.dataTables.min.js')}}"></script>
-<script src="{{asset('/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js')}}"></script>
-<script src="{{asset('/vendors/data-tables/js/datatables.checkboxes.min.js')}}"></script>
+<script src="{{asset('public/vendors/data-tables/js/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('public/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js')}}"></script>
+<script src="{{asset('public/vendors/data-tables/js/datatables.checkboxes.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('/js/scripts/app-invoice.js')}}"></script>
+<script src="{{asset('public/js/scripts/app-invoice.js')}}"></script>
 @endsection

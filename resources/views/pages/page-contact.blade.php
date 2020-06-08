@@ -6,13 +6,13 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/vendors/flag-icon/css/flag-icon.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('/fonts/fontawesome/css/all.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/flag-icon/css/flag-icon.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/fonts/fontawesome/css/all.min.css')}}">
 @endsection
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/page-contact.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/page-contact.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -129,5 +129,5 @@
 
 {{-- page script --}}
 @section('page-script')
-<script src="{{asset('/js/scripts/page-contact.js')}}"></script>
+<script src="{{asset('public/js/scripts/page-contact.js')}}"></script>
 @endsection

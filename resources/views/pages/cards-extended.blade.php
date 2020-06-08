@@ -6,7 +6,7 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/fonts/fontawesome/css/all.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/fonts/fontawesome/css/all.min.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -18,13 +18,13 @@
       <h4 class="card-title">Gradient Card & Gradient Card With Analytics</h4>
       <p>
         Here is the gradient card with flat image for all gradient classes please check
-        <a href="{{asset('/css-color')}}" target="_blank"> css-color</a>.
+        <a href="{{asset('public/css-color')}}" target="_blank"> css-color</a>.
       </p>
       <div class="row">
         <div class="col s12 m3">
           <div class="card gradient-shadow gradient-45deg-light-blue-cyan border-radius-3">
             <div class="card-content center">
-              <img src="{{asset('/images/icon/apple-watch.png')}}" alt="images" class="width-40" />
+              <img src="{{asset('public/images/icon/apple-watch.png')}}" alt="images" class="width-40" />
               <h5 class="white-text lighten-4">50% Off</h5>
               <p class="white-text lighten-4">On apple watch</p>
             </div>
@@ -33,7 +33,7 @@
         <div class="col s12 m3">
           <div class="card gradient-shadow gradient-45deg-red-pink border-radius-3">
             <div class="card-content center">
-              <img src="{{asset('/images/icon/printer.png')}}" alt="images" class="width-40" />
+              <img src="{{asset('public/images/icon/printer.png')}}" alt="images" class="width-40" />
               <h5 class="white-text lighten-4">20% Off</h5>
               <p class="white-text lighten-4">On Canon Printer</p>
             </div>
@@ -42,7 +42,7 @@
         <div class="col s12 m3">
           <div class="card gradient-shadow gradient-45deg-amber-amber border-radius-3">
             <div class="card-content center">
-              <img src="{{asset('/images/icon/laptop.png')}}" alt="images" class="width-40" />
+              <img src="{{asset('public/images/icon/laptop.png')}}" alt="images" class="width-40" />
               <h5 class="white-text lighten-4">40% Off</h5>
               <p class="white-text lighten-4">On apple macbook</p>
             </div>
@@ -51,7 +51,7 @@
         <div class="col s12 m3">
           <div class="card gradient-shadow gradient-45deg-green-teal border-radius-3">
             <div class="card-content center">
-              <img src="{{asset('/images/icon/bowling.png')}}" alt="images" class="width-40" />
+              <img src="{{asset('public/images/icon/bowling.png')}}" alt="images" class="width-40" />
               <h5 class="white-text lighten-4">60% Off</h5>
               <p class="white-text lighten-4">On any video game</p>
             </div>
@@ -231,7 +231,7 @@
       <div class="col s12 m6 l4 card-width">
         <div class="card-panel border-radius-6 mt-10 card-animation-1">
           <img class="responsive-img border-radius-8 z-depth-4 image-n-margin"
-            src="{{asset('/images/cards/news-fashion.jpg')}}" alt="images" />
+            src="{{asset('public/images/cards/news-fashion.jpg')}}" alt="images" />
           <h6><a href="#" class="mt-5">Fashion</a></h6>
           <p>Fashion is a popular style, especially in clothing, footwear, lifestyle, accessories,
             makeup,
@@ -239,7 +239,7 @@
             body.</p>
           <div class="row mt-4">
             <div class="col s2">
-              <a href="#"><img src="{{asset('/images/user/9.jpg')}}" width="40" alt="fashion"
+              <a href="#"><img src="{{asset('public/images/user/9.jpg')}}" width="40" alt="fashion"
                   class="circle responsive-img mr-3" /></a>
             </div>
             <a href="#">
@@ -257,13 +257,13 @@
       <div class="col s12 m6 l4 card-width">
         <div class="card-panel border-radius-6 mt-10 card-animation-1">
           <img class="responsive-img border-radius-8 z-depth-4 image-n-margin"
-            src="{{asset('/images/cards/news-apple.jpg')}}" alt="images" />
+            src="{{asset('public/images/cards/news-apple.jpg')}}" alt="images" />
           <h6><a href="#" class="mt-5">Apple News</a></h6>
           <p>More than 40% users have reported their new phones won't charge when plugged into
             lightning cables.</p>
           <div class="row mt-4">
             <div class="col s2">
-              <a href="#"><img src="{{asset('/images/user/1.jpg')}}" width="40" alt="news"
+              <a href="#"><img src="{{asset('public/images/user/1.jpg')}}" width="40" alt="news"
                   class="circle responsive-img mr-3" /></a>
             </div>
             <a href="#">
@@ -281,7 +281,7 @@
       <div class="col s12 m6 l4 card-width">
         <div class="card-panel border-radius-6 mt-10 card-animation-1">
           <img class="responsive-img border-radius-8 z-depth-4 image-n-margin"
-            src="{{asset('/images/cards/news-twitter.jpg')}}" alt="" />
+            src="{{asset('public/images/cards/news-twitter.jpg')}}" alt="" />
           <h6><a href="#" class="mt-5">Twitter Brings Its 'Data Saver'</a></h6>
           <p>Microblogging site Twitter has rolled out its latest update for Android and iOS users
             with the "data
@@ -290,7 +290,7 @@
           </p>
           <div class="row mt-4">
             <div class="col s2">
-              <a href="#"><img src="{{asset('/images/user/8.jpg')}}" width="40" alt="news"
+              <a href="#"><img src="{{asset('public/images/user/8.jpg')}}" width="40" alt="news"
                   class="circle responsive-img mr-3" /></a>
             </div>
             <a href="#">
@@ -318,7 +318,7 @@
         <div class="card card-border center-align gradient-45deg-indigo-purple">
           <div class="card-content white-text">
             <div class="col s12"><i class="material-icons right">favorite</i></div>
-            <img class="responsive-img circle z-depth-4" width="100" src="{{asset('/images/user/6.jpg')}}" alt="" />
+            <img class="responsive-img circle z-depth-4" width="100" src="{{asset('public/images/user/6.jpg')}}" alt="" />
             <h5 class="white-text mb-1">Beverly Little</h5>
             <p class="m-0">Senior Product Designer</p>
             <p class="mt-8">
@@ -357,7 +357,7 @@
         <div class="card card-border center-align gradient-45deg-purple-deep-orange">
           <div class="card-content white-text">
             <div class="col s12"><i class="material-icons right">favorite</i></div>
-            <img class="responsive-img circle z-depth-4" width="100" src="{{asset('/images/user/2.jpg')}}"
+            <img class="responsive-img circle z-depth-4" width="100" src="{{asset('public/images/user/2.jpg')}}"
               alt="images" />
             <h5 class="white-text mb-1">Frank Goodman</h5>
             <p class="m-0">Senior Developer</p>
@@ -397,7 +397,7 @@
         <div class="card card-border center-align gradient-45deg-indigo-purple">
           <div class="card-content white-text">
             <div class="col s12"><i class="material-icons right">favorite</i></div>
-            <img class="responsive-img circle z-depth-4" width="100" src="{{asset('/images/user/8.jpg')}}"
+            <img class="responsive-img circle z-depth-4" width="100" src="{{asset('public/images/user/8.jpg')}}"
               alt="images" />
             <h5 class="white-text mb-1">Luiza Ales</h5>
             <p class="m-0">Graphic Designer</p>
@@ -446,7 +446,7 @@
         <div class="card deep-purple">
           <div class="card-content white-text right-align pr-0">
             <span class="card-title position-absolute">Video</span>
-            <img class="responsive-img" src="{{asset('/images/cards/camara.png')}}" alt="images" />
+            <img class="responsive-img" src="{{asset('public/images/cards/camara.png')}}" alt="images" />
           </div>
           <div class="card-action pt-0">
             <p class="white-text">Default Quality</p>
@@ -465,7 +465,7 @@
         <div class="card red darken-2">
           <div class="card-content white-text right-align pr-0">
             <span class="card-title position-absolute">Music</span>
-            <img class="responsive-img" src="{{asset('/images/cards/headphones.png')}}" alt="images" />
+            <img class="responsive-img" src="{{asset('public/images/cards/headphones.png')}}" alt="images" />
           </div>
           <div class="card-action pt-0">
             <p class="white-text">Default Quality</p>
@@ -484,7 +484,7 @@
         <div class="card black">
           <div class="card-content white-text right-align pr-0">
             <span class="card-title position-absolute">iPad</span> <img class="responsive-img"
-              src="{{asset('/images/cards/ipad.png')}}" alt="images" />
+              src="{{asset('public/images/cards/ipad.png')}}" alt="images" />
           </div>
           <div class="card-action pt-0">
             <p class="white-text">Storage</p>
@@ -514,7 +514,7 @@
         <div class="card gradient-45deg-light-blue-cyan">
           <div class="card-content white-text center">
             <h6 class="card-title font-weight-400">Apple Watch</h6>
-            <img src="{{asset('/images/cards/watch.png')}}" alt="images" class="responsive-img" />
+            <img src="{{asset('public/images/cards/watch.png')}}" alt="images" class="responsive-img" />
             <p>
               The Apple Watch, <br />
               all time witch will suit any time
@@ -531,7 +531,7 @@
           <div class="card-content white-text center">
             <span class="card-title blue-grey-text lighten-4 font-weight-400">The Asics
               Shoes</span>
-            <img src="{{asset('/images/cards/shoes.png')}}" alt="images" class="responsive-img" />
+            <img src="{{asset('public/images/cards/shoes.png')}}" alt="images" class="responsive-img" />
             <p class="blue-grey-text lighten-4">
               Buy White Shoes for Men <br />
               online Huge selection of White Men
@@ -547,7 +547,7 @@
         <div class="card gradient-45deg-red-pink">
           <div class="card-content white-text center">
             <h6 class="card-title font-weight-400">iPhone</h6>
-            <img src="{{asset('/images/cards/iphonec.png')}}" alt="images" class="responsive-img" />
+            <img src="{{asset('public/images/cards/iphonec.png')}}" alt="images" class="responsive-img" />
             <p>
               The Apple iPhone, <br />
               all time witch will suit any time
@@ -634,9 +634,9 @@
             </ul>
           </div>
           <div class="card-content">
-            <div id="test4" class="center"><img src="{{asset('/images/cards/nike.png')}}" alt="images" /></div>
-            <div id="test5" class="center"><img src="{{asset('/images/cards/puma.png')}}" alt="images" /></div>
-            <div id="test6" class="center"><img src="{{asset('/images/cards/reebok.png')}}" alt="images" /></div>
+            <div id="test4" class="center"><img src="{{asset('public/images/cards/nike.png')}}" alt="images" /></div>
+            <div id="test5" class="center"><img src="{{asset('public/images/cards/puma.png')}}" alt="images" /></div>
+            <div id="test6" class="center"><img src="{{asset('public/images/cards/reebok.png')}}" alt="images" /></div>
           </div>
         </div>
       </div>
@@ -647,13 +647,13 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('/vendors/chartist-js/chartist.min.js')}}"></script>
-<script src="{{asset('/vendors/chartjs/chart.min.js')}}"></script>
-<script src="{{asset('/fonts/fontawesome/js/all.min.js')}}"></script>
+<script src="{{asset('public/vendors/chartist-js/chartist.min.js')}}"></script>
+<script src="{{asset('public/vendors/chartjs/chart.min.js')}}"></script>
+<script src="{{asset('public/fonts/fontawesome/js/all.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('/js/scripts/cards-extended.js')}}"></script>
-<script src="{{asset('/js/custom/custom-script.js')}}"></script>
+<script src="{{asset('public/js/scripts/cards-extended.js')}}"></script>
+<script src="{{asset('public/js/custom/custom-script.js')}}"></script>
 @endsection

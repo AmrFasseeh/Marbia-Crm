@@ -6,7 +6,7 @@
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/icon.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/icon.css')}}">
 @endsection
 
 {{-- page content --}}

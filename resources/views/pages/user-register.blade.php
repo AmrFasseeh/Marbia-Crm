@@ -6,7 +6,7 @@
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/register.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/register.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -50,13 +50,13 @@
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <a href="{{asset('/')}}"
+          <a href="{{asset('public/')}}"
             class="btn waves-effect waves-light border-round gradient-45deg-purple-deep-orange col s12">Register</a>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <p class="margin medium-small"><a href="{{asset('user-login')}}">Already have an account? Login</a></p>
+          <p class="margin medium-small"><a href="{{asset('publicuser-login')}}">Already have an account? Login</a></p>
         </div>
       </div>
     </form>

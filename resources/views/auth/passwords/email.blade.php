@@ -6,7 +6,7 @@
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/forgot.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/forgot.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -69,5 +69,5 @@
 
 {{-- page script --}}
 @section('page-script')
-<script src="{{asset('/js/scripts/ui-alerts.js')}}"></script>
+<script src="{{asset('public/js/scripts/ui-alerts.js')}}"></script>
 @endsection

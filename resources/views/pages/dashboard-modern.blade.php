@@ -6,15 +6,15 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/vendors/animate-css/animate.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('/vendors/chartist-js/chartist.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('/vendors/chartist-js/chartist-plugin-tooltip.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/animate-css/animate.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/chartist-js/chartist.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/chartist-js/chartist-plugin-tooltip.css')}}">
 @endsection
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/dashboard-modern.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/intro.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/dashboard-modern.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/intro.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -95,7 +95,7 @@
                <ul class="collection mb-0">
                   @foreach ($latest_deals as $deal)
                   <li class="collection-item avatar">
-                     <img src="{{asset('/images/avatar/default.png')}}" alt="" class="circle" />
+                     <img src="{{asset('public/images/avatar/default.png')}}" alt="" class="circle" />
                      <p class="font-weight-600"><a href="{{ route('view.deal', $deal->id) }}">{{ $deal->customer->fullname }}</a></p>
                      <p class="medium-small">{{ Carbon\Carbon::make($deal->created_at)->toFormattedDateString() }}</p>
                   </li>
@@ -189,15 +189,15 @@
 
 {{-- vendor scripts --}}
 @section('vendor-script')
-<script src="{{asset('/vendors/chartjs/chart.min.js')}}"></script>
-<script src="{{asset('/vendors/chartist-js/chartist.min.js')}}"></script>
-<script src="{{asset('/vendors/chartist-js/chartist-plugin-tooltip.js')}}"></script>
-<script src="{{asset('/vendors/chartist-js/chartist-plugin-fill-donut.min.js')}}"></script>
+<script src="{{asset('public/vendors/chartjs/chart.min.js')}}"></script>
+<script src="{{asset('public/vendors/chartist-js/chartist.min.js')}}"></script>
+<script src="{{asset('public/vendors/chartist-js/chartist-plugin-tooltip.js')}}"></script>
+<script src="{{asset('public/vendors/chartist-js/chartist-plugin-fill-donut.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
-<script src="{{asset('/js/scripts/dashboard-modern.js')}}"></script>
+<script src="{{asset('public/js/scripts/dashboard-modern.js')}}"></script>
 <script>
    var CurrentBalanceDonutChart = new Chartist.Pie(
     "#current-balance-donut-chart",
@@ -230,5 +230,5 @@
     }
   )
 </script>
-<script src="{{asset('/js/scripts/intro.js')}}"></script>
+<script src="{{asset('public/js/scripts/intro.js')}}"></script>
 @endsection

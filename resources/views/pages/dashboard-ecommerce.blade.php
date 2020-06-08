@@ -6,7 +6,7 @@
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/dashboard.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/dashboard.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -181,7 +181,7 @@
             <div class="card animate fadeLeft">
                <div class="card-content  center">
                   <h6 class="card-title font-weight-400 mb-0">Apple Watch</h6>
-                  <img src="{{asset('/images/cards/watch.png')}}" alt="" class="responsive-img" />
+                  <img src="{{asset('public/images/cards/watch.png')}}" alt="" class="responsive-img" />
                   <p><b>The Apple Watch</b></p>
                   <p>One day only exclusive sale on our marketplace</p>
                </div>
@@ -194,7 +194,7 @@
             <div class="card animate fadeUp">
                <div class="card-content center">
                   <span class="card-title center-align">Music</span>
-                  <img src="{{asset('/images/cards/headphones-2.png')}}" alt="" class="responsive-img" />
+                  <img src="{{asset('public/images/cards/headphones-2.png')}}" alt="" class="responsive-img" />
                </div>
                <div class="card-action pt-0">
                   <p class="">Default Quality</p>
@@ -213,7 +213,7 @@
             <div class="card animate fadeRight">
                <div class="card-content center">
                   <h6 class="card-title font-weight-400 mb-0">iPhone</h6>
-                  <img src="{{asset('/images/cards/iphonec.png')}}" alt="" class="responsive-img" />
+                  <img src="{{asset('public/images/cards/iphonec.png')}}" alt="" class="responsive-img" />
                   <p><b>The Apple iPhone X</b></p>
                   <p>One day only exclusive sale on our marketplace</p>
                </div>
@@ -230,7 +230,7 @@
             <div class="col s12 m3">
                <div class="card gradient-shadow gradient-45deg-light-blue-cyan border-radius-3 animate fadeUp">
                   <div class="card-content center">
-                     <img src="{{asset('/images/icon/apple-watch.png')}}"
+                     <img src="{{asset('public/images/icon/apple-watch.png')}}"
                         class="width-40 border-round z-depth-5 responsive-img" alt="image" />
                      <h5 class="white-text lighten-4">50% Off</h5>
                      <p class="white-text lighten-4">On apple watch</p>
@@ -240,7 +240,7 @@
             <div class="col s12 m3">
                <div class="card gradient-shadow gradient-45deg-red-pink border-radius-3 animate fadeUp">
                   <div class="card-content center">
-                     <img src="{{asset('/images/icon/printer.png')}}"
+                     <img src="{{asset('public/images/icon/printer.png')}}"
                         class="width-40 border-round z-depth-5 responsive-img" alt="images" />
                      <h5 class="white-text lighten-4">20% Off</h5>
                      <p class="white-text lighten-4">On Canon Printer</p>
@@ -250,7 +250,7 @@
             <div class="col s12 m3">
                <div class="card gradient-shadow gradient-45deg-amber-amber border-radius-3 animate fadeUp">
                   <div class="card-content center">
-                     <img src="{{asset('/images/icon/laptop.png')}}"
+                     <img src="{{asset('public/images/icon/laptop.png')}}"
                         class="width-40 border-round z-depth-5 responsive-img" alt="image" />
                      <h5 class="white-text lighten-4">40% Off</h5>
                      <p class="white-text lighten-4">On apple macbook</p>
@@ -260,7 +260,7 @@
             <div class="col s12 m3">
                <div class="card gradient-shadow gradient-45deg-green-teal border-radius-3 animate fadeUp">
                   <div class="card-content center">
-                     <img src="{{asset('/images/icon/bowling.png')}}"
+                     <img src="{{asset('public/images/icon/bowling.png')}}"
                         class="width-40 border-round z-depth-5 responsive-img" alt="image" />
                      <h5 class="white-text lighten-4">60% Off</h5>
                      <p class="white-text lighten-4">On any game</p>
@@ -278,10 +278,10 @@
 
 {{-- vendor script --}}
 @section('vendor-script')
-<script src="{{asset('/vendors/chartjs/chart.min.js')}}"></script>
+<script src="{{asset('public/vendors/chartjs/chart.min.js')}}"></script>
 @endsection
 
 {{-- page script --}}
 @section('page-script')
-<script src="{{asset('/js/scripts/dashboard-ecommerce.js')}}"></script>
+<script src="{{asset('public/js/scripts/dashboard-ecommerce.js')}}"></script>
 @endsection

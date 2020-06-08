@@ -68,7 +68,7 @@ class DashboardController extends Controller
                     }
                 }
                 if ($now->toDateString() == Carbon::make($deal->confirm_time)->addMonth()->addDay()->toDateString()) {
-                    dd('here');
+                    // dd('here');
                     $deal->notification_status = 0;
                 }
             } elseif ($deal->payment_method == 'inst_3') {

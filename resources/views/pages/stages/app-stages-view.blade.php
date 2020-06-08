@@ -6,7 +6,7 @@
 
 {{-- page styles --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/cards-basic.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/cards-basic.css')}}">
 <style>
     .card .card-content img {
         min-height: 269.15px;
@@ -31,7 +31,7 @@
             <div class="card-content">
                 <p>Related to <span class="red-text">{{ $stage->project->title }}</span> project</p>
                 <img class="responsive-img mt-4 p-3 border-radius-6"
-                    src="{{ $stage->image ? $stage->image->url():asset('/images/gallery/34.png')}}" alt="">
+                    src="{{ $stage->image ? $stage->image->url():asset('public/images/gallery/34.png')}}" alt="">
                 <p class="mt-2 mb-2">{{ $stage->description }}</p>
                 <hr>
                 <p class="mt-2"><b class="blue-grey-text text-darken-4">Created:</b>
@@ -52,7 +52,7 @@
                 <h5 class="mt-0">{{ $building->building_name }}</h5>
                 <p><span class="red-text">{{ $building->building_type }}</span></p>
                 <img class="responsive-img mt-4 p-3 border-radius-6"
-                    src="{{ $building->image ? $building->image->url():asset('/images/gallery/34.png')}}" alt="">
+                    src="{{ $building->image ? $building->image->url():asset('public/images/gallery/34.png')}}" alt="">
                 <p class="mt-2 mb-2">{{ $building->description }}</p>
                 <hr>
                 <p class="mt-2"><b class="blue-grey-text text-darken-4">Created:</b>
@@ -77,11 +77,11 @@
     @endforelse
     @endsection
     @section('vendor-script')
-<script src="{{asset('/vendors/sweetalert/sweetalert.min.js')}}"></script>
+<script src="{{asset('public/vendors/sweetalert/sweetalert.min.js')}}"></script>
 @endsection
 
 @section('page-script')
-{{-- <script src="{{asset('/js/scripts/page-users.js')}}"></script> --}}
+{{-- <script src="{{asset('public/js/scripts/page-users.js')}}"></script> --}}
 <script>
     function deleteBuilding(id){
         swal({

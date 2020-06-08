@@ -6,13 +6,13 @@
 
 {{-- vendor styles --}}
 @section('vendor-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/vendors/select2/select2.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('/vendors/select2/select2-materialize.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2-materialize.css')}}">
 @endsection
 
 {{-- page style --}}
 @section('page-style')
-<link rel="stylesheet" type="text/css" href="{{asset('/css/pages/page-account-settings.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/css/pages/page-account-settings.css')}}">
 @endsection
 
 {{-- page content --}}
@@ -69,7 +69,7 @@
         <div class="card-panel">
           <div class="display-flex">
             <div class="media">
-              <img src="{{asset('/images/avatar/avatar-12.png')}}" class="border-radius-4" alt="profile image"
+              <img src="{{asset('public/images/avatar/avatar-12.png')}}" class="border-radius-4" alt="profile image"
                 height="64" width="64">
             </div>
             <div class="media-body">
@@ -419,11 +419,11 @@
 
 {{-- page scripts --}}
 @section('vendor-script')
-<script src="{{asset('/vendors/select2/select2.full.min.js')}}"></script>
-<script src="{{asset('/vendors/jquery-validation/jquery.validate.min.js')}}"></script>
+<script src="{{asset('public/vendors/select2/select2.full.min.js')}}"></script>
+<script src="{{asset('public/vendors/jquery-validation/jquery.validate.min.js')}}"></script>
 @endsection
 
 {{-- page script --}}
 @section('page-script')
-<script src="{{asset('/js/scripts/page-account-settings.js')}}"></script>
+<script src="{{asset('public/js/scripts/page-account-settings.js')}}"></script>
 @endsection
