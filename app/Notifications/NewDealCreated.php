@@ -30,7 +30,7 @@ class NewDealCreated extends Notification
      */
     public function via($notifiable)
     {
-        return ['mail', 'database'];
+        return ['database'];
     }
 
     /**
