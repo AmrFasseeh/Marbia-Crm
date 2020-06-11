@@ -71,7 +71,7 @@
       "class": "collapsible-header waves-effect waves-cyan",
       "icon": "assignment_ind",
       "slug": "app-qualified-lead",
-      "permission_slug": "view-qualified-lead",
+      "permission_slug": "view-qualified-leads",
       "submenu": [
         {
           "url": "app-qualified-lead",
