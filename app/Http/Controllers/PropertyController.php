@@ -181,6 +181,106 @@ class PropertyController extends Controller
         return redirect()->back()->with('status', 'Property ' . $property->name . ' floor #: ' . $property->floor_no . ' is released!');
     }
 
+    public function advancedSearch(Request $request)
+    {
+        $searchCriteria = $request->validate([
+            'value_from' => 'required',
+            'value_to' => 'required',
+            'area_from' => 'required',
+            'area_to' => 'required',
+            'floor_no' => 'nullable|numeric',
+            'property_type' => 'required|string',
+            'bedrooms' => 'nullable|numeric',
+            'bathrooms' => 'nullable|numeric',
+            'kitchen' => 'nullable|numeric',
+            'status' => 'required|numeric',
+
+        ]);
+
+        $properties = Property::whereBetween('value', [$searchCriteria['value_from'], $searchCriteria['value_to']])
+            ->whereBetween('area_sqm', [$searchCriteria['area_from'], $searchCriteria['area_to']])
+            ->where('property_type', $searchCriteria['property_type']);
+
+        if ($searchCriteria['status'] == 0) { // available properties
+            $properties->where('status', 0);
+            if ($searchCriteria['floor_no'] != null) {
+                $properties->where('floor_no', $searchCriteria['floor_no']);
+            }
+            if ($searchCriteria['kitchen'] != null) {
+                $properties->where('kitchen', $searchCriteria['kitchen']);
+            }
+            if ($searchCriteria['bathrooms'] != null) {
+                $properties->where('bathrooms', $searchCriteria['bathrooms']);
+            }
+            if ($searchCriteria['bedrooms'] != null) {
+                $properties->where('bedrooms', $searchCriteria['bedrooms']);
+            }
+            $data = $properties->get();
+            // dd($data, $searchCriteria);
+            if ($data->isEmpty()) {
+                $request->session()->flash('warning', 'No properties found with this criteria!');
+            } else {
+                $request->session()->flash('status', 'Properties Found!');
+            }
+
+            return view('pages.properties.app-properties-search-result', [
+                'properties' => $data,
+            ]);
+        } elseif ($searchCriteria['status'] == 2) { // sold properties
+            $properties->where('status', 1);
+            if ($searchCriteria['floor_no'] != null) {
+                $properties->where('floor_no', $searchCriteria['floor_no']);
+            }
+            if ($searchCriteria['kitchen'] != null) {
+                $properties->where('kitchen', $searchCriteria['kitchen']);
+            }
+            if ($searchCriteria['bathrooms'] != null) {
+                $properties->where('bathrooms', $searchCriteria['bathrooms']);
+            }
+            if ($searchCriteria['bedrooms'] != null) {
+                $properties->where('bedrooms', $searchCriteria['bedrooms']);
+            }
+            $data = $properties->get();
+            // dd($data);
+            if ($data->isEmpty()) {
+                $request->session()->flash('warning', 'No properties found with this criteria!');
+            } else {
+                $request->session()->flash('status', 'Properties Found!');
+            }
+
+            return view('pages.properties.app-properties-search-result', [
+                'properties' => $data,
+            ]);
+        } elseif ($searchCriteria['status'] == 2) { // on hold properties
+            $properties->where('hold', 1);
+            if ($searchCriteria['floor_no'] != null) {
+                $properties->where('floor_no', $searchCriteria['floor_no']);
+            }
+            if ($searchCriteria['kitchen'] != null) {
+                $properties->where('kitchen', $searchCriteria['kitchen']);
+            }
+            if ($searchCriteria['bathrooms'] != null) {
+                $properties->where('bathrooms', $searchCriteria['bathrooms']);
+            }
+            if ($searchCriteria['bedrooms'] != null) {
+                $properties->where('bedrooms', $searchCriteria['bedrooms']);
+            }
+            $data = $properties->get();
+            // dd($data);
+            if ($data->isEmpty()) {
+                $request->session()->flash('warning', 'No properties found with this criteria!');
+            } else {
+                $request->session()->flash('status', 'Properties Found!');
+            }
+            return view('pages.properties.app-properties-search-result', [
+                'properties' => $data,
+            ]);
+        }
+
+    }
+
+    
+
     /**
      * Display the specified resource.
      *

@@ -23,8 +23,8 @@ class CreatePropertiesTable extends Migration
             $table->integer('bedrooms')->nullable();
             $table->integer('bathrooms')->nullable();
             $table->integer('kitchen')->nullable();
-            $table->string('area_sqm')->nullable();
-            $table->string('value');
+            $table->integer('area_sqm')->nullable();
+            $table->integer('value');
             $table->boolean('status')->default(0);
             $table->string('payment_category')->nullable();
             $table->bigInteger('building_id')->unsigned();

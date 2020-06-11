@@ -55,6 +55,8 @@
     $translation = $menu->i18n;
     }
     @endphp
+    {{-- {{ dd($menu->permission_slug) }} --}}
+    @if (Auth::user()->hasPermission($menu->permission_slug))
     <li class="bold {{(request()->is($menu->url.'*')) ? 'active' : '' }}">
       <a class="{{$custom_classes}} {{ (request()->is($menu->url.'*')) ? 'active '.$configData['activeMenuColor'] : ''}}"
         @if(!empty($configData['activeMenuColor'])) {{'style=background:none;box-shadow:none;'}} @endif
@@ -70,6 +72,7 @@
       @include('panels.submenu', ['menu' => $menu->submenu])
       @endif
     </li>
+    @endif
     @endif
     @endforeach
     @endif

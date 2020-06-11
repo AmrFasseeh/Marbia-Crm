@@ -13,9 +13,7 @@ use App\Http\Controllers\LanguageController;
 
     // Dashboard Route
 Route::get('/', 'DashboardController@dashboardModern')->name('home');
-Route::get('/modern', 'DashboardController@dashboardModern');
-Route::get('/ecommerce', 'DashboardController@dashboardEcommerce');
-Route::get('/analytics', 'DashboardController@dashboardAnalytics');
+Route::post('property/search', 'PropertyController@advancedSearch')->name('property.search');
 
 
 // Notifications Route

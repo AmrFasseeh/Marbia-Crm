@@ -7,6 +7,7 @@
       "class": "waves-effect waves-cyan",
       "slug": "home",
       "icon": "home",
+      "permission_slug": "home",
       "tagcustom": "badge pill orange float-right mr-10"
     },
     {
@@ -19,6 +20,7 @@
       "i18n": "Calendar",
       "class": "waves-effect waves-cyan",
       "icon": "today",
+      "permission_slug": "view-calendar",
       "slug": "app-calendar"
     },
     {
@@ -28,6 +30,7 @@
       "class": "collapsible-header waves-effect waves-cyan",
       "icon": "contacts_outline",
       "slug": "app-contacts",
+      "permission_slug": "view-contact",
       "tagcustom": "badge pill pink accent-2 float-right mr-2",
       "submenu": [
         {
@@ -45,6 +48,7 @@
       "class": "collapsible-header waves-effect waves-cyan",
       "icon": "contact_phone",
       "slug": "app-leads",
+      "permission_slug": "view-lead",
       "submenu": [
         {
           "url": "app-leads-list",
@@ -67,6 +71,7 @@
       "class": "collapsible-header waves-effect waves-cyan",
       "icon": "assignment_ind",
       "slug": "app-qualified-lead",
+      "permission_slug": "view-qualified-lead",
       "submenu": [
         {
           "url": "app-qualified-lead",
@@ -83,6 +88,7 @@
       "class": "collapsible-header waves-effect waves-cyan",
       "icon": "format_list_bulleted",
       "slug": "app-projects",
+      "permission_slug": "list-project",
       "submenu": [
         {
           "url": "app-projects-list",
@@ -117,6 +123,7 @@
       "class": "collapsible-header waves-effect waves-cyan",
       "icon": "content_paste",
       "slug": "app-deals",
+      "permission_slug": "view-deal",
       "submenu": [
         {
           "url": "app-deals-list",
@@ -132,6 +139,7 @@
       "i18n": "Reports",
       "class": "waves-effect waves-cyan",
       "icon": "insert_drive_file",
+      "permission_slug": "view-report",
       "slug": "app-reports"
     },
     {
@@ -146,6 +154,7 @@
       "slug": "user",
       "icon": "face",
       "tagcustom": "badge pill purple float-right mr-10",
+      "permission_slug": "view-user",
       "submenu": [
         {
           "url": "page-users-list",
@@ -173,6 +182,7 @@
       "i18n": "Settings",
       "class": "waves-effect waves-cyan",
       "slug": "app-settings",
+      "permission_slug": "view-setting",
       "icon": "settings"
     }
   ]

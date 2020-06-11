@@ -114,6 +114,17 @@ class DealController extends Controller
         $deal->currency = 'EGP';
         $deal->down_payment = $validatedDeal['down_payment'];
 
+        if ($deal->deal_stages_id == 5) {
+            $now = Carbon::now()->toDateTimeString();
+            $deal->confirm_time = $now;
+            $users = User::all();
+            foreach ($users as $user) {
+                if ($user->hasGroup('admin')) {
+                    $user->notify(new DealWon($deal));
+                }
+            }
+        }
+
         if ($validatedDeal['payment'] == 'cash') {
             $deal->payment = $validatedDeal['payment'];
             $deal->discount = $validatedDeal['discount'];
@@ -187,16 +198,14 @@ class DealController extends Controller
         $stage = DealStages::findorfail($deal->deal_stages_id);
 
         if ($deal->payment == 'cash') {
-
-            $value = $deal->value - $deal->down_payment;
+            $value = $deal->value - ($deal->down_payment + $deal->property->hold_payment);
             $discount_amount = $value * $deal->discount / 100;
             $final_value = $value - $discount_amount;
 
         } elseif ($deal->payment == 'inst') {
             if ($deal->payment_duration) {
-
                 $deal_months = $deal->payment_duration * 12;
-                $value = $deal->value - $deal->down_payment;
+                $value = $deal->value - ($deal->down_payment + $deal->property->hold_payment);
                 $discount_amount = $value * $deal->discount / 100;
                 $final_value = $value - $discount_amount;
 

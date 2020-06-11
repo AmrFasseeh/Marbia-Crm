@@ -139,6 +139,56 @@
                     </table>
                 </div>
                 <div class="col s12 m6">
+                    <h6 class="mb-2 mt-2"><i class="material-icons">location_on</i> Property Info</h6>
+                    <table class="striped">
+                        <tbody>
+                            <tr>
+                                <td>Property Title:</td>
+                                <td>{{ $deal->property->name }}</td>
+                            </tr>
+                            <tr>
+                                <td>Info:</td>
+                                <td class="users-view-latest-activity">
+                                    {{ $deal->property->building->buildingGroup->project->title }},
+                                    {{ $deal->property->building->buildingGroup->title }},
+                                    {{ $deal->property->building->building_name }}</td>
+                            </tr>
+                            <tr>
+                                <td>Address:</td>
+                                <td class="users-view-role">
+                                    {{ $district. ', '.$city.', '.$country }}</td>
+                            </tr>
+                            <tr>
+                                <td>Type:</td>
+                                <td class="users-view-role">
+                                    {{ $deal->property->property_type }}</td>
+                            </tr>
+                            <tr>
+                                <td>Floor #:</td>
+                                <td class="users-view-role">
+                                    {{ $deal->property->floor_no }}</td>
+                            </tr>
+                            <tr>
+                                <td>Appartment #:</td>
+                                <td class="users-view-role">
+                                    {{ $deal->property->apartment_no }}</td>
+                            </tr>
+                            <tr>
+                                <td>Area(Sqm):</td>
+                                <td class="users-view-role">
+                                    {{ $deal->property->area_sqm }}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <div class="row">
+                <div class="col s12 m6">
                     <h6 class="mb-2 mt-2"><i class="material-icons">contacts</i> Customer Info</h6>
                     <table class="striped">
                         <tbody>
@@ -173,62 +223,6 @@
                             <tr>
                                 <td>Address:</td>
                                 <td>{{ $deal->customer->address }}</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <div class="row">
-                <div class="col s12 m6">
-                    <h6 class="mb-2 mt-2"><i class="material-icons">location_on</i> Property Info</h6>
-                    <table class="striped">
-                        <tbody>
-                            <tr>
-                                <td>Property Title:</td>
-                                <td>{{ $deal->property->name }}</td>
-                            </tr>
-                            <tr>
-                                <td>Info:</td>
-                                <td class="users-view-latest-activity">
-                                    {{ $deal->property->building->buildingGroup->project->title }},
-                                    {{ $deal->property->building->buildingGroup->title }},
-                                    {{ $deal->property->building->building_name }}</td>
-                            </tr>
-                            <tr>
-                                <td>Address:</td>
-                                <td class="users-view-role">
-                                    {{ $district. ', '.$city.', '.$country }}</td>
-                            </tr>
-                            <tr>
-                                <td>Type:</td>
-                                <td class="users-view-role">
-                                    {{ $deal->property->property_type }}</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col s12 m6 mt-4">
-                    <table class="striped">
-                        <tbody>
-                            <tr>
-                                <td>Floor #:</td>
-                                <td class="users-view-role">
-                                    {{ $deal->property->floor_no }}</td>
-                            </tr>
-                            <tr>
-                                <td>Appartment #:</td>
-                                <td class="users-view-role">
-                                    {{ $deal->property->apartment_no }}</td>
-                            </tr>
-                            <tr>
-                                <td>Area(Sqm):</td>
-                                <td class="users-view-role">
-                                    {{ $deal->property->area_sqm }}
-                                </td>
                             </tr>
                         </tbody>
                     </table>

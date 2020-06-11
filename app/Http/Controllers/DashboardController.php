@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Customer;
 use App\Deal;
 use App\Notifications\InstallmentDueToday;
+use App\Property;
 use App\User;
 use Carbon\Carbon;
 
@@ -67,7 +68,7 @@ class DashboardController extends Controller
                         }
                     }
                 }
-                if ($now->toDateString() == Carbon::make($deal->confirm_time)->addMonth()->addDay()->toDateString()) {
+                if ($now->toDateString() >= Carbon::make($deal->confirm_time)->addMonth()->addDay()->toDateString()) {
                     // dd('here');
                     $deal->notification_status = 0;
                 }
@@ -85,7 +86,7 @@ class DashboardController extends Controller
                         }
                     }
                 }
-                if ($now->toDateString() == Carbon::make($deal->confirm_time)->addMonth(3)->addDay()->toDateString()) {
+                if ($now->toDateString() >= Carbon::make($deal->confirm_time)->addMonth(3)->addDay()->toDateString()) {
                     $deal->notification_status = 0;
                 }
             } elseif ($deal->payment_method == 'inst_6') {
@@ -104,7 +105,7 @@ class DashboardController extends Controller
                         }
                     }
                 }
-                if ($now->toDateString() == Carbon::make($deal->confirm_time)->addMonth(6)->addDay()->toDateString()) {
+                if ($now->toDateString() >= Carbon::make($deal->confirm_time)->addMonth(6)->addDay()->toDateString()) {
                     $deal->notification_status = 0;
                 }
             } elseif ($deal->payment_method == 'inst_12') {
@@ -120,11 +121,17 @@ class DashboardController extends Controller
                         }
                     }
                 }
-                if ($now->toDateString() == Carbon::make($deal->confirm_time)->addYear()->addDay()->toDateString()) {
+                if ($now->toDateString() >= Carbon::make($deal->confirm_time)->addYear()->addDay()->toDateString()) {
                     $deal->notification_status = 0;
                 }
             }
         }
+
+        $property_max_price = Property::max('value');
+        $property_min_price = Property::min('value');
+        $property_max_area = Property::max('area_sqm');
+        $property_min_area = Property::min('area_sqm');
+        $property_types = Property::select('property_type')->distinct('property_type')->get();
 
         return view('pages.dashboard-modern', [
             'balance' => $balance,
@@ -136,22 +143,11 @@ class DashboardController extends Controller
             'last_deal_value' => $last_deal_value->value ?? 0,
             'today_deals' => $today_deals ? $today_deals->sum('value') : 0,
             'today_deals_count' => $today_deals_count == 0 ? 1 : $today_deals_count,
+            'property_max_price' => $property_max_price,
+            'property_min_price' => $property_min_price,
+            'property_max_area' => $property_max_area,
+            'property_min_area' => $property_min_area,
+            'property_types' => $property_types,
         ]);
-    }
-
-    public function dashboardEcommerce()
-    {
-        // navbar large
-        $pageConfigs = ['navbarLarge' => false];
-
-        return view('/pages/dashboard-ecommerce', ['pageConfigs' => $pageConfigs]);
-    }
-
-    public function dashboardAnalytics()
-    {
-        // navbar large
-        $pageConfigs = ['navbarLarge' => false];
-
-        return view('/pages/dashboard-analytics', ['pageConfigs' => $pageConfigs]);
     }
 }

@@ -9,6 +9,10 @@
 <link rel="stylesheet" type="text/css" href="{{asset('public/vendors/animate-css/animate.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('public/vendors/chartist-js/chartist.min.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('public/vendors/chartist-js/chartist-plugin-tooltip.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/ionRangeSlider/css/ion.rangeSlider.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/ionRangeSlider/css/ion.rangeSlider.skinFlat.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/vendors/select2/select2-materialize.css')}}">
 @endsection
 
 {{-- page styles --}}
@@ -22,12 +26,79 @@
 <div class="section">
    <!-- Current balance & total transactions cards-->
    <div class="row vertical-modern-dashboard">
+      <div class="col s12">
+         <div class="card animate fadeLeft">
+            <div class="card-content">
+               <h6 class="mb-0 mt-0 display-flex justify-content-between">Advanced Property Search
+               </h6>
+               <form action="{{ route('property.search') }}" method="post">
+                  @csrf
+                  <div class="row mb-2">
+                     <div class="col s4 mt-2">
+                        <label for="value">Price Range</label>
+                        <input type="range" id="value" id="value">
+                        <input type="hidden" id="value_from" name="value_from">
+                        <input type="hidden" id="value_to" name="value_to">
+                     </div>
+                     <div class="col s4 mt-2">
+                        <label for="area_sqm">Area Range</label>
+                        <input type="range" id="area_sqm" id="area_sqm">
+                        <input type="hidden" id="area_from" name="area_from">
+                        <input type="hidden" id="area_to" name="area_to">
+                     </div>
+                     <div class="col s2 mt-2">
+                        <label for="floor_no">Floor #</label>
+                        <input type="number" id="floor_no" name="floor_no" id="floor_no">
+                     </div>
+                     <div class="col s2 mt-2">
+                        <label for="property_type">Property Type</label>
+                        <select id="property_type" class="select2 browser-default" name="property_type">
+                           <option disabled>Select</option>
+                           @foreach ($property_types as $type)
+                           <option value="{{ $type->property_type }}">{{ $type->property_type }}</option>
+                           @endforeach
+                         </select>
+                     </div>
+                  </div>
+                     <div class="row">
+                        <div class="col s3 mt-2">
+                           <label for="bedrooms"># of Bedrooms</label>
+                           <input type="number" name="bedrooms" id="bedrooms">
+                        </div>
+                        <div class="col s3 mt-2">
+                           <label for="bathrooms"># of Bathrooms</label>
+                           <input type="number" name="bathrooms" id="bathrooms">
+                        </div>
+                        <div class="col s3 mt-2">
+                           <label for="kitchen"># of Kitchens</label>
+                           <input type="number" name="kitchen" id="kitchen">
+                        </div>
+                        <div class="col s3 mt-2">
+                           <label for="status">Property Availability</label>
+                           <select id="status" class="select2 browser-default" name="status">
+                              <option disabled>Select</option>
+                              <option value="0">Available</option>
+                              <option value="1">onHold</option>
+                              <option value="2">Sold</option>
+                            </select>
+                        </div>
+                  </div>
+                  <div class="row mt-2">
+                     <div class="col s12 m8 l8">
+                        <input type="submit" value="Search!" class="btn blue">
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="row vertical-modern-dashboard">
       <div class="col s12 m4 l4">
          <!-- Current Balance -->
          <div class="card animate fadeLeft">
             <div class="card-content">
-               <h6 class="mb-0 mt-0 display-flex justify-content-between">Deals Balance <i
-                     class="material-icons float-right">more_vert</i>
+               <h6 class="mb-0 mt-0 display-flex justify-content-between">Deals Balance
                </h6>
                <p class="medium-small">This billing cycle</p>
                <div class="current-balance-container">
@@ -193,12 +264,58 @@
 <script src="{{asset('public/vendors/chartist-js/chartist.min.js')}}"></script>
 <script src="{{asset('public/vendors/chartist-js/chartist-plugin-tooltip.js')}}"></script>
 <script src="{{asset('public/vendors/chartist-js/chartist-plugin-fill-donut.min.js')}}"></script>
+<script src="{{asset('public/vendors/ionRangeSlider/js/ion.rangeSlider.js')}}"></script>
+<script src="{{asset('public/vendors/select2/select2.full.min.js')}}"></script>
 @endsection
 
 {{-- page scripts --}}
 @section('page-script')
 <script src="{{asset('public/js/scripts/dashboard-modern.js')}}"></script>
 <script>
+$("#value").ionRangeSlider({
+    type: "double",
+    grid: true,
+    min: {{ $property_min_price }},
+    max: {{ $property_max_price }},
+    from: {{ $property_max_price }}/4,
+    to: {{ $property_max_price }}/2,
+    prefix: "EGP ",
+    onStart: function(data) {
+       $('input#value_from').attr('value', data.from);
+       $('input#value_to').attr('value', data.to);
+    },
+    onChange: function(data) {
+       $('input#value_from').attr('value', data.from);
+       $('input#value_to').attr('value', data.to);
+    }
+  });
+  $("#area_sqm").ionRangeSlider({
+    type: "double",
+    grid: true,
+    min: {{ $property_min_area }},
+    max: {{ $property_max_area }},
+    from: {{ $property_max_area }}/4,
+    to: {{ $property_max_area }}/2,
+    prefix: "Sqm ",
+    onStart: function(data) {
+       $('input#area_from').attr('value', data.from);
+       $('input#area_to').attr('value', data.to);
+    },
+    onChange: function(data) {
+       $('input#area_from').attr('value', data.from);
+       $('input#area_to').attr('value', data.to);
+    }
+  });
+
+   $("#property_type").select2({
+        dropdownAutoWidth: true,
+        placeholder: "Select"
+    });
+    $("#status").select2({
+        dropdownAutoWidth: true,
+        placeholder: "Select"
+    });
+   
    var CurrentBalanceDonutChart = new Chartist.Pie(
     "#current-balance-donut-chart",
     {
