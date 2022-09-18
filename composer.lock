@@ -3500,6 +3500,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/http-foundation/zipball/02d968647fe61b2f419a8dc70c468a9d30a48d3a",
                 "reference": "02d968647fe61b2f419a8dc70c468a9d30a48d3a",
+
                 "shasum": ""
             },
             "require": {
@@ -4061,6 +4062,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/5232de97ee3b75b0360528dae24e73db49566ab1",
                 "reference": "5232de97ee3b75b0360528dae24e73db49566ab1",
+
                 "shasum": ""
             },
             "require": {
